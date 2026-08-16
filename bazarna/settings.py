@@ -52,12 +52,14 @@ CORS_ALLOW_HEADERS = [
 # ==============================================================================
 INSTALLED_APPS = [
     'modeltranslation',
+    'cloudinary_storage',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary',
     'django.contrib.sites',
     'django.contrib.sitemaps',
 
@@ -243,6 +245,12 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.getenv('CLOUDINARY_URL')
+}
+if os.getenv('CLOUDINARY_URL'):
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 # ==============================================================================
 # 11. THIRD-PARTY & EXTRA CONFIGURATIONS
 # ==============================================================================
@@ -275,10 +283,22 @@ MESSAGE_TAGS = {
 # 12. FIREBASE CLOUD MESSAGING
 # ==============================================================================
 FIREBASE_KEY_PATH = os.path.join(BASE_DIR, 'firebase-key.json')
+firebase_cred_json = os.environ.get('FIREBASE_CREDENTIALS_JSON')
 
 if not firebase_admin._apps:
-    cred = credentials.Certificate(FIREBASE_KEY_PATH)
-    firebase_admin.initialize_app(cred)
+    try:
+        if firebase_cred_json:
+            import json
+            cred_dict = json.loads(firebase_cred_json)
+            cred = credentials.Certificate(cred_dict)
+            firebase_admin.initialize_app(cred)
+        elif os.path.exists(FIREBASE_KEY_PATH):
+            cred = credentials.Certificate(FIREBASE_KEY_PATH)
+            firebase_admin.initialize_app(cred)
+        else:
+            print("WARNING: Firebase credentials not found. Notifications will not work.")
+    except Exception as e:
+        print(f"WARNING: Failed to initialize Firebase: {e}")
 
 # ==============================================================================
 # 13. DEFAULT AUTO FIELD
