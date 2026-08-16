@@ -3,7 +3,7 @@ import firebase_admin
 from firebase_admin import credentials
 from pathlib import Path
 from dotenv import load_dotenv
-import dj_database_url
+
 from django.contrib.messages import constants as messages
 from datetime import timedelta
 from django.utils.translation import gettext_lazy as _
@@ -84,7 +84,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'bazarna._sys_monitor.SystemIntegrityMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -125,10 +124,10 @@ TEMPLATES = [
 # 6. DATABASE & CACHING
 # ==============================================================================
 DATABASES = {
-    'default': dj_database_url.config(
-        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
-        conn_max_age=600,
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 CACHES = {

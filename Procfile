@@ -1,1 +1,0 @@
-web: gunicorn bazarna.wsgi --log-file -
