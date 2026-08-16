@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 @receiver(post_save, sender=OrderItem)
 @receiver(post_delete, sender=OrderItem)
 def update_order_totals(sender, instance, **kwargs):
+    if kwargs.get('raw', False): return
     order = instance.order
     current_items = order.items.all()
     total_products = sum(item.quantity * item.price_at_purchase for item in current_items)
@@ -23,6 +24,7 @@ def update_order_totals(sender, instance, **kwargs):
 # 2. إدارة المخزون (خصم الكميات عند الشراء)
 @receiver(post_save, sender=Order)
 def manage_inventory(sender, instance, created, **kwargs):
+    if kwargs.get('raw', False): return
     if created: return
     if instance.status == Order.Status.PENDING:
         for item in instance.items.all():
@@ -41,6 +43,7 @@ from accounts.models import ReferralRewardLog # استدعاء السجل
 
 @receiver(post_save, sender=Order)
 def apply_referral_reward(sender, instance, created, **kwargs):
+    if kwargs.get('raw', False): return
     if instance.status == Order.Status.DELIVERED:
         customer = instance.customer
         inviter = customer.invited_by
@@ -100,6 +103,7 @@ def apply_referral_reward(sender, instance, created, **kwargs):
 # ========================================================
 @receiver(post_save, sender=Order)
 def distribute_profits(sender, instance, created, **kwargs):
+    if kwargs.get('raw', False): return
     if instance.status == Order.Status.DELIVERED:
         already_paid = WalletTransaction.objects.filter(
             description__contains=f"#{instance.order_id}",
