@@ -1,0 +1,282 @@
+{% extends 'supervisor/base_supervisor.html' %}
+{% load i18n l10n %}
+
+{% block page_title %}{% trans "إعدادات الموقع" %}{% endblock %}
+
+{% block content %}
+<style>
+    /* تنسيقات التابات والقائمة الجانبية */
+    .custom-pills .nav-link {
+        color: #64748b;
+        font-weight: 700;
+        padding: 12px 20px;
+        border-radius: 12px;
+        margin-bottom: 8px;
+        transition: all 0.3s ease;
+        text-align: right;
+    }
+    .custom-pills .nav-link:hover {
+        background-color: #f1f5f9;
+        color: #3b82f6;
+    }
+    .custom-pills .nav-link.active {
+        background-color: #3b82f6;
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+    .custom-pills .nav-link i {
+        width: 24px;
+        text-align: center;
+    }
+    
+    /* تنسيق الكروت لاختيار بوابة الدفع */
+    .gateway-card {
+        border: 2px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+    .gateway-card:hover {
+        border-color: #cbd5e1;
+        background-color: #f8fafc;
+    }
+    .gateway-input:checked + .gateway-card {
+        border-color: #3b82f6;
+        background-color: #eff6ff;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
+    }
+    .gateway-input {
+        display: none;
+    }
+    
+    /* الشريط السفلي العائم (Sticky Bottom Bar) */
+    .sticky-save-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid #e2e8f0;
+        padding: 15px;
+        z-index: 1030;
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: center;
+        transition: 0.3s ease;
+    }
+    
+    /* منع تغطية الشريط السفلي للمحتوى */
+    .settings-container {
+        padding-bottom: 100px;
+    }
+</style>
+
+<div class="container-fluid settings-container" style="max-width: 1100px;">
+    
+    <div class="mb-4 d-flex align-items-center justify-content-between">
+        <h4 class="fw-bold mb-0 text-dark">{% trans "إعدادات المنصة المركزية" %}</h4>
+        <span class="badge bg-primary rounded-pill px-3 py-2 shadow-sm">
+            <i class="fas fa-globe me-1"></i> 
+            {% if settings.country %}{{ settings.country.name }}{% else %}{% trans "الإعدادات العامة" %}{% endif %}
+        </span>
+    </div>
+
+    <form method="POST" enctype="multipart/form-data" id="settingsForm">
+        {% csrf_token %}
+        
+        <div class="row g-4">
+            
+            <div class="col-md-4 col-lg-3">
+                <div class="nav flex-column nav-pills custom-pills shadow-sm rounded-4 bg-white p-3 sticky-top" style="top: 20px;" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab-identity" type="button" role="tab">
+                        <i class="fas fa-paint-brush me-2"></i> {% trans "الهوية والبصرية" %}
+                    </button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-gateways" type="button" role="tab">
+                        <i class="fas fa-credit-card me-2"></i> {% trans "بوابات الدفع" %}
+                    </button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-wallet" type="button" role="tab">
+                        <i class="fas fa-wallet me-2"></i> {% trans "المحفظة والسحب" %}
+                    </button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-referral" type="button" role="tab">
+                        <i class="fas fa-gift me-2"></i> {% trans "المكافآت والدعوات" %}
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-lg-9">
+                <div class="tab-content card border-0 shadow-sm rounded-4 p-4 bg-white" style="min-height: 400px;">
+                    
+                    <div class="tab-pane fade show active" id="tab-identity" role="tabpanel">
+                        <h5 class="fw-bold text-dark mb-4 pb-2 border-bottom"><i class="fas fa-paint-brush text-primary me-2"></i> {% trans "الهوية والبصرية" %}</h5>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label small text-muted fw-bold">{% trans "اسم الموقع / الفرع" %}</label>
+                                <input type="text" name="site_name" class="form-control bg-light border-0 py-2 fw-bold" value="{{ settings.site_name }}" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-gateways" role="tabpanel">
+                        <h5 class="fw-bold text-dark mb-4 pb-2 border-bottom"><i class="fas fa-credit-card text-primary me-2"></i> {% trans "بوابات الدفع الإلكتروني" %}</h5>
+                        <p class="text-muted small fw-bold mb-4">{% trans "تم ضبط فواتيرك كبوابة الدفع الرسمية للمنصة." %}</p>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="w-100 h-100">
+                                    <input type="radio" name="active_payment_gateway" value="FAWATERK" class="gateway-input" checked>
+                                    <div class="gateway-card text-center d-flex flex-column align-items-center justify-content-center">
+                                        <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                                        <h5 class="fw-bold text-dark mb-1">{% trans "فواتيرك (Fawaterk)" %}</h5>
+                                        <span class="badge bg-success rounded-pill mt-2">{% trans "البوابة الحالية والنشطة" %}</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row g-4 mt-4 border-top pt-4">
+                            <h6 class="fw-bold text-dark mb-3"><i class="fas fa-sliders-h text-primary me-2"></i> {% trans "ضبط عمولات فواتيرك" %}</h6>
+                            
+                            <div class="col-md-8">
+                                <div class="p-3 bg-light rounded-3 border">
+                                    <label class="form-label small text-muted fw-bold"><i class="fas fa-percent text-primary me-1"></i> {% trans "نسبة رسوم Fawaterk (%)" %}</label>
+                                    <input type="number" name="fawaterk_fee_percent" class="form-control border-0 fw-bold shadow-sm mb-3" step="0.01" value="{{ settings.fawaterk_fee_percentage|unlocalize|default:'2.00' }}" required>
+                                    
+                                    <label class="form-label small text-muted fw-bold"><i class="fas fa-money-bill-wave text-success me-1"></i> {% trans "رسوم Fawaterk (المبلغ الثابت)" %}</label>
+                                    <div class="input-group shadow-sm">
+                                        <input type="number" name="fawaterk_fee_fixed" class="form-control border-0 fw-bold" step="0.01" value="{{ settings.fawaterk_fee_fixed|unlocalize|default:'2.00' }}" required>
+                                        <span class="input-group-text bg-white border-0">{{ settings.country.currency_symbol|default:"ج.م" }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-wallet" role="tabpanel">
+                        <h5 class="fw-bold text-dark mb-4 pb-2 border-bottom"><i class="fas fa-wallet text-warning me-2"></i> {% trans "سياسات المحافظ والسحب" %}</h5>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label small text-muted fw-bold">{% trans "الحد الأدنى لطلب السحب" %}</label>
+                                <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                    <input type="number" name="min_withdrawal" class="form-control border-0 bg-light fw-bold" step="0.01" value="{{ settings.min_withdrawal_amount|unlocalize }}" required>
+                                    <span class="input-group-text bg-white text-muted border-0">{{ settings.country.currency_symbol|default:"ج.م" }}</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small text-muted fw-bold">{% trans "المبلغ المحجوز لضمان الجدية" %}</label>
+                                <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                    <input type="number" name="reserved_balance" class="form-control border-0 bg-light fw-bold" step="0.01" value="{{ settings.min_wallet_balance|unlocalize }}" required>
+                                    <span class="input-group-text bg-white text-muted border-0">{{ settings.country.currency_symbol|default:"ج.م" }}</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label small text-muted fw-bold">{% trans "مدة تعليق الأرباح للمراجعة" %}</label>
+                                <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                    <input type="number" name="release_hours" class="form-control border-0 bg-light fw-bold" min="0" value="{{ settings.pending_balance_release_hours }}" required>
+                                    <span class="input-group-text bg-white text-muted border-0"><i class="fas fa-clock me-1"></i> {% trans "ساعة" %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 🔥 نظام المكافآت الجديد والمقسّم 🔥 -->
+                    <div class="tab-pane fade" id="tab-referral" role="tabpanel">
+                        <h5 class="fw-bold text-dark mb-4 pb-2 border-bottom"><i class="fas fa-gift text-danger me-2"></i> {% trans "نظام المكافآت والدعوات" %}</h5>
+                        
+                        <!-- 1. إعدادات الداعي -->
+                        <div class="card border border-primary border-opacity-25 shadow-sm rounded-4 mb-4">
+                            <div class="card-header bg-primary bg-opacity-10 border-0 pt-3 pb-2">
+                                <h6 class="fw-bold text-primary mb-0"><i class="fas fa-bullhorn me-2"></i> {% trans "إعدادات الداعي (اكتساب المكافآت)" %}</h6>
+                                <p class="small text-muted mt-1 mb-0">{% trans "القواعد الخاصة بالشخص الذي يشارك الكود للحصول على رصيد مكافأة." %}</p>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted fw-bold">{% trans "نسبة المكافأة للداعي من الطلب" %}</label>
+                                        <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                            <input type="number" name="ref_reward_percent" class="form-control border-0 bg-light fw-bold" step="0.01" max="100" value="{{ settings.referral_reward_percentage|unlocalize|default:'10.00' }}" required>
+                                            <span class="input-group-text bg-white text-muted border-0 fw-bold">%</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted fw-bold">{% trans "الحد الأقصى للمكافأة في الطلب الواحد" %}</label>
+                                        <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                            <input type="number" name="ref_reward_max_amount" class="form-control border-0 bg-light fw-bold text-danger" step="0.01" value="{{ settings.referral_reward_max_amount|unlocalize|default:'100.00' }}" required>
+                                            <span class="input-group-text bg-white text-danger border-0">{{ settings.country.currency_symbol|default:"ج.م" }}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted fw-bold">{% trans "عدد الطلبات المؤهلة (للمدعو الواحد)" %}</label>
+                                        <input type="number" name="ref_orders_limit" class="form-control border-0 bg-light fw-bold py-2 shadow-sm rounded-3" min="1" value="{{ settings.referral_reward_limit_orders|default:'1' }}" required>
+                                        <small class="text-muted d-block mt-1">{% trans "كم عدد الطلبات التي سيحصل الداعي على مكافأة منها؟" %}</small>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-muted fw-bold">{% trans "صلاحية رصيد المكافأة للداعي" %}</label>
+                                        <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                            <input type="number" name="ref_validity_days" class="form-control border-0 bg-light fw-bold" value="{{ settings.referral_reward_validity_days|default:'30' }}" required>
+                                            <span class="input-group-text bg-white text-muted border-0"><i class="fas fa-calendar-day me-1"></i> {% trans "أيام" %}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. إعدادات المدعو (والاستخدام) -->
+                        <div class="card border border-success border-opacity-25 shadow-sm rounded-4">
+                            <div class="card-header bg-success bg-opacity-10 border-0 pt-3 pb-2">
+                                <h6 class="fw-bold text-success mb-0"><i class="fas fa-shopping-bag me-2"></i> {% trans "إعدادات المدعو واستخدام الرصيد" %}</h6>
+                                <p class="small text-muted mt-1 mb-0">{% trans "قواعد تسجيل المستخدم الجديد، وكيفية استخدام وتطبيق رصيد المكافآت عند الشراء." %}</p>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row g-4">
+                                    <div class="col-md-12">
+                                        <label class="form-label small text-muted fw-bold">{% trans "مهلة إدخال كود الدعوة للمستخدم الجديد" %}</label>
+                                        <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                            <input type="number" name="ref_grace" class="form-control border-0 bg-light fw-bold" value="{{ settings.referral_grace_period_hours|default:'24' }}" required>
+                                            <span class="input-group-text bg-white text-muted border-0"><i class="fas fa-clock me-1"></i> {% trans "ساعة" %}</span>
+                                        </div>
+                                        <small class="text-muted d-block mt-1">أقصى مدة مسموحة للمدعو لإدخال كود صديقه (الداعي) بعد إنشاء الحساب.</small>
+                                    </div>
+
+                                    <div class="col-md-6 border-top pt-3">
+                                        <label class="form-label small text-muted fw-bold">{% trans "أقصى نسبة خصم يمكن استخدامها للمنتج" %}</label>
+                                        <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                            <input type="number" name="ref_limit" class="form-control border-0 bg-light fw-bold" min="0" max="100" value="{{ settings.referral_discount_limit_pct|default:'10' }}" required>
+                                            <span class="input-group-text bg-white text-muted border-0">%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 border-top pt-3">
+                                        <label class="form-label small text-muted fw-bold">{% trans "الحد الأقصى المالي لخصم الإحالة بالسلة" %}</label>
+                                        <div class="input-group shadow-sm rounded-3 overflow-hidden">
+                                            <input type="number" name="ref_discount_max_amount" class="form-control border-0 bg-light fw-bold text-danger" step="0.01" value="{{ settings.referral_discount_max_amount|unlocalize|default:'100.00' }}" required>
+                                            <span class="input-group-text bg-white text-danger border-0">{{ settings.country.currency_symbol|default:"ج.م" }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sticky-save-bar">
+            <button type="submit" class="btn btn-dark px-5 py-3 rounded-pill fw-bold fs-6 shadow-lg d-flex align-items-center gap-2 transition-hover">
+                <i class="fas fa-save"></i> 
+                <span>{% trans "حفظ جميع الإعدادات" %}</span>
+            </button>
+        </div>
+
+    </form>
+</div>
+
+{% endblock %}

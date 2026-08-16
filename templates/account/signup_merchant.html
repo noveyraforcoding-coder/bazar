@@ -1,0 +1,411 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+<style>
+  /* --- متغيرات النظام (Ultra-Modern UI) --- */
+  :root {
+    --bg-main: #F4F5F8;
+    --surface: #FFFFFF;
+    --text-primary: #0A0A0A;
+    --text-secondary: #71717A;
+    --accent-dark: #000000;
+    --accent-gold: #F5A623;
+    --danger: #EF4444;
+    --success: #10B981;
+    --border-light: rgba(0, 0, 0, 0.04);
+  }
+
+  body {
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary);
+    font-family: 'Tajawal', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @keyframes fadeUpIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up {
+    animation: fadeUpIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    opacity: 0;
+  }
+
+  .neo-auth-card {
+    background: var(--surface);
+    border-radius: 32px;
+    padding: 48px 32px;
+    border: none;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.03);
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .welcome-icon-box {
+    width: 75px; height: 75px;
+    background: rgba(245, 166, 35, 0.1);
+    color: var(--accent-gold);
+    border-radius: 24px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 10px 20px rgba(245, 166, 35, 0.05);
+    margin-bottom: 24px;
+    transform: rotate(-5deg);
+  }
+
+  .section-title {
+    font-weight: 800;
+    color: var(--text-primary);
+    font-size: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+  .section-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px; height: 20px;
+    background: var(--accent-gold);
+    border-radius: 4px;
+    margin-inline-end: 12px; 
+  }
+
+  .form-label-neo {
+    font-weight: 800;
+    color: var(--text-primary);
+    font-size: 13px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .neo-form-group input[type="text"], 
+  .neo-form-group input[type="number"], 
+  .neo-form-group input[type="password"], 
+  .neo-form-group select,
+  .neo-form-group textarea {
+    background: #F4F4F5 !important;
+    border: 2px solid transparent !important;
+    border-radius: 16px;
+    padding: 14px 20px;
+    color: var(--text-primary) !important;
+    font-weight: 700;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .neo-form-group input:focus, 
+  .neo-form-group select:focus,
+  .neo-form-group textarea:focus {
+    background: var(--surface) !important;
+    border-color: var(--accent-gold) !important;
+    box-shadow: 0 8px 20px rgba(245, 166, 35, 0.05) !important;
+  }
+  .neo-form-group input::placeholder, .neo-form-group textarea::placeholder { color: #A1A1AA !important; font-weight: 500; }
+
+  .toggle-pass-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    inset-inline-end: 16px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 16px;
+    display: flex; align-items: center; justify-content: center;
+    padding: 0; margin: 0;
+    z-index: 10;
+  }
+
+  .upload-box-neo {
+    background: #F4F4F5;
+    border: 2px dashed #D4D4D8;
+    border-radius: 16px;
+    padding: 24px 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    height: 100%;
+  }
+  .upload-box-neo:hover {
+    background: var(--surface);
+    border-color: var(--accent-gold);
+    box-shadow: 0 10px 25px rgba(245, 166, 35, 0.05);
+  }
+  .upload-box-neo i { font-size: 32px; color: #A1A1AA; margin-bottom: 12px; transition: 0.3s; }
+  .upload-box-neo:hover i { color: var(--accent-gold); transform: scale(1.1); }
+  .neo-form-group input[type="file"] { display: none; } 
+
+  .terms-box-neo {
+    background: rgba(245, 166, 35, 0.05);
+    border: 1px solid rgba(245, 166, 35, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .neo-checkbox {
+    width: 24px !important; height: 24px !important;
+    padding: 0 !important; margin: 0 !important;
+    accent-color: var(--accent-dark);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .btn-neo-gold {
+    background: var(--accent-dark);
+    color: #fff !important;
+    border: none;
+    font-weight: 800;
+    border-radius: 50px;
+    padding: 16px;
+    font-size: 16px;
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  .btn-neo-gold:active { transform: scale(0.96); box-shadow: 0 5px 10px rgba(0,0,0,0.05); }
+  .btn-neo-gold:disabled { background: #E4E4E7 !important; color: #A1A1AA !important; box-shadow: none; cursor: not-allowed; }
+
+  .neo-hr { border-color: var(--border-light); margin: 32px 0; border-width: 2px; }
+</style>
+
+<div class="container d-flex flex-column justify-content-center py-5" style="min-height: 90vh;">
+    
+    <div class="text-center mb-4 animate-fade-up">
+        <div class="welcome-icon-box mx-auto">
+            <i class="fas fa-store"></i>
+        </div>
+        <h3 class="fw-bold mb-2" style="color: var(--text-primary); letter-spacing: -0.5px;">{% trans "انضم كشريك نجاح 🤝" %}</h3>
+        <p style="color: var(--text-secondary); font-weight: 500; font-size: 15px;">
+            {% trans "سجل متجرك، حدد دولتك، وابدأ البيع لآلاف العملاء." %}
+        </p>
+    </div>
+
+    <form method="POST" enctype="multipart/form-data" class="neo-auth-card neo-form-group">
+        {% csrf_token %}
+        
+        <div class="animate-fade-up" style="animation-delay: 100ms;">
+            <h6 class="section-title">{% trans "بياناتك الشخصية والدولة" %}</h6>
+            
+            <div class="row g-3 mb-4">
+                <div class="col-12 col-md-6">
+                    <label class="form-label-neo">{% trans " (الذي سيظهر للعملاء) الاسم الأول" %} <span class="text-danger ms-1">*</span></label>
+                    {{ form.first_name }}
+                </div>
+            </div>
+
+            <div class="mb-4 p-3 rounded-4" style="background: rgba(245, 166, 35, 0.05); border: 1px solid rgba(245, 166, 35, 0.1);">
+                <label class="form-label-neo" style="color: #D97706;"><i class="fas fa-globe me-2 ms-1"></i> {% trans "دولة المتجر (أين تبيع؟)" %} <span class="text-danger ms-1">*</span></label>
+                {{ form.country }}
+                <div class="form-text small mt-2 fw-bold" style="color: var(--text-secondary);">{% trans "منتجاتك ستظهر للعملاء في هذه الدولة فقط." %}</div>
+                {% if form.country.errors %}<div class="text-danger small mt-2 fw-bold"><i class="fas fa-exclamation-circle me-1"></i> {{ form.country.errors.0 }}</div>{% endif %}
+            </div>
+            
+            <div class="row g-3 mb-4">
+                <div class="col-12 col-md-6">
+                    <label class="form-label-neo">{% trans "رقم الهاتف (الأساسي)" %} <span class="text-danger ms-1">*</span></label>
+                    {{ form.phone_primary }}
+                    {% if form.phone_primary.errors %}<div class="text-danger small mt-2 fw-bold"><i class="fas fa-exclamation-circle me-1"></i> {{ form.phone_primary.errors.0 }}</div>{% endif %}
+                </div>
+                
+                <div class="col-12 col-md-6">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <label class="form-label-neo mb-0">{% trans "رقم الواتساب" %} <span class="text-danger ms-1">*</span></label>
+                        <div class="form-check mb-0 d-flex align-items-center p-0">
+                            <input class="form-check-input ms-0 me-2" type="checkbox" id="sameAsPhone" style="cursor: pointer; width: 18px; height: 18px;">
+                            <label class="form-check-label small fw-bold text-success ms-1" for="sameAsPhone" style="cursor:pointer; font-size: 12px;"><i class="fab fa-whatsapp"></i> {% trans "نفس الرقم الأساسي" %}</label>
+                        </div>
+                    </div>
+                    {{ form.whatsapp_number }}
+                    {% if form.whatsapp_number.errors %}<div class="text-danger small mt-2 fw-bold"><i class="fas fa-exclamation-circle me-1"></i> {{ form.whatsapp_number.errors.0 }}</div>{% endif %}
+                </div>
+            </div>
+
+            <div class="mb-4" style="position: relative;">
+                <label class="form-label-neo">{% trans "كلمة المرور" %} <span class="text-danger ms-1">*</span></label>
+                <div style="position: relative;">
+                    {{ form.password }}
+                    <button type="button" class="toggle-pass-btn" onclick="togglePass()">
+                        <i class="far fa-eye" id="pass-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="neo-hr animate-fade-up" style="animation-delay: 200ms;">
+
+        <div class="animate-fade-up" style="animation-delay: 200ms;">
+            <h6 class="section-title">{% trans "تفاصيل النشاط التجاري" %}</h6>
+            
+            <div class="mb-4">
+                <label class="form-label-neo">{% trans "وصف البضاعة (الأنواع والأسعار)" %} <span class="text-danger ms-1">*</span></label>
+                {{ form.goods_types }}
+                <div class="form-text small mt-2" style="color: var(--text-secondary); font-weight: 500;">{% trans "مثال: ملابس أطفال، خامات قطنية، أحذية رياضية." %}</div>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-12 col-md-6">
+                    <label class="form-label-neo">{% trans "الكمية المتوفرة تقريباً" %}</label>
+                    {{ form.goods_quantity }}
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label-neo">{% trans "متوسط الأسعار" %}</label>
+                    {{ form.goods_average_price }}
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="form-label-neo">{% trans "الكميات المتوقع بيعها (شهرياً)" %}</label>
+                {{ form.expected_sales_quantity }}
+                <div class="form-text small mt-2" style="color: var(--text-secondary); font-weight: 500;">{% trans "مثال: 500 قطعة، 100 أوردر." %}</div>
+            </div>
+        </div>
+
+        <hr class="neo-hr animate-fade-up" style="animation-delay: 300ms;">
+
+        <div class="animate-fade-up" style="animation-delay: 300ms;">
+            <h6 class="section-title">{% trans "هوية وشعار المتجر" %}</h6>
+            
+            <div class="mb-4">
+                <label class="form-label-neo">{% trans "صورة المحل / لوجو المتجر" %} <span class="text-danger ms-1">*</span></label>
+                <label class="upload-box-neo w-100 py-4" for="id_shop_image">
+                    <i class="fas fa-image"></i>
+                    <span class="small fw-bold" style="color: var(--text-primary);">{% trans "اضغط لرفع الشعار" %}</span>
+                </label>
+                <div class="d-none">{{ form.shop_image }}</div>
+            </div>
+
+            <div class="mb-4 p-4 rounded-4" style="background: #F4F4F5; border: 1px solid var(--border-light);">
+                <div class="form-check form-switch d-flex align-items-center mb-0 p-0">
+                    <input class="form-check-input ms-0 me-3" type="checkbox" id="hasTaxRegister" onchange="toggleTaxField()" style="width: 44px; height: 24px; cursor: pointer;">
+                    <label class="form-check-label fw-bold ms-2" for="hasTaxRegister" style="color: var(--text-primary); cursor: pointer; font-size: 14px;">
+                        {% trans "هل لديك سجل ضريبي؟ 📄" %}
+                    </label>
+                </div>
+
+                <div id="tax-field-container" style="display: none;" class="mt-4 animate__animated animate__fadeIn">
+                    <label class="form-label-neo">{% trans "رقم السجل الضريبي" %}</label>
+                    {{ form.tax_register_number }}
+                    <div class="form-text small mt-2 fw-bold" style="color: var(--accent-gold);"><i class="fas fa-star me-1"></i> {% trans "يفضل إضافته لزيادة ثقة العملاء بك." %}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="terms-box-neo mb-4 animate-fade-up" style="animation-delay: 400ms;">
+            <input class="neo-checkbox ms-3" type="checkbox" id="agreeTerms" required>
+            <label class="form-check-label mb-0" for="agreeTerms" style="font-size: 13px; font-weight: 600; color: var(--text-primary); line-height: 1.6;">
+                {% trans "أقر بأنني قرأت وأوافق على" %} 
+                <a href="{% url 'legal_document' 'TERMS' 'MERCHANT' %}" target="_blank" style="color: var(--accent-gold); text-decoration: underline;">{% trans "الشروط والأحكام" %}</a> 
+                {% trans "و" %} 
+                <a href="{% url 'legal_document' 'PRIVACY' 'MERCHANT' %}" target="_blank" style="color: var(--accent-gold); text-decoration: underline;">{% trans "سياسة الخصوصية" %}</a> 
+                {% trans "الخاصة بالتجار." %}
+            </label>
+        </div>
+
+        <div class="animate-fade-up" style="animation-delay: 500ms;">
+            <button type="submit" class="btn btn-neo-gold w-100" id="submitBtn" disabled>
+                {% trans "إرسال طلب الانضمام 🚀" %}
+            </button>
+            <p class="text-center small mt-3 fw-bold" style="color: var(--text-secondary);">{% trans "سيتم مراجعة طلبك من قبل الإدارة خلال 24 ساعة." %}</p>
+        </div>
+
+    </form>
+</div>
+
+<script>
+    // تفعيل الزر عند الموافقة على الشروط
+    document.getElementById('agreeTerms').addEventListener('change', function() {
+        document.getElementById('submitBtn').disabled = !this.checked;
+    });
+
+    // إظهار/إخفاء الباسورد
+    function togglePass() {
+        const input = document.getElementById('id_password');
+        const icon = document.getElementById('pass-icon');
+        if (input.type === "password") {
+            input.type = "text"; 
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
+        } else {
+            input.type = "password"; 
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
+        }
+    }
+
+    // إظهار/إخفاء حقل السجل الضريبي
+    function toggleTaxField() {
+        const checkbox = document.getElementById('hasTaxRegister');
+        const container = document.getElementById('tax-field-container');
+        if (checkbox.checked) { 
+            container.style.display = 'block'; 
+        } else { 
+            container.style.display = 'none'; 
+            const input = container.querySelector('input'); 
+            if (input) input.value = ''; 
+        }
+    }
+
+    // نظام نسخ رقم الهاتف للواتساب تلقائياً
+    document.addEventListener('DOMContentLoaded', function() {
+        const phoneInput = document.getElementById('id_phone_primary');
+        const whatsappInput = document.getElementById('id_whatsapp_number');
+        const sameAsPhoneCheckbox = document.getElementById('sameAsPhone');
+
+        function syncWhatsApp() {
+            if (sameAsPhoneCheckbox.checked) {
+                whatsappInput.value = phoneInput.value;
+                whatsappInput.readOnly = true;
+                whatsappInput.style.backgroundColor = '#E4E4E7';
+                whatsappInput.style.color = '#71717A';
+            } else {
+                whatsappInput.readOnly = false;
+                whatsappInput.style.backgroundColor = '#F4F4F5';
+                whatsappInput.style.color = '#0A0A0A';
+            }
+        }
+
+        if(sameAsPhoneCheckbox) {
+            sameAsPhoneCheckbox.addEventListener('change', syncWhatsApp);
+        }
+
+        if(phoneInput) {
+            phoneInput.addEventListener('input', function() {
+                if (sameAsPhoneCheckbox.checked) {
+                    whatsappInput.value = this.value;
+                }
+            });
+        }
+
+        // عرض علامة صح خضراء عند رفع الملفات بنجاح
+        const fileInputs = document.querySelectorAll('input[type="file"]');
+        fileInputs.forEach(input => {
+            input.addEventListener('change', function() {
+                const uploadBox = this.closest('.col-12, .mb-4').querySelector('.upload-box-neo');
+                const existingCheck = uploadBox.querySelector('.file-check-mark');
+                if (existingCheck) { existingCheck.remove(); }
+                
+                if (this.files && this.files.length > 0) {
+                    const checkMark = document.createElement('div');
+                    checkMark.className = 'text-success mt-2 file-check-mark fw-bold animate__animated animate__fadeInUp';
+                    checkMark.innerHTML = '<i class="fas fa-check-circle" style="color: var(--success); font-size: 20px;"></i> <span class="d-block mt-1" style="font-size: 11px;">تم الرفع</span>';
+                    
+                    const originalIcon = uploadBox.querySelector('i:not(.fa-check-circle)');
+                    if(originalIcon) originalIcon.style.display = 'none';
+                    
+                    uploadBox.appendChild(checkMark);
+                    uploadBox.style.borderColor = 'var(--success)';
+                    uploadBox.style.background = 'rgba(16, 185, 129, 0.05)';
+                }
+            });
+        });
+    });
+</script>
+
+{% endblock %}

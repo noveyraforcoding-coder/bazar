@@ -1,0 +1,292 @@
+{% extends 'supervisor/base_supervisor.html' %}
+{% load supervisor_tags i18n %} 
+
+{% block head_title %}{% trans "لوحة القيادة الشاملة" %} | {{ site_settings.site_name|default:"Elbazaar" }}{% endblock %}
+{% block page_title %}{% trans "مركز العمليات" %}{% endblock %}
+
+{% block content %}
+{% trans "ج.م" as default_currency %}
+<div class="container-fluid p-0 pb-5">
+
+    <div class="d-flex align-items-center justify-content-between mb-4 bg-white p-4 rounded-4 shadow-sm border-start border-5 border-primary">
+        <div>
+            <h4 class="fw-bold mb-1 text-dark">{% trans "مرحباً بك،" %} {{ request.user.first_name }} 👋</h4>
+            <p class="text-muted small mb-0 fw-bold">{% trans "نظرة شاملة على أداء السوق والمهام الإدارية المطلوبة." %}</p>
+        </div>
+        
+        {% if request.user.is_superuser or request.user.role == 'OWNER' or request.user|has_perm:'merchants' %}
+        <div class="d-none d-md-block bg-light p-3 rounded-3 border">
+            <small class="d-block fw-bold text-primary mb-2"><i class="fas fa-link me-1"></i> {% trans "رابط دعوة تاجر جديد" %}</small>
+            <div class="input-group input-group-sm" style="width: 300px;">
+                <input type="text" id="merchantLink" class="form-control fw-bold text-muted bg-white" readonly value="{{ request.scheme }}://{{ request.get_host }}{% url 'merchant_signup' %}">
+                <button class="btn btn-primary fw-bold px-3" onclick="copyMerchantLink()">{% trans "نسخ" %}</button>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="card border-0 shadow-sm mb-4 rounded-4 bg-white">
+        <div class="card-body d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div class="btn-group shadow-sm" role="group">
+                <a href="?range=today" class="btn btn-outline-primary btn-sm px-3 fw-bold {% if current_range == 'today' %}active{% endif %}">{% trans "اليوم" %}</a>
+                <a href="?range=week" class="btn btn-outline-primary btn-sm px-3 fw-bold {% if current_range == 'week' %}active{% endif %}">{% trans "أسبوع" %}</a>
+                <a href="?range=month" class="btn btn-outline-primary btn-sm px-3 fw-bold {% if current_range == 'month' or not current_range %}active{% endif %}">{% trans "شهر" %}</a>
+                <a href="?range=year" class="btn btn-outline-primary btn-sm px-3 fw-bold {% if current_range == 'year' %}active{% endif %}">{% trans "سنة" %}</a>
+            </div>
+
+            <form method="GET" class="d-flex align-items-center gap-2">
+                <input type="hidden" name="range" value="custom">
+                <input type="date" name="start_date" class="form-control form-control-sm border-0 bg-light fw-bold" value="{{ start_date|date:'Y-m-d' }}" required>
+                <span class="text-muted small">إلى</span>
+                <input type="date" name="end_date" class="form-control form-control-sm border-0 bg-light fw-bold" value="{{ end_date|date:'Y-m-d' }}" required>
+                <button type="submit" class="btn btn-dark btn-sm rounded-pill px-3 shadow-sm">{% trans "تطبيق الفلتر" %}</button>
+            </form>
+        </div>
+    </div>
+
+    {% if request.user.is_superuser or request.user.role == 'OWNER' or request.user|has_perm:'finance' %}
+    <div class="row g-3 mb-4">
+        <div class="col-12 col-md-6">
+            <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                <div class="card-body p-4 position-relative text-white">
+                    <i class="fas fa-chart-line position-absolute" style="font-size: 5rem; opacity: 0.1; left: -10px; bottom: -10px;"></i>
+                    <h6 class="fw-bold mb-2 opacity-75">{% trans "إجمالي مبيعات الطلبات" %} <small>({% if current_range == 'today' %}اليوم{% elif current_range == 'week' %}هذا الأسبوع{% elif current_range == 'year' %}هذا العام{% elif current_range == 'custom' %}الفترة المحددة{% else %}هذا الشهر{% endif %})</small></h6>
+                    <h2 class="fw-bolder mb-0 display-6">{{ sales_in_range|default:"0.00"|floatformat:2 }} <span class="fs-6 opacity-75">{{ request.user.country.currency_symbol|default:default_currency }}</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100" style="background: linear-gradient(135deg, #10b981, #047857);">
+                <div class="card-body p-4 position-relative text-white">
+                    <i class="fas fa-hand-holding-usd position-absolute" style="font-size: 5rem; opacity: 0.1; left: -10px; bottom: -10px;"></i>
+                    <h6 class="fw-bold mb-2 text-warning">{% trans "أرباح المنصة الصافية" %} <small>({% if current_range == 'today' %}اليوم{% elif current_range == 'week' %}هذا الأسبوع{% elif current_range == 'year' %}هذا العام{% elif current_range == 'custom' %}الفترة المحددة{% else %}هذا الشهر{% endif %})</small></h6>
+                    <h2 class="fw-bolder mb-0 display-6">{{ platform_profit|default:"0.00"|floatformat:2 }} <span class="fs-6 opacity-75">{{ request.user.country.currency_symbol|default:default_currency }}</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <h5 class="fw-bold text-dark mb-3"><i class="fas fa-bolt text-danger me-2"></i> {% trans "مركز العمليات (يحتاج لتدخل)" %}</h5>
+    
+    <div class="row g-2 g-md-3 mb-2 mb-md-3">
+        {% if request.user|has_perm:'orders' or request.user.is_superuser %}
+        <div class="col-6 col-md-3">
+            <a href="{% url 'super_all_orders' %}?status=PENDING" class="card border-0 shadow-sm p-3 text-center text-decoration-none h-100 bg-white rounded-4 hover-lift">
+                <div class="badge bg-warning text-dark position-absolute top-0 start-0 m-2 rounded-circle px-2 py-1">{{ pending_orders|default:"0" }}</div>
+                <i class="fas fa-box fa-2x text-warning mb-2 mt-2"></i>
+                <span class="d-block text-dark fw-bold small">{% trans "طلبات جديدة" %}</span>
+            </a>
+        </div>
+        
+        <div class="col-6 col-md-3">
+            <a href="{% url 'admin_complaints_list' %}" class="card border-0 shadow-sm p-3 text-center text-decoration-none h-100 bg-white rounded-4 hover-lift" style="border-bottom: 3px solid #ef4444 !important;">
+                <div class="badge bg-danger position-absolute top-0 start-0 m-2 rounded-circle px-2 py-1">{{ pending_complaints|default:"0" }}</div>
+                <i class="fas fa-exclamation-triangle fa-2x text-danger mb-2 mt-2"></i>
+                <span class="d-block text-dark fw-bold small">{% trans "شكاوى العملاء" %}</span>
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a href="{% url 'admin_complaints_list' %}" class="card border-0 shadow-sm p-3 text-center text-decoration-none h-100 bg-white rounded-4 hover-lift" style="border-bottom: 3px solid #f97316 !important;">
+                <div class="badge bg-orange text-white position-absolute top-0 start-0 m-2 rounded-circle px-2 py-1" style="background-color: #f97316;">{{ pending_returns|default:"0" }}</div>
+                <i class="fas fa-undo-alt fa-2x mb-2 mt-2" style="color: #f97316;"></i>
+                <span class="d-block text-dark fw-bold small">{% trans "طلبات مرتجع" %}</span>
+            </a>
+        </div>
+        {% endif %}
+
+        {% if request.user|has_perm:'support' or request.user.is_superuser %}
+        <div class="col-6 col-md-3">
+            <a href="{% url 'super_support_tickets' %}?status=OPEN" class="card border-0 shadow-sm p-3 text-center text-decoration-none h-100 bg-white rounded-4 hover-lift">
+                <div class="badge bg-dark position-absolute top-0 start-0 m-2 rounded-circle px-2 py-1">{{ open_tickets_count|default:"0" }}</div>
+                <i class="fas fa-headset fa-2x text-dark mb-2 mt-2"></i>
+                <span class="d-block text-dark fw-bold small">{% trans "تذاكر الدعم" %}</span>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="row g-2 g-md-3 mb-4">
+        {% if request.user|has_perm:'finance' or request.user.is_superuser %}
+        <div class="col-4 col-md-4">
+            <a href="{% url 'super_pending_withdrawals' %}" class="card border-0 shadow-sm p-3 text-center text-decoration-none h-100 bg-white rounded-4 hover-lift">
+                <div class="badge bg-secondary position-absolute top-0 start-0 m-2 rounded-circle px-2 py-1">{{ pending_withdrawals|default:"0" }}</div>
+                <i class="fas fa-money-check-alt fa-2x text-secondary mb-2 mt-2"></i>
+                <span class="d-block text-dark fw-bold small" style="font-size: 11px;">{% trans "سحوبات مالية" %}</span>
+            </a>
+        </div>
+        {% endif %}
+
+        {% if request.user|has_perm:'merchants' or request.user.is_superuser %}
+        <div class="col-4 col-md-4">
+            <a href="{% url 'super_pending_merchants' %}" class="card border-0 shadow-sm p-3 text-center text-decoration-none h-100 bg-white rounded-4 hover-lift">
+                <div class="badge bg-primary position-absolute top-0 start-0 m-2 rounded-circle px-2 py-1">{{ new_merchants|default:"0" }}</div>
+                <i class="fas fa-store fa-2x text-primary mb-2 mt-2"></i>
+                <span class="d-block text-dark fw-bold small" style="font-size: 11px;">{% trans "متاجر للمراجعة" %}</span>
+            </a>
+        </div>
+        {% endif %}
+
+        {% if request.user|has_perm:'products' or request.user.is_superuser %}
+        <div class="col-4 col-md-4">
+            <a href="{% url 'super_pending_products' %}" class="card border-0 shadow-sm p-3 text-center text-decoration-none h-100 bg-white rounded-4 hover-lift">
+                <div class="badge bg-info text-dark position-absolute top-0 start-0 m-2 rounded-circle px-2 py-1">{{ pending_products|default:"0" }}</div>
+                <i class="fas fa-tags fa-2x text-info mb-2 mt-2"></i>
+                <span class="d-block text-dark fw-bold small" style="font-size: 11px;">{% trans "منتجات معلقة" %}</span>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-12">
+            <div class="card border-0 rounded-4 shadow-sm h-100 bg-white">
+                <div class="card-header bg-white border-0 pt-4 pb-0 px-4 d-flex justify-content-between align-items-center">
+                    <h6 class="fw-bold text-dark m-0"><i class="fas fa-chart-area text-primary me-2"></i> {% trans "منحنى المبيعات للفترة المحددة" %}</h6>
+                </div>
+                <div class="card-body p-4">
+                    <div style="height: 320px; width: 100%;">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 rounded-4 shadow-sm bg-white overflow-hidden">
+        <div class="card-header bg-white border-bottom border-light pt-4 pb-3 px-4 d-flex justify-content-between align-items-center">
+            <h6 class="fw-bold text-dark m-0"><i class="fas fa-shopping-cart text-primary me-2"></i> {% trans "أحدث الطلبات في هذه الفترة" %}</h6>
+            <a href="{% url 'super_all_orders' %}" class="btn btn-sm btn-outline-primary rounded-pill fw-bold px-4">{% trans "عرض كافة الطلبات" %}</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="bg-light text-muted small">
+                    <tr>
+                        <th class="px-4 py-3">{% trans "رقم الطلب" %}</th>
+                        <th class="py-3">{% trans "العميل" %}</th>
+                        <th class="py-3">{% trans "التاجر" %}</th>
+                        <th class="py-3">{% trans "الإجمالي" %}</th>
+                        <th class="py-3">{% trans "الحالة" %}</th>
+                        <th class="py-3 text-end px-4">{% trans "التاريخ" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for order in recent_orders %}
+                    <tr>
+                        <td class="px-4 py-3 fw-bold text-dark"><a href="{% url 'super_order_detail' order.order_id %}" class="text-decoration-none">#{{ order.order_id }}</a></td>
+                        <td class="py-3"><i class="fas fa-user-circle text-muted me-1"></i> {{ order.customer.first_name|default:order.customer.username }}</td>
+                        <td class="py-3"><i class="fas fa-store text-muted me-1"></i> {{ order.merchant.user.first_name|default:"--" }}</td>
+                        <td class="py-3 fw-bolder text-primary">{{ order.final_total }} <small>{{ request.user.country.currency_symbol|default:default_currency }}</small></td>
+                        <td class="py-3">
+                            <span class="badge 
+                                {% if order.status == 'DELIVERED' %}bg-success
+                                {% elif order.status == 'PENDING' %}bg-warning text-dark
+                                {% elif order.status == 'CANCELLED' or order.status == 'RETURNED' %}bg-danger
+                                {% else %}bg-info text-dark{% endif %} 
+                                rounded-pill px-3 py-2">
+                                {{ order.get_status_display }}
+                            </span>
+                        </td>
+                        <td class="text-end px-4 py-3 text-muted small">{{ order.created_at|date:"d M Y, h:i A" }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" class="text-center py-5 text-muted fw-bold">{% trans "لا توجد طلبات في هذه الفترة." %}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important; }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+{{ chart_labels|json_script:"labelsData" }}
+{{ chart_data|json_script:"valuesData" }}
+
+<script>
+    function copyMerchantLink() {
+        var copyText = document.getElementById("merchantLink");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); 
+        navigator.clipboard.writeText(copyText.value);
+        alert('{% trans "تم نسخ رابط التسجيل للتاجر بنجاح!" %}');
+    }
+
+    const msgTotalSales = '{% trans "المبيعات" %}';
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const labels = JSON.parse(document.getElementById('labelsData').textContent);
+        const data = JSON.parse(document.getElementById('valuesData').textContent);
+
+        const canvas = document.getElementById('salesChart');
+        if (!canvas) return; 
+        
+        const ctx = canvas.getContext('2d');
+        
+        let gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, 'rgba(59, 130, 246, 0.5)'); 
+        gradient.addColorStop(1, 'rgba(59, 130, 246, 0.0)');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: msgTotalSales,
+                    data: data,
+                    borderColor: '#3b82f6',
+                    backgroundColor: gradient,
+                    borderWidth: 3,
+                    pointBackgroundColor: '#ffffff',
+                    pointBorderColor: '#3b82f6',
+                    pointBorderWidth: 2,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    fill: true,
+                    tension: 0.4 
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1e293b',
+                        titleFont: { family: 'Tajawal', size: 13 },
+                        bodyFont: { family: 'Tajawal', size: 14, weight: 'bold' },
+                        padding: 10,
+                        displayColors: false
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false, drawBorder: false },
+                        ticks: { font: { family: 'Tajawal' }, color: '#94a3b8' }
+                    },
+                    y: {
+                        grid: { color: '#f1f5f9', borderDash: [5, 5], drawBorder: false },
+                        ticks: { 
+                            font: { family: 'Tajawal' }, 
+                            color: '#94a3b8',
+                            beginAtZero: true
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+{% endblock %}

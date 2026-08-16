@@ -1,0 +1,336 @@
+{% extends 'base.html' %}
+{% load i18n %} 
+
+{% block content %}
+
+<style>
+  /* --- متغيرات النظام (Ultra-Modern UI) --- */
+  :root {
+    --bg-main: #F4F5F8;
+    --surface: #FFFFFF;
+    --text-primary: #0A0A0A;
+    --text-secondary: #71717A;
+    --accent-dark: #000000;
+    --accent-gold: #F5A623;
+    --danger-light: #FEF2F2;
+    --danger: #EF4444;
+    --success-light: #ECFDF5;
+    --success: #10B981;
+    --border-light: rgba(0, 0, 0, 0.05);
+  }
+
+  body {
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary);
+    font-family: 'Tajawal', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* --- أنيميشن الدخول --- */
+  @keyframes fadeUpIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up {
+    animation: fadeUpIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    opacity: 0;
+  }
+
+  /* --- الهيدر الزجاجي --- */
+  .ultra-header {
+    background: rgba(244, 245, 248, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .icon-btn {
+    width: 44px; height: 44px;
+    background: var(--surface);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-primary);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  }
+
+  /* --- الكروت العصرية --- */
+  .neo-card {
+    background: var(--surface);
+    border-radius: 32px;
+    padding: 32px 24px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+  }
+
+  /* --- أيقونات الحالات --- */
+  .status-icon-box {
+    width: 80px; height: 80px;
+    border-radius: 24px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .status-success { background: var(--success-light); color: var(--success); }
+  .status-danger { background: var(--danger-light); color: var(--danger); }
+
+  /* --- أزرار الإجراءات (Neo Buttons) --- */
+  .btn-neo-primary {
+    background: var(--accent-dark) !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 800;
+    border-radius: 50px;
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  .btn-neo-primary:active { transform: scale(0.96); box-shadow: 0 5px 10px rgba(0,0,0,0.05); }
+
+  .btn-neo-danger-outline {
+    background: transparent !important;
+    color: var(--danger) !important;
+    border: 2px solid rgba(239, 68, 68, 0.2) !important;
+    font-weight: 800;
+    border-radius: 50px;
+    transition: all 0.3s;
+  }
+  .btn-neo-danger-outline:active { transform: scale(0.96); background: var(--danger-light) !important; }
+  
+  .btn-neo-danger {
+    background: var(--danger) !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 800;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(239, 68, 68, 0.2);
+    transition: all 0.3s;
+  }
+  .btn-neo-danger:active { transform: scale(0.96); }
+
+  /* --- خانات الإدخال --- */
+  .neo-input {
+    background: #F4F4F5 !important;
+    border: 2px solid transparent !important;
+    border-radius: 16px;
+    padding: 14px 16px;
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: none !important;
+  }
+  .neo-input:focus {
+    background: var(--surface) !important;
+    border-color: var(--accent-dark) !important;
+  }
+  .neo-input::placeholder { color: #A1A1AA !important; }
+  
+  .neo-input-group-text {
+    background: #F4F4F5;
+    border: 2px solid transparent;
+    border-right: none;
+    border-radius: 16px 0 0 16px;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+  }
+  .input-group:focus-within .neo-input-group-text,
+  .input-group:focus-within .neo-input {
+    background: var(--surface) !important;
+  }
+  .input-group:focus-within .neo-input-group-text {
+    border-color: var(--success) !important; color: var(--success) !important;
+  }
+  .input-group:focus-within .neo-input {
+    border-color: var(--success) !important; border-right: 2px solid var(--success) !important;
+  }
+
+  /* --- نجوم التقييم العصرية الفاتحة --- */
+/* --- نجوم التقييم العصرية الفاتحة --- */
+  .interactive-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 12px;
+    direction: ltr; /* 🔥 مهم جداً: إجبار الاتجاه عشان الترتيب يضبط مع الـ RTL */
+  }
+  
+  .interactive-stars input { 
+    display: none; 
+  }
+  
+  .interactive-stars label {
+    color: #E4E4E7; /* لون النجمة المطفية */
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* 1. تلوين النجمة المحددة وما قبلها باللون الذهبي */
+  .interactive-stars input:checked ~ label {
+    color: var(--accent-gold);
+    text-shadow: 0 4px 15px rgba(245, 166, 35, 0.4);
+  }
+
+  /* 2. إلغاء لون التحديد لو المستخدم بيعمل Hover لتغيير التقييم */
+  .interactive-stars:hover label {
+    color: #E4E4E7 !important;
+    text-shadow: none !important;
+    transform: scale(1);
+  }
+
+  /* 3. تلوين النجمة اللي عليها الماوس واللي قبلها (التأثير المباشر) */
+  .interactive-stars label:hover,
+  .interactive-stars label:hover ~ label {
+    color: var(--accent-gold) !important;
+    text-shadow: 0 6px 20px rgba(245, 166, 35, 0.6) !important;
+    transform: scale(1.15) translateY(-2px); /* تأثير حركة بسيط وجميل */
+  }
+
+  /* تأثير الضغطة */
+  .interactive-stars label:active { 
+    transform: scale(0.9) translateY(0); 
+  }
+
+  /* --- الأقسام المخفية --- */
+  .reveal-section {
+    background: #F4F4F5;
+    border-radius: 24px;
+    padding: 24px;
+    margin-top: 24px;
+    border: 1px solid var(--border-light);
+    animation: fadeUpIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  .reveal-danger {
+    background: var(--danger-light);
+    border-color: rgba(239, 68, 68, 0.1);
+  }
+</style>
+
+<div class="ultra-header p-3 d-flex align-items-center sticky-top" style="z-index: 1020;">
+    <a href="javascript:history.back()" class="icon-btn text-decoration-none me-3">
+        <i class="fas fa-arrow-right"></i>
+    </a>
+    <h5 class="m-0 fw-bold" style="letter-spacing: -0.5px;">{% trans "حالة الطلب" %}</h5>
+</div>
+
+<div class="container text-center pb-5 mt-4" style="min-height: 80vh; padding-bottom: 120px !important;">
+    <div class="neo-card mx-auto animate-fade-up" style="max-width: 600px;">
+        
+        {% if order.status == 'DELIVERED' %}
+            <div class="mb-4">
+                <div class="status-icon-box status-success">
+                    <i class="fas fa-box-open"></i>
+                </div>
+                <h3 class="fw-bold mb-2" style="letter-spacing: -0.5px; color: var(--text-primary);">
+                    {% blocktrans with order_id=order.order_id|default:order.id %}الطلب #{{ order_id }}{% endblocktrans %}
+                </h3>
+                <p class="fw-bold" style="color: var(--text-secondary); font-size: 15px;">
+                    {% trans "التاجر يفيد بأنه" %} <span class="text-success">{% trans "تم تسليم" %}</span> {% trans "طلبك. يرجى تأكيد ذلك للمتابعة." %}
+                </p>
+            </div>
+        {% elif order.status == 'RETURNED' %}
+            <div class="mb-4">
+                <div class="status-icon-box status-danger">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <h3 class="fw-bold mb-2" style="letter-spacing: -0.5px; color: var(--text-primary);">
+                    {% blocktrans with order_id=order.order_id|default:order.id %}الطلب #{{ order_id }}{% endblocktrans %}
+                </h3>
+                <p class="fw-bold" style="color: var(--text-secondary); font-size: 15px;">
+                    {% trans "التاجر يفيد بأنه" %} <span class="text-danger">{% trans "تم إرجاع" %}</span> {% trans "طلبك ولم تستلمه. هل هذا صحيح؟" %}
+                </p>
+            </div>
+        {% endif %}
+        
+        <form method="POST">
+            {% csrf_token %}
+            
+            <div class="d-grid gap-3 mt-4">
+                <button type="button" class="btn btn-neo-primary py-3" 
+                        onclick="document.getElementById('confirm-section').style.display='block'; document.getElementById('reject-section').style.display='none'; document.getElementById('whatsapp_input').required=false;">
+                    {% if order.status == 'DELIVERED' %}
+                        <i class="fas fa-check-circle fs-5 me-2"></i> {% trans "نعم، استلمت الطلب بنجاح" %}
+                    {% elif order.status == 'RETURNED' %}
+                        <i class="fas fa-thumbs-up fs-5 me-2"></i> {% trans "نعم، لم أستلم / أرجعت الطلب" %}
+                    {% endif %}
+                </button>
+                
+                <button type="button" class="btn btn-neo-danger-outline py-3" 
+                        onclick="document.getElementById('reject-section').style.display='block'; document.getElementById('confirm-section').style.display='none'; document.getElementById('whatsapp_input').required=true;">
+                    {% if order.status == 'DELIVERED' %}
+                        <i class="fas fa-times-circle fs-5 me-2"></i> {% trans "لا، لم أستلم شيئاً (يوجد مشكلة)" %}
+                    {% elif order.status == 'RETURNED' %}
+                        <i class="fas fa-exclamation-triangle fs-5 me-2"></i> {% trans "لا، لقد استلمت الطلب ودفعت ثمنه!" %}
+                    {% endif %}
+                </button>
+            </div>
+
+            <div id="confirm-section" style="display:none;" class="reveal-section">
+                
+                {% if order.status == 'DELIVERED' %}
+                    <label class="fw-bold fs-5 mb-4" style="color: var(--text-primary); letter-spacing: -0.5px;">{% trans "كيف كانت تجربتك معنا؟" %}</label>
+                    <div class="interactive-stars mb-4">
+                        <input type="radio" name="rating" value="5" id="s5" checked><label for="s5"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rating" value="4" id="s4"><label for="s4"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rating" value="3" id="s3"><label for="s3"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rating" value="2" id="s2"><label for="s2"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rating" value="1" id="s1"><label for="s1"><i class="fas fa-star"></i></label>
+                    </div>
+                    
+                    <div class="mb-4 text-start">
+                        <label class="form-label small fw-bold" style="color: var(--text-secondary);">{% trans "أخبرنا برأيك في المنتجات (اختياري)" %}</label>
+                        <textarea name="review_comment" class="form-control neo-input" rows="3" style="background: var(--surface) !important;" placeholder="{% trans 'جودة الخامة، سرعة التوصيل، التغليف...' %}"></textarea>
+                    </div>
+                    
+                    <button type="submit" name="action" value="confirm" class="btn btn-neo-primary w-100 py-3">
+                        {% trans "إرسال التقييم والمتابعة" %} <i class="fas fa-arrow-left ms-2"></i>
+                    </button>
+                
+                {% elif order.status == 'RETURNED' %}
+                    <div class="d-flex align-items-center justify-content-center p-3 rounded-4 mb-4" style="background: rgba(16, 185, 129, 0.1); color: var(--success);">
+                        <i class="fas fa-info-circle fs-4 me-3"></i>
+                        <span class="fw-bold text-start" style="font-size: 14px;">{% trans "سيتم إغلاق الطلب رسمياً كمرتجع ولن يتم مطالبتك بأي مصاريف." %}</span>
+                    </div>
+                    <button type="submit" name="action" value="confirm" class="btn btn-neo-primary w-100 py-3">
+                        {% trans "تأكيد المرتجع والمتابعة" %} <i class="fas fa-check ms-2"></i>
+                    </button>
+                {% endif %}
+            </div>
+
+            <div id="reject-section" style="display:none;" class="reveal-section reveal-danger">
+                
+                <div class="text-start mb-3">
+                    <label class="fw-bold" style="color: var(--danger); font-size: 15px;">
+                        {% if order.status == 'DELIVERED' %}
+                            <i class="fas fa-exclamation-circle me-1"></i> {% trans "لماذا لم تستلم الطلب؟" %}
+                        {% elif order.status == 'RETURNED' %}
+                            <i class="fas fa-shield-alt me-1"></i> {% trans "إبلاغ عن تلاعب المندوب:" %}
+                        {% endif %}
+                    </label>
+                </div>
+                
+                <textarea name="reason" class="form-control neo-input mb-4" rows="3" 
+                          style="background: var(--surface) !important; border-color: rgba(239, 68, 68, 0.3) !important;"
+                          placeholder="{% if order.status == 'DELIVERED' %}{% trans 'مثال: المندوب لم يتواصل معي حتى الآن...' %}{% else %}{% trans 'مثال: لقد استلمت الطلب يوم الخميس ودفعت الفلوس للمندوب كاش...' %}{% endif %}"></textarea>
+                
+                <div class="mb-4 text-start">
+                    <label class="form-label fw-bold small" style="color: var(--text-primary);">{% trans "رقم الواتساب للتواصل المباشر والتحقيق" %} <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <span class="input-group-text neo-input-group-text border-end-0" style="background: rgba(16, 185, 129, 0.1) !important; color: var(--success) !important;">
+                            <i class="fab fa-whatsapp fs-5"></i>
+                        </span>
+                        <input type="tel" id="whatsapp_input" name="whatsapp_number" class="form-control neo-input border-start-0 text-end" 
+                            style="background: var(--surface) !important;"
+                            minlength="11" maxlength="15" 
+                            placeholder="01xxxxxxxxx" dir="ltr"
+                            onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    </div>
+                    <div class="form-text small fw-bold mt-2 text-end" style="color: var(--text-secondary);">{% trans "سنقوم بالتواصل معك فوراً لضمان حقك وحل المشكلة." %}</div>
+                </div>
+                
+                <button type="submit" name="action" value="reject" class="btn btn-neo-danger w-100 py-3">
+                    {% trans "إرسال الشكوى العاجلة" %} <i class="fas fa-paper-plane ms-2"></i>
+                </button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+{% endblock %}

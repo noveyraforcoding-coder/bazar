@@ -1,0 +1,70 @@
+{% extends 'supervisor/base_supervisor.html' %}
+{% load i18n %}
+
+{% block head_title %}{% trans "المستخدمون المحظورون | لوحة التحكم" %}{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">{% trans "المستخدمون المحظورون" %}</h2>
+        <span class="badge bg-danger fs-6">{{ users.count }} {% trans "مستخدم" %}</span>
+    </div>
+
+    {% if users %}
+    <div class="card shadow-sm">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>{% trans "المستخدم" %}</th>
+                            <th>{% trans "البريد / الهاتف" %}</th>
+                            <th>{% trans "الدور" %}</th>
+                            <th>{% trans "الدولة" %}</th>
+                            <th>{% trans "الإجراء" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in users %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td>
+                                <strong>{{ user.username }}</strong>
+                                {% if user.get_full_name %}
+                                <br><small class="text-muted">{{ user.get_full_name }}</small>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {{ user.email|default:"—" }}<br>
+                                <small class="text-muted">{{ user.phone_primary|default:"—" }}</small>
+                            </td>
+                            <td>
+                                <span class="badge bg-secondary">{{ user.role }}</span>
+                            </td>
+                            <td>{{ user.country|default:"—" }}</td>
+                            <td>
+                                <a href="{% url 'super_ban_user' user.id %}"
+                                   class="btn btn-sm btn-outline-success"
+                                   onclick="return confirm('{% trans "هل تريد رفع الحظر عن هذا المستخدم؟" %}');">
+                                    {% trans "رفع الحظر" %}
+                                </a>
+                                <a href="{% url 'super_user_edit' user.id %}" class="btn btn-sm btn-outline-primary ms-1">
+                                    {% trans "تعديل" %}
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="alert alert-info text-center mt-4">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        {% trans "لا يوجد مستخدمون محظورون حالياً." %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

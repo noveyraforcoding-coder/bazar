@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load i18n %} 
+
+{% block page_title %}{% trans "سياسة الخصوصية" %}{% endblock %}
+
+{% block content %}
+
+<style>
+  /* --- متغيرات النظام (Ultra-Modern UI) --- */
+  :root {
+    --bg-main: #F4F5F8;
+    --surface: #FFFFFF;
+    --text-primary: #0A0A0A;
+    --text-secondary: #71717A;
+    --text-body: #3F3F46; /* لون مريح جداً لقراءة النصوص الطويلة */
+    --accent-dark: #000000;
+    --accent-gold: #F5A623;
+    --border-light: rgba(0, 0, 0, 0.05);
+  }
+
+  body {
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary);
+    font-family: 'Tajawal', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* --- أنيميشن الدخول (Staggered Fade-Up) --- */
+  @keyframes fadeUpIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up {
+    animation: fadeUpIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    opacity: 0;
+  }
+
+  /* --- الهيدر الزجاجي --- */
+  .ultra-header {
+    background: rgba(244, 245, 248, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .icon-btn {
+    width: 44px; height: 44px;
+    background: var(--surface);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-primary);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transition: transform 0.2s;
+  }
+  .icon-btn:active { transform: scale(0.92); }
+
+  /* --- الكارت الفاخر المخصص للنصوص --- */
+  .neo-article-card {
+    background: var(--surface);
+    border-radius: 32px;
+    padding: 40px;
+    border: none;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+  }
+
+  /* --- هيدر الصفحة --- */
+  .shield-icon-wrapper {
+    width: 70px; height: 70px;
+    background: #F4F4F5;
+    color: var(--accent-dark);
+    border-radius: 20px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    transform: rotate(-5deg);
+    transition: transform 0.4s;
+  }
+  .neo-article-card:hover .shield-icon-wrapper {
+    transform: rotate(0deg) scale(1.05);
+  }
+
+  /* --- تنسيق نصوص البنود --- */
+  .doc-section-title {
+    color: var(--text-primary);
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+
+  .doc-number-badge {
+    background: var(--accent-dark);
+    color: #fff;
+    width: 28px; height: 28px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    margin-left: 12px; /* مسافة للغة العربية RTL */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  .doc-body-text {
+    color: var(--text-body);
+    line-height: 2.2;
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 40px; /* لعمل مسافة تحت الرقم للحفاظ على الهامش */
+  }
+
+  /* ريسبونسيف للموبايل */
+  @media (max-width: 768px) {
+    .neo-article-card { padding: 24px; }
+    .doc-body-text { padding-right: 12px; }
+  }
+</style>
+
+<div class="ultra-header p-3 d-flex align-items-center sticky-top" style="z-index: 1020;">
+    <a href="javascript:history.back()" class="icon-btn text-decoration-none me-3">
+        <i class="fas fa-arrow-right"></i>
+    </a>
+    <h4 class="m-0 fw-bold" style="color: var(--text-primary); letter-spacing: -0.5px;">{% trans "سياسة الخصوصية" %}</h4>
+</div>
+
+<div class="container py-4 mb-5" style="min-height: 80vh;">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            
+            <div class="neo-article-card animate-fade-up" style="animation-delay: 100ms;">
+                
+                <div class="text-center mb-5 border-bottom pb-4" style="border-color: var(--border-light) !important;">
+                    <div class="shield-icon-wrapper">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2 class="fw-bold mb-2" style="color: var(--text-primary); letter-spacing: -0.5px;">{% trans "سياسة خصوصية العملاء" %}</h2>
+                    <p style="color: var(--text-secondary); font-weight: 500; font-size: 15px;">
+                        {% trans "نحن نهتم بخصوصيتك ونلتزم بحماية بياناتك الشخصية في ." %}{{ site_settings.site_name|default:"Elbazaar" }}
+                    </p>
+                </div>
+                
+                <div class="legal-content">
+                    {% if policies %}
+                        {% for policy in policies %}
+                        <div class="mb-4 animate-fade-up" style="animation-delay: {{ forloop.counter0|add:2 }}00ms;">
+                            
+                            <div class="d-flex align-items-start mb-2">
+                                <span class="doc-number-badge flex-shrink-0">{{ policy.order|default:forloop.counter }}</span>
+                                <h5 class="doc-section-title mt-1 mb-0">{{ policy.title }}</h5>
+                            </div>
+                            
+                            <div class="doc-body-text text-start">
+                                {{ policy.content|linebreaksbr }}
+                            </div>
+                            
+                        </div>
+                        
+                        {% if not forloop.last %}
+                            <hr style="border-color: var(--border-light); margin: 30px 0;">
+                        {% endif %}
+                        
+                        {% endfor %}
+                    {% else %}
+                        <div class="text-center py-5 animate-fade-up" style="animation-delay: 200ms;">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 90px; height: 90px; background: #F4F4F5;">
+                                <i class="fas fa-file-signature fa-2x" style="color: var(--text-secondary); opacity: 0.5;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2" style="color: var(--text-primary); letter-spacing: -0.5px;">{% trans "جاري تحديث سياسة الخصوصية" %}</h5>
+                            <p class="small" style="color: var(--text-secondary); font-weight: 500;">{% trans "يرجى العودة لاحقاً لمراجعة التحديثات الجديدة." %}</p>
+                        </div>
+                    {% endif %}
+                </div>
+                
+                <div class="text-center mt-5 pt-4 border-top" style="border-color: var(--border-light) !important;">
+                    <p class="small mb-0" style="color: var(--text-secondary); font-weight: 600;">
+                        <i class="fas fa-check-circle me-1" style="color: var(--accent-dark);"></i> 
+                        {% trans "استخدامك لتطبيق  يعني موافقتك على هذه الشروط والسياسات." %}{{ site_settings.site_name|default:"Elbazaar" }}
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

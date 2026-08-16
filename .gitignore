@@ -1,0 +1,30 @@
+db.sqlite3
+*.sqlite3
+.env
+*.env
+
+# Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtualenv
+venv/
+.venv/
+.env
+
+# Static & Media
+staticfiles/
+media/
+
+# OS
+.DS_Store
+
+# Test data — never commit
+test_accounts.md
+
+# Secrets & credentials
+firebase-key.json
+*.tar.gz
+*.zip

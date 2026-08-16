@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+{% load i18n %} 
+
+{% block content %}
+
+<style>
+  /* --- متغيرات النظام (Ultra-Modern UI) --- */
+  :root {
+    --bg-main: #F4F5F8;
+    --surface: #FFFFFF;
+    --text-primary: #0A0A0A;
+    --text-secondary: #71717A;
+    --accent-dark: #0A0A0A; /* أسود فخم لرسائل العميل */
+    --border-light: rgba(0, 0, 0, 0.05);
+  }
+
+  /* تجاوز إعدادات base.html لإخفاء القائمة السفلية وإعطاء مساحة للشات */
+  body.has-bottom-nav .bottom-nav { display: none !important; }
+  body { 
+      background-color: var(--bg-main) !important; 
+      padding-bottom: 100px !important; 
+  }
+
+  /* --- الهيدر الزجاجي للشات --- */
+  .chat-header-neo {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-light);
+    z-index: 1020;
+    padding: 12px 20px;
+  }
+
+  /* --- فقاعات المحادثة (Chat Bubbles) --- */
+  .neo-chat-bubble {
+    position: relative;
+    max-width: 80%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    animation: fadeUpMessage 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  @keyframes fadeUpMessage {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* رسائل العميل (Me) */
+  .neo-bubble-me {
+    background-color: var(--accent-dark);
+    color: #ffffff;
+    /* لدعم اللغة العربية (RTL): المحاذاة لليسار */
+    margin-inline-start: auto; 
+    border-radius: 20px 20px 4px 20px; /* زاوية مدببة في الأسفل */
+  }
+
+  /* رسائل الدعم (Support) */
+  .neo-bubble-other {
+    background-color: var(--surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    /* لدعم اللغة العربية (RTL): المحاذاة لليمين */
+    margin-inline-end: auto;
+    border-radius: 20px 20px 20px 4px;
+  }
+
+  .chat-time {
+    font-size: 10px;
+    margin-top: 6px;
+    align-self: flex-end;
+    font-weight: 600;
+  }
+
+  .neo-bubble-me .chat-time { color: rgba(255, 255, 255, 0.6); }
+  .neo-bubble-other .chat-time { color: #A1A1AA; }
+
+  .support-name {
+    font-size: 12px;
+    font-weight: 800;
+    color: #3B82F6; /* أزرق مميز للدعم */
+    margin-bottom: 4px;
+    display: flex; align-items: center; gap: 4px;
+  }
+
+  /* --- منطقة الإدخال السفلية --- */
+  .chat-input-wrapper {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(244, 245, 248, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--border-light);
+    z-index: 1000;
+  }
+
+  .neo-chat-input {
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    border-radius: 24px;
+    padding: 12px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    font-weight: 600;
+    transition: all 0.3s;
+    color: var(--text-primary);
+  }
+  .neo-chat-input:focus {
+    outline: none;
+    border-color: #D4D4D8;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  }
+
+  .btn-send-neo {
+    width: 48px; height: 48px;
+    background: var(--accent-dark);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .btn-send-neo:active { transform: scale(0.9); }
+
+</style>
+
+<div class="chat-header-neo d-flex align-items-center sticky-top">
+    <a href="{% url 'my_tickets' %}" class="text-dark me-3 text-decoration-none" style="font-size: 20px;">
+        <i class="fas fa-arrow-right"></i>
+    </a>
+    <div class="d-flex align-items-center gap-3 flex-grow-1">
+        <div class="rounded-circle d-flex justify-content-center align-items-center flex-shrink-0" style="width: 45px; height: 45px; background: rgba(59, 130, 246, 0.1); color: #3B82F6;">
+            <i class="fas fa-headset fs-5"></i>
+        </div>
+        <div>
+            <h6 class="m-0 fw-bold" style="font-size: 15px; letter-spacing: -0.5px;">{% trans "تذكرة" %} #{{ ticket.id }}</h6>
+            <span class="badge rounded-pill mt-1 px-2 py-1" style="font-size: 10px; background: {% if ticket.status == 'OPEN' %}#ECFDF5; color: #10B981;{% else %}#F4F4F5; color: #71717A;{% endif %}">
+                {{ ticket.get_status_display }}
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-4">
+    <div class="d-flex flex-column" id="chat-container">
+        
+        <div class="neo-chat-bubble neo-bubble-me">
+            <p class="mb-0">{{ ticket.message }}</p>
+            <span class="chat-time">{{ ticket.created_at|date:"H:i" }}</span>
+        </div>
+
+        {% for msg in ticket.messages.all %}
+            {% if msg.is_support_reply %}
+                <div class="neo-chat-bubble neo-bubble-other">
+                    <span class="support-name"><i class="fas fa-headset"></i> {% trans "الدعم الفني" %}</span>
+                    <p class="mb-0">{{ msg.message }}</p>
+                    <span class="chat-time">{{ msg.created_at|date:"H:i" }}</span>
+                </div>
+            {% else %}
+                <div class="neo-chat-bubble neo-bubble-me">
+                    <p class="mb-0">{{ msg.message }}</p>
+                    <span class="chat-time">{{ msg.created_at|date:"H:i" }}</span>
+                </div>
+            {% endif %}
+        {% endfor %}
+        
+    </div>
+</div>
+
+<div class="chat-input-wrapper">
+    
+    {% if ticket.status == 'CLOSED' or ticket.status == 'RESOLVED' %}
+        <div class="p-3 text-center rounded-4" style="background: #F4F4F5; border: 1px solid var(--border-light);">
+            <i class="fas fa-lock me-1" style="color: var(--text-secondary);"></i>
+            <span class="fw-bold" style="color: var(--text-secondary); font-size: 13px;">{% trans "هذه التذكرة مغلقة. لا يمكن الرد عليها." %}</span>
+            <a href="{% url 'create_ticket' %}" class="btn btn-dark btn-sm rounded-pill ms-2 fw-bold">{% trans "تذكرة جديدة" %}</a>
+        </div>
+    {% else %}
+        <form method="POST" class="d-flex gap-2 align-items-end w-100 m-0">
+            {% csrf_token %}
+            <textarea name="message" class="form-control neo-chat-input" rows="1" style="resize: none; max-height: 120px; overflow-y: auto;" placeholder="{% trans 'اكتب ردك هنا...' %}" required autocomplete="off" oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'"></textarea>
+            
+            <button type="submit" class="btn-send-neo">
+                <i class="fas fa-paper-plane" style="transform: translateX(-1px) translateY(1px);"></i> 
+            </button>
+        </form>
+    {% endif %}
+    
+</div>
+
+<script>
+    // النزول لآخر الشات فور فتح الصفحة
+    window.scrollTo(0, document.body.scrollHeight);
+
+    const ticketId = "{{ ticket.id }}";
+    const chatContainer = document.getElementById('chat-container');
+    // جلب عدد الرسائل الحالية الموجودة في الصفحة
+    let lastMsgCount = {{ ticket.messages.count }};
+    const textSupport = '{% trans "الدعم الفني" %}';
+
+    function fetchMessages() {
+        fetch(`/support/api/messages/${ticketId}/`)
+            .then(response => response.json())
+            .then(data => {
+                // إذا كان هناك رسائل جديدة فقط
+                if (data.messages.length > lastMsgCount) {
+                    
+                    // استخراج الرسائل الجديدة فقط التي لم يتم رسمها بعد
+                    const newMessages = data.messages.slice(lastMsgCount);
+                    
+                    newMessages.forEach(msg => {
+                        let html = '';
+                        
+                        if (msg.sender === 'user') {
+                            html = `
+                            <div class="neo-chat-bubble neo-bubble-me">
+                                <p class="mb-0">${msg.text}</p>
+                                <span class="chat-time">${msg.time}</span>
+                            </div>
+                            `;
+                        } else {
+                            html = `
+                            <div class="neo-chat-bubble neo-bubble-other">
+                                <span class="support-name"><i class="fas fa-headset"></i> ${textSupport}</span>
+                                <p class="mb-0">${msg.text}</p>
+                                <span class="chat-time">${msg.time}</span>
+                            </div>
+                            `;
+                        }
+                        
+                        // إضافتها في نهاية الشات بدون مسح القديم
+                        chatContainer.insertAdjacentHTML('beforeend', html);
+                    });
+
+                    // تحديث العداد
+                    lastMsgCount = data.messages.length;
+                    
+                    // النزول لأسفل بنعومة عند وصول رسالة جديدة
+                    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                }
+            })
+            .catch(err => console.error("Live Chat Error:", err));
+    }
+
+    // 🔥 سرعة البرق: التحديث كل ثانيتين (2000 مللي ثانية) كما طلبت 🔥
+    setInterval(fetchMessages, 2000);
+</script>
+
+{% endblock %}

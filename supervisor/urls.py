@@ -1,0 +1,110 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    # Dashboard
+    path('', views.supervisor_dashboard, name='supervisor_dashboard'),
+
+    # Orders
+    path('orders/all/', views.all_orders, name='super_all_orders'),
+    path('orders/export/', views.export_orders, name='super_export_orders'),
+    path('orders/<str:order_id>/', views.order_detail, name='super_order_detail'),
+
+    # Products
+    path('products/pending/', views.pending_products, name='super_pending_products'),
+    path('products/review/<int:pk>/', views.product_review, name='super_product_review'),
+    path('products/all/', views.all_products, name='super_all_products'),
+    path('products/delete/<int:pk>/', views.delete_product_admin, name='super_delete_product'),
+    path('products/edit/<int:pk>/', views.edit_product_admin, name='super_edit_product'),
+    path('products/archived/', views.archived_products, name='super_archived_products'),
+    path('products/restore/<int:pk>/', views.restore_archived_product, name='super_restore_product'),
+
+    # Merchants
+    path('merchants/pending/', views.pending_merchants, name='super_pending_merchants'),
+    path('merchants/approve/<int:pk>/', views.approve_merchant, name='super_approve_merchant'),
+    path('merchants/reject/<int:pk>/', views.reject_merchant, name='super_reject_merchant'),
+    path('merchants/all/', views.merchants_list, name='super_merchants_list'),
+    path('merchants/profile/<int:pk>/', views.merchant_profile_admin, name='super_merchant_profile'),
+    path('merchant/<int:pk>/toggle-verify/', views.toggle_verify_merchant, name='super_toggle_verify_merchant'),
+    path('merchants/update-limit/<int:pk>/', views.update_merchant_limit, name='super_update_merchant_limit'),
+    path('merchants/hide-products/<int:pk>/', views.hide_merchant_products, name='super_hide_merchant_products'),
+    path('merchants/show-products/<int:pk>/', views.show_merchant_products, name='super_show_merchant_products'),
+
+    # Users
+    path('users/', views.users_list, name='super_users_list'),
+    path('users/edit/<int:user_id>/', views.user_edit, name='super_user_edit'),
+    path('users/delete/<int:user_id>/', views.user_delete, name='super_user_delete'),
+    path('users/banned/', views.banned_users, name='super_banned_users'),
+    path('users/ban/<int:user_id>/', views.ban_user, name='super_ban_user'),
+
+    # Finance
+    path('deposits/pending/', views.pending_deposits, name='super_pending_deposits'),
+    path('deposits/approve/<int:pk>/', views.approve_deposit, name='super_approve_deposit'),
+    path('withdrawals/pending/', views.pending_withdrawals, name='super_pending_withdrawals'),
+    path('withdrawals/approve/<int:pk>/', views.approve_withdrawal, name='super_approve_withdrawal'),
+    path('withdrawals/reject/<int:pk>/', views.reject_withdrawal, name='super_reject_withdrawal'),
+    path('wallets/', views.wallets_list, name='super_wallets_list'),
+    path('wallets/adjust/<int:wallet_id>/', views.adjust_wallet, name='super_adjust_wallet'),
+    path('finance/overview/', views.finance_overview, name='super_finance_overview'),
+    path('finance/logs/', views.finance_logs, name='super_finance_logs'),
+    path('finance/export/profits/', views.export_profit_report, name='super_export_profits'),
+    path('finance/export/debts/', views.export_debts_report, name='super_export_debts'),
+
+    # Categories
+    path('categories/', views.manage_categories, name='super_categories'),
+    path('categories/delete/<int:pk>/', views.delete_category, name='super_delete_category'),
+    path('categories/edit/<int:pk>/', views.edit_category, name='super_edit_category'),
+
+    # Offers & Banners
+    path('offers/', views.manage_offers, name='super_manage_offers'),
+    path('offers/create/', views.create_platform_offer, name='super_create_offer'),
+    path('offers/delete/<int:pk>/', views.delete_offer_admin, name='super_delete_offer'),
+    path('banners/', views.manage_banners, name='super_manage_banners'),
+    path('banners/delete/<int:pk>/', views.delete_banner, name='super_delete_banner'),
+    path('popups/', views.super_manage_popups, name='super_manage_popups'),
+    path('popups/toggle/<int:pk>/', views.super_toggle_popup, name='super_toggle_popup'),
+    path('popups/delete/<int:pk>/', views.super_delete_popup, name='super_delete_popup'),
+
+    # Analytics & Customers
+    path('analytics/customers/', views.customers_analytics, name='super_customers_analytics'),
+    path('analytics/customer/<int:user_id>/', views.customer_profile_admin, name='super_customer_profile'),
+
+    # Support & Complaints
+    path('support/', views.support_tickets, name='super_support_tickets'),
+    path('support/<int:pk>/', views.support_ticket_detail, name='super_ticket_detail'),
+    path('complaints/', views.admin_complaints_list, name='admin_complaints_list'),
+    path('complaints/resolve/<int:complaint_id>/', views.admin_resolve_complaint, name='admin_resolve_complaint'),
+
+    # Reviews
+    path('reviews/', views.super_reviews_list, name='super_reviews_list'),
+
+    # Team & Roles
+    path('team/', views.team_management, name='super_team'),
+    path('team/roles/', views.manage_roles, name='super_manage_roles'),
+    path('team/roles/delete/<int:pk>/', views.delete_role, name='super_delete_role'),
+
+    # Vouchers
+    path('personal-vouchers/', views.manage_vouchers, name='super_manage_vouchers'),
+    path('personal-vouchers/delete/<int:pk>/', views.delete_voucher, name='super_delete_voucher'),
+
+    # Terms & Conditions
+    path('terms/', views.manage_terms, name='super_manage_terms'),
+    path('terms/delete/<int:pk>/', views.delete_term, name='super_delete_term'),
+    path('terms/edit/<int:pk>/', views.edit_term, name='super_edit_term'),
+
+    # Countries & Governorates
+    path('countries/', views.manage_countries, name='super_manage_countries'),
+    path('countries/delete/<int:pk>/', views.delete_country, name='super_delete_country'),
+    path('governorates/', views.manage_governorates, name='super_manage_governorates'),
+    path('governorates/delete/<int:pk>/', views.delete_governorate, name='super_delete_governorate'),
+
+    # Notifications
+    path('notifications/send/', views.send_broadcast, name='super_send_broadcast'),
+    path('notifications/', views.admin_notifications, name='admin_notifications'),
+
+    # Settings & Owner
+    path('settings/', views.site_settings_view, name='super_site_settings'),
+    path('owner-dashboard/', views.owner_dashboard, name='owner_dashboard'),
+    path('supervisor/translations/', views.system_translations_view, name='super_system_translations'),
+    path('edit-about-us/', views.edit_about_us, name='super_edit_about_us'),
+]

@@ -1,0 +1,7701 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-12 18:54+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\accounts\forms.py:11
+msgid "اسم مستخدم مميز"
+msgstr ""
+
+#: .\accounts\forms.py:12
+msgid "اسم المستخدم (Username)"
+msgstr ""
+
+#: .\accounts\forms.py:17 .\accounts\forms.py:66
+#: .\templates\account\login.html:159
+#: .\templates\account\signup_customer.html:190
+#: .\templates\account\signup_merchant.html:231
+msgid "كلمة المرور"
+msgstr ""
+
+#: .\accounts\forms.py:27 .\accounts\forms.py:153
+msgid "01xxxxxxxxx"
+msgstr ""
+
+#: .\accounts\forms.py:31 .\accounts\forms.py:159
+#: .\templates\account\signup_customer.html:184
+msgid "رقم الموبايل"
+msgstr ""
+
+#: .\accounts\forms.py:32 .\store\models.py:352
+#: .\templates\supervisor\manage_countries.html:31
+#: .\templates\supervisor\manage_governorates.html:48
+msgid "الدولة"
+msgstr ""
+
+#: .\accounts\forms.py:33 .\accounts\forms.py:157
+#: .\templates\account\complete_profile.html:200
+#: .\templates\account\settings.html:105
+#: .\templates\account\signup_customer.html:162
+#: .\templates\merchant\profile.html:70
+#: .\templates\supervisor\user_edit.html:45
+msgid "الاسم الأول"
+msgstr ""
+
+#: .\accounts\forms.py:34 .\accounts\forms.py:158
+#: .\templates\account\complete_profile.html:204
+#: .\templates\account\signup_customer.html:166
+#: .\templates\merchant\profile.html:74
+#: .\templates\supervisor\user_edit.html:49
+msgid "اسم العائلة"
+msgstr ""
+
+#: .\accounts\forms.py:40
+msgid "اسم المستخدم هذا مسجل مسبقاً، جرب اسماً آخر."
+msgstr ""
+
+#: .\accounts\forms.py:46
+msgid "رقم الهاتف هذا مسجل بالفعل."
+msgstr ""
+
+#: .\accounts\forms.py:63
+msgid "الاسم بالكامل"
+msgstr ""
+
+#: .\accounts\forms.py:65 .\templates\merchant\order_detail.html:80
+#: .\templates\store\checkout.html:177
+#: .\templates\supervisor\support_ticket_detail.html:66
+#: .\templates\supervisor\team_management.html:35
+msgid "رقم الهاتف"
+msgstr ""
+
+#: .\accounts\forms.py:71 .\templates\account\signup_merchant.html:204
+msgid "دولة المتجر (أين تبيع؟)"
+msgstr ""
+
+#: .\accounts\forms.py:75
+msgid "رقم السجل الضريبي (اختياري)"
+msgstr ""
+
+#: .\accounts\forms.py:78
+msgid "كمية البضاعة (الكلية)"
+msgstr ""
+
+#: .\accounts\forms.py:79 .\accounts\forms.py:144
+#: .\templates\supervisor\merchant_profile_admin.html:343
+#: .\templates\supervisor\pending_merchants.html:54
+msgid "أنواع البضاعة"
+msgstr ""
+
+#: .\accounts\forms.py:80 .\templates\account\signup_merchant.html:258
+#: .\templates\merchant\profile.html:100
+#: .\templates\supervisor\pending_merchants.html:62
+msgid "متوسط الأسعار"
+msgstr ""
+
+#: .\accounts\forms.py:81 .\templates\merchant\profile.html:104
+msgid "المقاسات المتاحة"
+msgstr ""
+
+#: .\accounts\forms.py:83 .\templates\account\signup_merchant.html:264
+msgid "الكميات المتوقع بيعها (شهرياً)"
+msgstr ""
+
+#: .\accounts\forms.py:84
+msgid "رقم الواتساب للتواصل"
+msgstr ""
+
+#: .\accounts\forms.py:86 .\templates\account\merchant_onboarding.html:189
+msgid "صورة المحل / اللوجو"
+msgstr ""
+
+#: .\accounts\forms.py:137
+msgid "أريد التسجيل كتاجر"
+msgstr ""
+
+#: .\accounts\forms.py:142 .\templates\account\signup_merchant.html:293
+#: .\templates\supervisor\merchant_profile_admin.html:323
+msgid "رقم السجل الضريبي"
+msgstr ""
+
+#: .\accounts\forms.py:143
+msgid "كمية البضاعة"
+msgstr ""
+
+#: .\accounts\forms.py:160
+msgid "دولتك"
+msgstr ""
+
+#: .\accounts\views.py:323
+msgid "تم تحديث بياناتك بنجاح ✅"
+msgstr ""
+
+#: .\accounts\views.py:332
+msgid "تم تغيير كلمة المرور بنجاح 🔒"
+msgstr ""
+
+#: .\accounts\views.py:334
+msgid "خطأ في البيانات، يرجى التأكد من كلمة المرور الحالية."
+msgstr ""
+
+#: .\bazarna\settings.py:155
+msgid "Arabic"
+msgstr ""
+
+#: .\bazarna\settings.py:156
+msgid "English"
+msgstr ""
+
+#: .\merchant_panel\views.py:733 .\store\views.py:683 .\store\views.py:839
+msgid "حدث خطأ أثناء إصدار فاتورة الدفع: "
+msgstr ""
+
+#: .\store\models.py:207
+msgid "طريقة الدفع"
+msgstr ""
+
+#: .\store\models.py:353
+msgid "اسم الموقع/الفرع"
+msgstr ""
+
+#: .\store\models.py:354
+msgid "رسوم ثابتة"
+msgstr ""
+
+#: .\store\models.py:355
+msgid "نسبة العمولة (%)"
+msgstr ""
+
+#: .\store\models.py:356
+msgid "الحد الأدنى للسحب"
+msgstr ""
+
+#: .\store\models.py:357
+msgid "المبلغ المحجوز في المحفظة"
+msgstr ""
+
+#: .\store\models.py:358
+msgid "الحد الأدنى لتفعيل المنتجات"
+msgstr ""
+
+#: .\store\models.py:359
+msgid "مدة تعليق الرصيد (ساعة)"
+msgstr ""
+
+#: .\store\models.py:374
+msgid "صورة البانر"
+msgstr ""
+
+#: .\store\views.py:96
+msgid "تم تغيير دولة المتجر بنجاح."
+msgstr ""
+
+#: .\store\views.py:207
+msgid "هذا المنتج غير متوفر في دولتك الحالية."
+msgstr ""
+
+#: .\store\views.py:260
+msgid "هذا المتجر غير متاح في دولتك الحالية."
+msgstr ""
+
+#: .\store\views.py:275 .\store\views.py:293
+msgid "أقوى العروض والخصومات"
+msgstr ""
+
+#: .\store\views.py:307
+msgid "الرجاء اختيار المقاس واللون."
+msgstr ""
+
+#: .\store\views.py:315
+msgid "لا يمكنك إضافة منتجات من دولة أخرى لسلتك الحالية."
+msgstr ""
+
+#: .\store\views.py:320
+#, python-format
+msgid "عفواً، الكمية المتاحة حالياً هي %(qty)s فقط."
+msgstr ""
+
+#: .\store\views.py:347
+msgid "تمت الإضافة للسلة بنجاح! 🛍️"
+msgstr ""
+
+#: .\store\views.py:372
+msgid "تم إزالة بعض المنتجات من السلة لأنها غير متاحة في دولتك الحالية."
+msgstr ""
+
+#: .\store\views.py:437
+msgid "لم تختر منتجات."
+msgstr ""
+
+#: .\store\views.py:486
+msgid "البيانات ناقصة."
+msgstr ""
+
+#: .\store\views.py:563 .\store\views.py:568
+msgid "طلب جديد! 🛍️"
+msgstr ""
+
+#: .\store\views.py:564 .\store\views.py:569
+#, python-format
+msgid "وصلك طلب جديد #%(id)s من %(name)s."
+msgstr ""
+
+#: .\store\views.py:589
+msgid "حدث خطأ أثناء إتمام الطلب، يرجى المحاولة مرة أخرى."
+msgstr ""
+
+#: .\store\views.py:639
+msgid "رقم المحفظة مطلوب."
+msgstr ""
+
+#: .\store\views.py:689
+msgid "فشل الاتصال بالبنك. تم حفظ الطلب، يرجى المحاولة من 'طلباتي'."
+msgstr ""
+
+#: .\store\views.py:695 .\store\views.py:700
+msgid "تم استلام طلبك! 🎉"
+msgstr ""
+
+#: .\store\views.py:696
+msgid "تم استلام طلبك بنجاح وسيقوم التاجر بتأكيده قريباً."
+msgstr ""
+
+#: .\store\views.py:701
+msgid "تم استلام طلبك بنجاح وسيقوم التاجر بالبدء في تجهيزه."
+msgstr ""
+
+#: .\store\views.py:704
+msgid "تم استلام طلبك بنجاح!"
+msgstr ""
+
+#: .\store\views.py:752
+msgid "تغيير طريقة الدفع! 🔄"
+msgstr ""
+
+#: .\store\views.py:752
+#, python-format
+msgid "تم تغيير طريقة الدفع للطلب #%(id)s إلى كاش."
+msgstr ""
+
+#: .\store\views.py:753
+msgid "طلب جديد (كاش)! 🛍️"
+msgstr ""
+
+#: .\store\views.py:753
+#, python-format
+msgid "تغيرت طريقة الدفع للطلب #%(id)s لكاش."
+msgstr ""
+
+#: .\store\views.py:755
+msgid "تم تحويل الطلب إلى الدفع عند الاستلام بنجاح."
+msgstr ""
+
+#: .\store\views.py:843
+msgid "حدث خطأ أثناء الاتصال بالبنك، يرجى المحاولة مرة أخرى."
+msgstr ""
+
+#: .\store\views.py:874
+#, python-format
+msgid "تقييم مجمع من الطلب #%(id)s"
+msgstr ""
+
+#: .\store\views.py:891
+msgid "تأكيد استلام وتقييم! ⭐️"
+msgstr ""
+
+#: .\store\views.py:892
+#, python-format
+msgid "أكد العميل استلام الطلب #%(id)s وقيمه بـ %(rt)s نجوم."
+msgstr ""
+
+#: .\store\views.py:895
+msgid "استلام وتقييم ⭐️"
+msgstr ""
+
+#: .\store\views.py:895
+#, python-format
+msgid "العميل استلم الطلب #%(id)s واداك %(rt)s نجوم!"
+msgstr ""
+
+#: .\store\views.py:898
+msgid "شكراً لك! تم تأكيد استلامك وتقييم المنتجات بنجاح."
+msgstr ""
+
+#: .\store\views.py:903
+msgid "التاجر يدعي التسليم، ولكنني لم أستلم الطلب أو قمت بإرجاعه للمندوب!"
+msgstr ""
+
+#: .\store\views.py:906
+msgid "يجب إدخال رقم واتساب صحيح لا يقل عن 11 رقماً."
+msgstr ""
+
+#: .\store\views.py:923
+msgid "شكوى بعدم الاستلام! ⚠️"
+msgstr ""
+
+#: .\store\views.py:924
+#, python-format
+msgid ""
+"فتح العميل شكوى لعدم استلام الطلب #%(id)s. تم إيقاف أرباح الطلب للمراجعة."
+msgstr ""
+
+#: .\store\views.py:927
+msgid "تحذير: شكوى عدم استلام ⚠️"
+msgstr ""
+
+#: .\store\views.py:927
+#, python-format
+msgid "العميل فتح شكوى بعدم استلام الطلب #%(id)s."
+msgstr ""
+
+#: .\store\views.py:930
+msgid "تم تسجيل شكواك بعدم الاستلام! أوقفنا أرباح الطلب وسنحقق فوراً."
+msgstr ""
+
+#: .\store\views.py:941
+msgid ""
+"مرتجع متفق عليه: العميل والتاجر أكدوا المرتجع. بانتظار تدخل الإدارة لتسوية "
+"الأموال (الريفاند/الشحن)."
+msgstr ""
+
+#: .\store\views.py:942 .\templates\supervisor\all_orders.html:92
+#: .\templates\supervisor\merchant_profile_admin.html:84
+#: .\templates\supervisor\pending_merchants.html:43
+msgid "غير محدد"
+msgstr ""
+
+#: .\store\views.py:949
+msgid "تأكيد المرتجع من العميل 🔄"
+msgstr ""
+
+#: .\store\views.py:950
+#, python-format
+msgid "أكد العميل إرجاع الطلب #%(id)s. الطلب الآن لدى الإدارة لتسوية الحسابات."
+msgstr ""
+
+#: .\store\views.py:953
+msgid "العميل أكد المرتجع 🔄"
+msgstr ""
+
+#: .\store\views.py:953
+#, python-format
+msgid "تم تأكيد إرجاع الطلب #%(id)s وجاري التسوية."
+msgstr ""
+
+#: .\store\views.py:956
+msgid "تم تأكيد عملية الإرجاع. الإدارة ستقوم بتسوية أموالك في أقرب وقت."
+msgstr ""
+
+#: .\store\views.py:961
+msgid "المندوب يدعي أن الطلب مرتجع، لكنني استلمته ودفعت ثمنه كاملاً!"
+msgstr ""
+
+#: .\store\views.py:964
+msgid "يجب إدخال رقم واتساب صحيح."
+msgstr ""
+
+#: .\store\views.py:980
+msgid "شكوى خطيرة! 🚨"
+msgstr ""
+
+#: .\store\views.py:981
+#, python-format
+msgid "العميل يشتكي بأنه استلم الطلب #%(id)s ودفع ثمنه، رغم تسجيله كمرتجع."
+msgstr ""
+
+#: .\store\views.py:984
+msgid "شكوى تلاعب! 🚨"
+msgstr ""
+
+#: .\store\views.py:984
+#, python-format
+msgid "العميل يدعي استلامه ودفع ثمن الطلب #%(id)s رغم تسجيله كمرتجع."
+msgstr ""
+
+#: .\store\views.py:987
+msgid "تم تسجيل الشكوى الخطيرة! سنتواصل معك فوراً."
+msgstr ""
+
+#: .\store\views.py:1125
+msgid "تم شحن محفظتك بنجاح!"
+msgstr ""
+
+#: .\store\views.py:1140
+msgid "طلب مدفوع جديد! 💳"
+msgstr ""
+
+#: .\store\views.py:1141
+#, python-format
+msgid "تم استلام مبلغ الطلب #%(id)s، يرجى التجهيز."
+msgstr ""
+
+#: .\store\views.py:1147
+msgid "تم تأكيد الدفع بنجاح! شكراً لتسوقك معنا."
+msgstr ""
+
+#: .\store\views.py:1152
+msgid "لم يتم تأكيد الدفع أو تم إلغاؤه."
+msgstr ""
+
+#: .\store\views.py:1257
+msgid "لا يمكنك دعوة نفسك!"
+msgstr ""
+
+#: .\store\views.py:1259
+msgid "لقد استخدمت كود دعوة مسبقاً."
+msgstr ""
+
+#: .\store\views.py:1266
+msgid "دعوة ناجحة! 🎉"
+msgstr ""
+
+#: .\store\views.py:1267
+#, python-format
+msgid "قام %(name)s باستخدام كود دعوتك. ستحصل على المكافأة عند أول شراء له."
+msgstr ""
+
+#: .\store\views.py:1269
+msgid "مبروك دعوة ناجحة! 🎉"
+msgstr ""
+
+#: .\store\views.py:1269
+#, python-format
+msgid "%(name)s سجل بكودك، هينزلك مكافأة أول ما يشتري."
+msgstr ""
+
+#: .\store\views.py:1272
+msgid "تم تفعيل كود الدعوة بنجاح! 🎉"
+msgstr ""
+
+#: .\store\views.py:1275
+msgid "كود غير صحيح."
+msgstr ""
+
+#: .\store\views.py:1292 .\templates\account\signup_merchant.html:304
+#: .\templates\supervisor\translations.html:21 .\templates\terms.html:46
+msgid "الشروط والأحكام"
+msgstr ""
+
+#: .\store\views.py:1292 .\templates\account\complete_profile.html:224
+#: .\templates\account\profile.html:532
+#: .\templates\account\signup_customer.html:205
+#: .\templates\account\signup_merchant.html:306
+#: .\templates\merchant\profile.html:139 .\templates\merchant\profile.html:188
+#: .\templates\store\privacy_policy.html:4
+#: .\templates\store\privacy_policy.html:121
+#: .\templates\supervisor\manage_terms.html:39
+#: .\templates\supervisor\manage_terms.html:169
+#: .\templates\supervisor\manage_terms.html:270
+msgid "سياسة الخصوصية"
+msgstr ""
+
+#: .\store\views.py:1293 .\templates\supervisor\manage_terms.html:47
+#: .\templates\supervisor\manage_terms.html:177
+#: .\templates\supervisor\manage_terms.html:278
+msgid "للتجار"
+msgstr ""
+
+#: .\store\views.py:1293 .\templates\supervisor\manage_terms.html:46
+#: .\templates\supervisor\manage_terms.html:176
+#: .\templates\supervisor\manage_terms.html:277
+msgid "للعملاء"
+msgstr ""
+
+#: .\store\views.py:1313
+msgid "يرجى اختيار تقييم من 1 إلى 5 نجوم."
+msgstr ""
+
+#: .\store\views.py:1323 .\store\views.py:1326
+msgid "تقييم جديد! 🌟"
+msgstr ""
+
+#: .\store\views.py:1324
+#, python-format
+msgid "حصل منتجك '%(name)s' على تقييم %(stars)s نجوم."
+msgstr ""
+
+#: .\store\views.py:1326
+#, python-format
+msgid "في عميل إدى منتجك '%(name)s' %(stars)s نجوم."
+msgstr ""
+
+#: .\store\views.py:1329
+msgid "شكراً لك! تم حفظ تقييمك بنجاح 🌟"
+msgstr ""
+
+#: .\store\views.py:1331
+msgid "حدث خطأ أثناء إرسال التقييم."
+msgstr ""
+
+#: .\templates\account\banned.html:11
+msgid "حساب محظور"
+msgstr ""
+
+#: .\templates\account\banned.html:163
+msgid "عفواً، تم إيقاف حسابك"
+msgstr ""
+
+#: .\templates\account\banned.html:185
+msgid "تواصل مع الدعم لفك الحظر"
+msgstr ""
+
+#: .\templates\account\banned.html:191
+#: .\templates\supervisor\base_supervisor.html:429
+msgid "تسجيل خروج"
+msgstr ""
+
+#: .\templates\account\complete_profile.html:165
+msgid "خطوة أخيرة! 👋"
+msgstr ""
+
+#: .\templates\account\complete_profile.html:166
+msgid "أكمل بياناتك وحدد نوع حسابك لنخصص لك أفضل تجربة."
+msgstr ""
+
+#: .\templates\account\complete_profile.html:173
+msgid "أريد التسجيل في المنصة كـ:"
+msgstr ""
+
+#: .\templates\account\complete_profile.html:193
+msgid "دولتك الحالية"
+msgstr ""
+
+#: .\templates\account\complete_profile.html:210
+msgid "رقم الهاتف الأساسي (واتساب)"
+msgstr ""
+
+#: .\templates\account\complete_profile.html:214
+msgid "سنستخدم هذا الرقم لإرسال تحديثات طلباتك."
+msgstr ""
+
+#: .\templates\account\complete_profile.html:221
+#: .\templates\account\signup_customer.html:202
+msgid "أوافق على"
+msgstr ""
+
+#: .\templates\account\complete_profile.html:222
+#: .\templates\account\signup_customer.html:203
+msgid "شروط الاستخدام"
+msgstr ""
+
+#: .\templates\account\complete_profile.html:223
+#: .\templates\account\signup_customer.html:204
+#: .\templates\account\signup_merchant.html:305
+msgid "و"
+msgstr ""
+
+#: .\templates\account\complete_profile.html:229
+msgid "حفظ ومتابعة"
+msgstr ""
+
+#: .\templates\account\delete_account.html:10
+msgid "طلب حذف الحساب | تطبيق "
+msgstr ""
+
+#: .\templates\account\delete_account.html:177
+msgid "طلب حذف الحساب والبيانات"
+msgstr ""
+
+#: .\templates\account\delete_account.html:190
+msgid ""
+"لإزالة بياناتك بشكل نهائي من منصة  يرجى إرسال طلب من بريدك الإلكتروني المسجل "
+"أو من خلال تذاكر الدعم الفني داخل التطبيق."
+msgstr ""
+
+#: .\templates\account\delete_account.html:215
+msgid "عبر البريد الإلكتروني:"
+msgstr ""
+
+#: .\templates\account\delete_account.html:241
+msgid "عبر التطبيق:"
+msgstr ""
+
+#: .\templates\account\delete_account.html:243
+msgid "افتح تذكرة دعم بعنوان 'حذف حساب'"
+msgstr ""
+
+#: .\templates\account\delete_account.html:250
+msgid "إرسال طلب الآن"
+msgstr ""
+
+#: .\templates\account\login.html:135
+msgid "عذراً!"
+msgstr ""
+
+#: .\templates\account\login.html:137
+msgid "اضغط على خانة"
+msgstr ""
+
+#: .\templates\account\login.html:137
+msgid "البروفايل"
+msgstr ""
+
+#: .\templates\account\login.html:137
+msgid "أسفل الشاشة لتسجيل الدخول."
+msgstr ""
+
+#: .\templates\account\login.html:149
+msgid "مرحباً بعودتك! 👋"
+msgstr ""
+
+#: .\templates\account\login.html:150
+msgid "سجل الدخول للمتابعة والتسوق في "
+msgstr ""
+
+#: .\templates\account\login.html:154
+msgid "اسم المستخدم أو رقم الهاتف"
+msgstr ""
+
+#: .\templates\account\login.html:155
+msgid "أدخل بيانات الدخول"
+msgstr ""
+
+#: .\templates\account\login.html:164 .\templates\account\profile.html:364
+#: .\templates\account\signup_choice.html:183
+#: .\templates\account\signup_customer.html:218
+#: .\templates\account\signup_unified.html:182
+msgid "تسجيل الدخول"
+msgstr ""
+
+#: .\templates\account\login.html:168
+msgid "أو الدخول السريع"
+msgstr ""
+
+#: .\templates\account\login.html:173
+msgid "الدخول باستخدام Google"
+msgstr ""
+
+#: .\templates\account\login.html:177
+msgid "ليس لديك حساب؟"
+msgstr ""
+
+#: .\templates\account\login.html:179
+msgid "سجل الآن مجاناً"
+msgstr ""
+
+#: .\templates\account\logout.html:110
+msgid "تسجيل الخروج"
+msgstr ""
+
+#: .\templates\account\logout.html:111
+msgid "هل أنت متأكد أنك تريد المغادرة؟"
+msgstr ""
+
+#: .\templates\account\logout.html:117
+msgid "نعم، تسجيل الخروج"
+msgstr ""
+
+#: .\templates\account\logout.html:120
+msgid "تراجع والبقاء"
+msgstr ""
+
+#: .\templates\account\merchant_onboarding.html:153
+msgid "تفعيل حساب التاجر 🏪"
+msgstr ""
+
+#: .\templates\account\merchant_onboarding.html:155
+msgid "يرجى رفع المستندات التالية للموافقة على متجرك والبدء في البيع."
+msgstr ""
+
+#: .\templates\account\merchant_onboarding.html:164
+msgid "الرقم القومي"
+msgstr ""
+
+#: .\templates\account\merchant_onboarding.html:173
+msgid "صورة البطاقة (أمام)"
+msgstr ""
+
+#: .\templates\account\merchant_onboarding.html:180
+msgid "صورة البطاقة (خلف)"
+msgstr ""
+
+#: .\templates\account\merchant_onboarding.html:194
+msgid "ستظهر هذه الصورة للعملاء في صفحة متجرك، اختر صورة واضحة ومميزة."
+msgstr ""
+
+#: .\templates\account\merchant_onboarding.html:201
+msgid "إرسال للمراجعة والتفعيل"
+msgstr ""
+
+#: .\templates\account\password_change.html:168
+#: .\templates\account\password_change.html:180
+#: .\templates\merchant\profile.html:125
+msgid "تغيير كلمة المرور"
+msgstr ""
+
+#: .\templates\account\password_change.html:181
+msgid "لحماية حسابك، يرجى تحديث بيانات الدخول الخاصة بك."
+msgstr ""
+
+#: .\templates\account\password_change.html:206
+#: .\templates\account\settings.html:131
+msgid "كلمة المرور الحالية"
+msgstr ""
+
+#: .\templates\account\password_change.html:208
+#: .\templates\account\settings.html:134
+msgid "كلمة المرور الجديدة"
+msgstr ""
+
+#: .\templates\account\password_change.html:210
+#: .\templates\account\settings.html:137
+msgid "تأكيد كلمة المرور الجديدة"
+msgstr ""
+
+#: .\templates\account\password_change.html:234
+#: .\templates\account\settings.html:139
+msgid "تحديث كلمة المرور"
+msgstr ""
+
+#: .\templates\account\password_change.html:238
+#: .\templates\store\paymob_iframe.html:129
+msgid "إلغاء والعودة"
+msgstr ""
+
+#: .\templates\account\profile.html:195
+msgid "حساب تاجر"
+msgstr ""
+
+#: .\templates\account\profile.html:218
+msgid "الإدارة والتحكم"
+msgstr ""
+
+#: .\templates\account\profile.html:227
+msgid "لوحة تحكم التاجر"
+msgstr ""
+
+#: .\templates\account\profile.html:228
+msgid "إدارة منتجاتك ومبيعاتك"
+msgstr ""
+
+#: .\templates\account\profile.html:240
+msgid "لوحة الإشراف والإدارة"
+msgstr ""
+
+#: .\templates\account\profile.html:241
+msgid "إدارة المنصة وعرض التقارير"
+msgstr ""
+
+#: .\templates\account\profile.html:249 .\templates\base.html:193
+#: .\templates\merchant\base_merchant.html:197
+msgid "حسابي"
+msgstr ""
+
+#: .\templates\account\profile.html:257 .\templates\store\my_orders.html:146
+msgid "طلباتي السابقة"
+msgstr ""
+
+#: .\templates\account\profile.html:258
+msgid "تتبع مشترياتك وحالة طلبك"
+msgstr ""
+
+#: .\templates\account\profile.html:268 .\templates\store\wishlist.html:152
+msgid "المفضلة"
+msgstr ""
+
+#: .\templates\account\profile.html:269
+msgid "المنتجات التي أعجبتك"
+msgstr ""
+
+#: .\templates\account\profile.html:279
+msgid "مركز الهدايا والدعوات"
+msgstr ""
+
+#: .\templates\account\profile.html:280
+msgid "شارك واربح رصيد مجاني!"
+msgstr ""
+
+#: .\templates\account\profile.html:290 .\templates\account\settings.html:95
+msgid "الإعدادات"
+msgstr ""
+
+#: .\templates\account\profile.html:291
+msgid "اللغة، الأمان، والبيانات الشخصية"
+msgstr ""
+
+#: .\templates\account\profile.html:298
+msgid "الدعم والسياسات"
+msgstr ""
+
+#: .\templates\account\profile.html:306
+msgid "الدعم الفني والمساعدة"
+msgstr ""
+
+#: .\templates\account\profile.html:307
+msgid "تواصل معنا لحل أي مشكلة"
+msgstr ""
+
+#: .\templates\account\profile.html:317 .\templates\account\profile.html:390
+#: .\templates\store\about_us.html:2 .\templates\store\about_us.html:114
+#: .\templates\supervisor\translations.html:24
+msgid "من نحن"
+msgstr ""
+
+#: .\templates\account\profile.html:318 .\templates\account\profile.html:391
+msgid "تعرف أكثر على قصتنا ورؤيتنا"
+msgstr ""
+
+#: .\templates\account\profile.html:328 .\templates\account\profile.html:401
+msgid "المركز القانوني والسياسات"
+msgstr ""
+
+#: .\templates\account\profile.html:329 .\templates\account\profile.html:402
+msgid "الشروط، الخصوصية، والاسترجاع"
+msgstr ""
+
+#: .\templates\account\profile.html:337 .\templates\merchant\profile.html:157
+msgid "تسجيل الخروج بأمان"
+msgstr ""
+
+#: .\templates\account\profile.html:354
+msgid "مرحباً بك في المنصة"
+msgstr ""
+
+#: .\templates\account\profile.html:355
+msgid "سجل دخولك الآن لتجربة تسوق أفضل"
+msgstr ""
+
+#: .\templates\account\profile.html:365
+msgid "سجل الدخول للوصول إلى طلباتك، محفظتك، وإعدادات حسابك."
+msgstr ""
+
+#: .\templates\account\profile.html:367
+msgid "تسجيل الدخول أو إنشاء حساب"
+msgstr ""
+
+#: .\templates\account\profile.html:371
+msgid "إعدادات عامة والسياسات"
+msgstr ""
+
+#: .\templates\account\profile.html:379 .\templates\account\profile.html:420
+msgid "إعدادات الزائر"
+msgstr ""
+
+#: .\templates\account\profile.html:380
+msgid "تغيير لغة التطبيق والدولة المؤقتة"
+msgstr ""
+
+#: .\templates\account\profile.html:426
+msgid "لغة العرض"
+msgstr ""
+
+#: .\templates\account\profile.html:440
+msgid "دولة المتجر (مؤقت)"
+msgstr ""
+
+#: .\templates\account\profile.html:468
+msgid "مركز السياسات"
+msgstr ""
+
+#: .\templates\account\profile.html:477
+msgid "الشروط"
+msgstr ""
+
+#: .\templates\account\profile.html:483
+msgid "الخصوصية"
+msgstr ""
+
+#: .\templates\account\profile.html:489
+msgid "الاسترجاع"
+msgstr ""
+
+#: .\templates\account\profile.html:503
+msgid "الأحكام والشروط"
+msgstr ""
+
+#: .\templates\account\profile.html:514 .\templates\account\profile.html:543
+#: .\templates\account\profile.html:572
+msgid "لا توجد بنود متاحة حالياً."
+msgstr ""
+
+#: .\templates\account\profile.html:520 .\templates\account\profile.html:549
+#: .\templates\account\profile.html:578
+msgid "رجوع للمركز"
+msgstr ""
+
+#: .\templates\account\profile.html:561
+msgid "سياسة الشحن والاسترجاع"
+msgstr ""
+
+#: .\templates\account\settings.html:97 .\templates\merchant\profile.html:58
+msgid "البيانات الشخصية"
+msgstr ""
+
+#: .\templates\account\settings.html:109
+msgid "الاسم الأخير"
+msgstr ""
+
+#: .\templates\account\settings.html:113
+msgid "رقم الهاتف (اسم المستخدم)"
+msgstr ""
+
+#: .\templates\account\settings.html:117 .\templates\merchant\profile.html:78
+msgid "البريد الإلكتروني"
+msgstr ""
+
+#: .\templates\account\settings.html:121
+msgid "حفظ التغييرات"
+msgstr ""
+
+#: .\templates\account\settings.html:125
+msgid "الأمان"
+msgstr ""
+
+#: .\templates\account\settings.html:143
+msgid "لغة التطبيق"
+msgstr ""
+
+#: .\templates\account\settings.html:145
+msgid "اختر اللغة المفضلة لاستخدام المنصة"
+msgstr ""
+
+#: .\templates\account\signup_choice.html:142
+#: .\templates\account\signup_unified.html:142
+msgid "إنشاء حساب جديد"
+msgstr ""
+
+#: .\templates\account\signup_choice.html:151
+#: .\templates\account\signup_unified.html:151
+msgid "كيف تريد التسجيل؟"
+msgstr ""
+
+#: .\templates\account\signup_choice.html:152
+#: .\templates\account\signup_unified.html:152
+msgid "اختر نوع الحساب الذي يناسبك للبدء في رحلتك معنا."
+msgstr ""
+
+#: .\templates\account\signup_choice.html:162
+#: .\templates\account\signup_unified.html:162
+msgid "أنا عميل"
+msgstr ""
+
+#: .\templates\account\signup_choice.html:163
+#: .\templates\account\signup_unified.html:163
+msgid "أريد تصفح وشراء المنتجات بأفضل الأسعار والعروض الحصرية."
+msgstr ""
+
+#: .\templates\account\signup_choice.html:181
+#: .\templates\account\signup_customer.html:216
+#: .\templates\account\signup_unified.html:180
+msgid "لديك حساب بالفعل؟"
+msgstr ""
+
+#: .\templates\account\signup_customer.html:154
+msgid "تسجيل عميل جديد 👋"
+msgstr ""
+
+#: .\templates\account\signup_customer.html:156
+msgid "أنشئ حسابك، حدد دولتك، وابدأ التسوق فوراً."
+msgstr ""
+
+#: .\templates\account\signup_customer.html:172
+#: .\templates\supervisor\team_management.html:30
+msgid "اسم المستخدم (للدخول)"
+msgstr ""
+
+#: .\templates\account\signup_customer.html:178
+msgid "الدولة (لتحديد المتجر المتاح لك)"
+msgstr ""
+
+#: .\templates\account\signup_customer.html:211
+msgid "إنشاء الحساب"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:184
+msgid "انضم كشريك نجاح 🤝"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:186
+msgid "سجل متجرك، حدد دولتك، وابدأ البيع لآلاف العملاء."
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:194
+msgid "بياناتك الشخصية والدولة"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:198
+msgid " (الذي سيظهر للعملاء) الاسم الأول"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:206
+msgid "منتجاتك ستظهر للعملاء في هذه الدولة فقط."
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:212
+msgid "رقم الهاتف (الأساسي)"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:219
+msgid "رقم الواتساب"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:222
+msgid "نفس الرقم الأساسي"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:244
+msgid "تفاصيل النشاط التجاري"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:247
+msgid "وصف البضاعة (الأنواع والأسعار)"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:249
+msgid "مثال: ملابس أطفال، خامات قطنية، أحذية رياضية."
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:254
+msgid "الكمية المتوفرة تقريباً"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:266
+msgid "مثال: 500 قطعة، 100 أوردر."
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:273
+msgid "هوية وشعار المتجر"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:276
+msgid "صورة المحل / لوجو المتجر"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:279
+msgid "اضغط لرفع الشعار"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:288
+msgid "هل لديك سجل ضريبي؟ 📄"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:295
+msgid "يفضل إضافته لزيادة ثقة العملاء بك."
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:303
+msgid "أقر بأنني قرأت وأوافق على"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:307
+msgid "الخاصة بالتجار."
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:313
+msgid "إرسال طلب الانضمام 🚀"
+msgstr ""
+
+#: .\templates\account\signup_merchant.html:315
+msgid "سيتم مراجعة طلبك من قبل الإدارة خلال 24 ساعة."
+msgstr ""
+
+#: .\templates\account\signup_unified.html:172
+msgid "أنا تاجر"
+msgstr ""
+
+#: .\templates\account\signup_unified.html:173
+msgid "أريد افتتاح متجري الخاص وبيع منتجاتي على المنصة بكل سهولة."
+msgstr ""
+
+#: .\templates\base.html:10
+msgid "سوقك الإلكتروني الأول"
+msgstr ""
+
+#: .\templates\base.html:12
+msgid "تسوق أفضل المنتجات بأرخص الأسعار في مصر. ملابس، إلكترونيات، والمزيد."
+msgstr ""
+
+#: .\templates\base.html:13
+msgid "تسوق, مصر, أونلاين, ملابس, خصومات"
+msgstr ""
+
+#: .\templates\base.html:16
+msgid "أفضل العروض والخصومات"
+msgstr ""
+
+#: .\templates\base.html:177 .\templates\merchant\base_merchant.html:177
+#: .\templates\supervisor\base_supervisor.html:233
+#: .\templates\supervisor\base_supervisor.html:253
+#: .\templates\supervisor\base_supervisor.html:470
+msgid "الرئيسية"
+msgstr ""
+
+#: .\templates\base.html:180 .\templates\supervisor\base_supervisor.html:301
+#: .\templates\supervisor\translations.html:15
+msgid "الأقسام"
+msgstr ""
+
+#: .\templates\base.html:187 ⁨.\templates\merchant\dashboard - merch.html⁩:117
+#: .\templates\merchant\dashboard.html:117
+msgid "العروض"
+msgstr ""
+
+#: .\templates\base.html:190
+msgid "السلة"
+msgstr ""
+
+#: .\templates\base.html:205
+msgid "مرحباً بك في"
+msgstr ""
+
+#: .\templates\base.html:209
+msgid "لعرض المنتجات والأسعار بدقة، يرجى تحديد دولتك من القائمة أدناه."
+msgstr ""
+
+#: .\templates\errors\404.html:4
+msgid "الصفحة غير موجودة | 404"
+msgstr ""
+
+#: .\templates\errors\404.html:122
+msgid "عذراً، فقدنا الأثر!"
+msgstr ""
+
+#: .\templates\errors\404.html:126
+msgid ""
+"يبدو أن الصفحة التي تبحث عنها غير موجودة. ربما تم تغيير الرابط أو تم حذف "
+"الصفحة."
+msgstr ""
+
+#: .\templates\errors\404.html:131 .\templates\merchant\notifications.html:63
+#: .\templates\store\about_us.html:132 .\templates\store\categories.html:168
+msgid "العودة للرئيسية"
+msgstr ""
+
+#: .\templates\errors\404.html:134
+msgid "الرجوع للخلف"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:5
+msgid "إدارة العروض | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:14 .\templates\merchant\products.html:75
+msgid "إدارة العروض"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:15
+msgid "إضافة أو تعديل خصم على المنتج"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:32
+msgid "السعر الأصلي:"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:42
+msgid "عرض خاص من المنصة 👑"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:44
+msgid "هذا المنتج عليه عرض نشط تم وضعه بواسطة إدارة المنصة."
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:45
+msgid "سيتم تعويضك بالفرق تلقائياً عند كل عملية بيع."
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:48
+msgid "نسبة الخصم الحالية:"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:57
+#, python-format
+msgid "نسبة الخصم (%%)"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:59
+msgid "مثلاً: 20 (اتركه 0 للشحن المجاني فقط)"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:63
+msgid "يمكنك إدخال 0 إذا كنت تريد تقديم عرض شحن مجاني فقط."
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:70
+msgid "عرض الشحن المجاني"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:76
+msgid "تفعيل شحن مجاني لهذا المنتج"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:79
+msgid "بشرط شراء عدد (قطع)"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:82
+msgid "قطعة/قطع"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:87
+msgid "مدة العرض (بالأيام)"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:90
+msgid "مثلاً: 7"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:93
+msgid "سيتم احتساب المدة بدءاً من اليوم."
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:100
+msgid "هذا العرض سيخصم من أرباحك مباشرة، ولن يتم تعويضه من المنصة."
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:106
+msgid "تحديث العرض"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:106
+msgid "تفعيل العرض ⚡"
+msgstr ""
+
+#: .\templates\merchant\add_offer.html:110
+msgid "هل أنت متأكد من إلغاء هذا العرض؟"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:5
+msgid "إضافة منتج | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:13
+msgid "إضافة منتج جديد 📦"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:19
+msgid "1. تفاصيل المنتج"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:23
+#: .\templates\merchant\edit_product.html:23
+msgid "اسم المنتج (عربي)"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:34
+msgid "السعر"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:39
+#: .\templates\supervisor\manage_terms.html:36
+#: .\templates\supervisor\manage_terms.html:166
+#: .\templates\supervisor\manage_terms.html:267
+msgid "القسم"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:41
+msgid "اختر..."
+msgstr ""
+
+#: .\templates\merchant\add_product.html:51
+#: .\templates\merchant\edit_product.html:41
+msgid "وصف المنتج (عربي)"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:61
+msgid "الصورة الرئيسية"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:66
+msgid "2. المخزون"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:72
+msgid "هذا المنتج يحتوي على مقاسات وألوان"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:76
+msgid "الكمية المتاحة (عدد القطع)"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:77
+msgid "مثلاً: 50"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:78
+msgid "أدخل إجمالي الكمية المتاحة من هذا المنتج."
+msgstr ""
+
+#: .\templates\merchant\add_product.html:87
+msgid "إضافة لون جديد"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:92
+msgid "3. صور المعرض (اختياري)"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:98
+msgid "حفظ المنتج"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:162
+msgid "اكتب اسم اللون (مثلاً: أحمر)"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:172
+#: .\templates\merchant\edit_product.html:136
+msgid "أضف مقاساً لهذا اللون"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:188
+#: .\templates\merchant\edit_product.html:152
+msgid "المقاس (XL)"
+msgstr ""
+
+#: .\templates\merchant\add_product.html:191
+#: .\templates\merchant\edit_product.html:81
+#: .\templates\merchant\edit_product.html:155
+msgid "الكمية"
+msgstr ""
+
+#: .\templates\merchant\base_merchant.html:9
+msgid "لوحة التاجر | "
+msgstr ""
+
+#: .\templates\merchant\base_merchant.html:105
+msgid "لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\base_merchant.html:182
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:85
+#: .\templates\merchant\dashboard.html:85
+#: .\templates\supervisor\base_supervisor.html:265
+msgid "الطلبات"
+msgstr ""
+
+#: .\templates\merchant\base_merchant.html:187
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:58
+#: .\templates\merchant\dashboard.html:58
+msgid "المنتجات"
+msgstr ""
+
+#: .\templates\merchant\base_merchant.html:192
+msgid "المحفظة"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:4
+#: .\templates\merchant\dashboard.html:4
+msgid "الرئيسية | لوحة التاجر"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:10
+#: .\templates\merchant\dashboard.html:10
+#: .\templates\supervisor\dashboard.html:13
+msgid "مرحباً بك،"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:11
+#: .\templates\merchant\dashboard.html:11
+msgid "لوحة تحكم متجرك"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:15
+#: .\templates\merchant\dashboard.html:15
+msgid "الرتبة"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:18
+#: .\templates\merchant\dashboard.html:18
+#: .\templates\supervisor\merchants_list.html:49
+#: .\templates\supervisor\merchants_list.html:85
+msgid "ذهبي"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:22
+#: .\templates\merchant\dashboard.html:22
+#: .\templates\supervisor\merchants_list.html:50
+#: .\templates\supervisor\merchants_list.html:87
+msgid "أزرق"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:26
+#: .\templates\merchant\dashboard.html:26
+#: .\templates\supervisor\merchants_list.html:48
+#: .\templates\supervisor\merchants_list.html:89
+msgid "فضي"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:29
+#: .\templates\merchant\dashboard.html:29
+msgid "غير موثق"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:30
+#: .\templates\merchant\dashboard.html:30
+msgid "تواصل للتوثيق"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:37
+#: .\templates\merchant\dashboard.html:37
+#: .\templates\merchant\products.html:101
+msgid "إضافة منتج جديد"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:47
+#: .\templates\merchant\dashboard.html:47
+msgid "الرصيد الحالي"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:70
+#: .\templates\merchant\dashboard.html:70
+#: .\templates\supervisor\base_supervisor.html:260
+msgid "إدارة المتجر"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:77
+#: .\templates\merchant\dashboard.html:77
+msgid "منتجاتي"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:93
+#: .\templates\merchant\dashboard.html:93
+msgid "الشحن"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:101
+#: .\templates\merchant\dashboard.html:101
+msgid "الدعم"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:109
+#: .\templates\merchant\dashboard.html:109
+msgid "التقارير"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:123
+#: .\templates\merchant\dashboard.html:123
+msgid "آخر الطلبات"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:124
+#: .\templates\merchant\dashboard.html:124 .\templates\store\home.html:268
+msgid "عرض الكل"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:135
+#: .\templates\merchant\dashboard.html:135
+#: .\templates\merchant\order_detail.html:17
+msgid "طلب #"
+msgstr ""
+
+#: ⁨.\templates\merchant\dashboard - merch.html⁩:149
+#: .\templates\merchant\dashboard.html:149
+msgid "لا توجد طلبات حديثة."
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:5
+msgid "تعديل منتج | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:13
+msgid "تعديل المنتج ✏️"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:19
+msgid "1. البيانات الأساسية"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:34
+#: .\templates\supervisor\archived_products.html:33
+msgid "السعر الأساسي"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:52
+msgid "2. إدارة المخزون"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:57
+msgid "الكمية المتاحة حالياً (عدد القطع)"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:59
+msgid "قم بتعديل إجمالي الكمية المتاحة من هذا المنتج."
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:84
+msgid "اكتب 0 للحذف"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:95
+msgid "إضافة لون جديد بالكامل"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:100
+#: .\templates\supervisor\categories.html:83
+#: .\templates\supervisor\manage_countries.html:153
+#: .\templates\supervisor\manage_governorates.html:87
+#: .\templates\supervisor\manage_terms.html:219
+msgid "حفظ التعديلات"
+msgstr ""
+
+#: .\templates\merchant\edit_product.html:126
+msgid "اكتب اسم اللون الجديد (مثال: أصفر)"
+msgstr ""
+
+#: .\templates\merchant\notifications.html:5
+msgid "الإشعارات | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\notifications.html:14
+msgid "الإشعارات 🔔"
+msgstr ""
+
+#: .\templates\merchant\notifications.html:60
+#: .\templates\store\notifications.html:172
+#: .\templates\supervisor\admin_notifications.html:42
+msgid "لا توجد إشعارات حالياً"
+msgstr ""
+
+#: .\templates\merchant\notifications.html:61
+msgid "سنقوم بإخطارك عند حدوث أي نشاط جديد في متجرك"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:5
+msgid "تفاصيل الطلب | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:40
+msgid "استلام"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:41
+msgid "تحضير"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:42
+msgid "شحن"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:43
+msgid "تسليم"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:54
+msgid "بيانات العميل"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:61
+#: .\templates\store\checkout.html:171
+msgid "اسم المستلم"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:70
+msgid "مقدم الطلب:"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:71
+msgid "طلب للغير"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:91
+#: .\templates\store\checkout.html:166
+msgid "العنوان بالتفصيل"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:96
+msgid "تم نسخ العنوان"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:103
+#: .\templates\store\customer_order_detail.html:154
+#: .\templates\supervisor\order_detail.html:34
+msgid "المنتجات المطلوبة"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:134
+msgid "الفاتورة وتفاصيل الدفع"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:138
+#: .\templates\supervisor\all_products.html:30
+msgid "إجمالي المنتجات"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:143
+msgid "تكلفة الشحن"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:151
+msgid "شحن أول مرة:"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:151
+msgid "شحن مجاني،"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:151
+msgid "المنصة ستعوضك."
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:153
+msgid "عرض شحن مجاني:"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:153
+msgid "أنت تتحمل تكلفة الشحن."
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:161
+msgid "خصم دعوات (معوض من المنصة)"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:170
+msgid "المطلوب تحصيله:"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:175
+msgid "مدفوع إلكترونياً"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:180
+#: .\templates\store\checkout.html:222 .\templates\store\checkout.html:268
+#: .\templates\store\retry_payment.html:130
+#: .\templates\store\retry_payment.html:179
+#: .\templates\supervisor\order_detail.html:125
+msgid "الدفع عند الاستلام"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:187
+msgid "تم إضافة المبلغ (المنتجات + الشحن) لمحفظتك كـ"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:187
+msgid "رصيد معلق"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:196
+msgid "حالة الطلب الآن:"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:206
+msgid "تأكيد وبدء التحضير"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:208
+msgid "هل أنت متأكد من إلغاء الطلب نهائياً؟"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:209
+#: .\templates\merchant\order_detail.html:217
+msgid "إلغاء الطلب"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:214
+msgid "تم تسليمها للمندوب (بدء الشحن)"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:216
+msgid "هل أنت متأكد من إلغاء الطلب؟"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:224
+msgid "تأكيد استلام العميل للطلب"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:229
+msgid "هل أنت متأكد أنك استلمت هذا المنتج كمرتجع من المندوب؟"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:230
+msgid "تأكيد استلام المرتجع لمخزني"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:234
+msgid "لقد قمت بتأكيد استلام هذا المرتجع."
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:240
+msgid "سيتم إضافة الأرباح فور تأكيد التسليم."
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:246
+msgid "الطلب مكتمل وتم تسليمه بنجاح"
+msgstr ""
+
+#: .\templates\merchant\order_detail.html:251
+msgid "هذا الطلب ملغي"
+msgstr ""
+
+#: .\templates\merchant\orders.html:5
+msgid "الطلبات الواردة | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\orders.html:14
+msgid "الطلبات الواردة 📦"
+msgstr ""
+
+#: .\templates\merchant\orders.html:15
+msgid "متابعة وإدارة طلبات العملاء"
+msgstr ""
+
+#: .\templates\merchant\orders.html:28
+#: .\templates\supervisor\all_orders.html:26
+msgid "قيد الانتظار"
+msgstr ""
+
+#: .\templates\merchant\orders.html:30
+#: .\templates\supervisor\all_orders.html:32
+msgid "جاري التحضير"
+msgstr ""
+
+#: .\templates\merchant\orders.html:32
+msgid "جاري الشحن"
+msgstr ""
+
+#: .\templates\merchant\orders.html:34 .\templates\store\my_orders.html:162
+#: .\templates\supervisor\all_orders.html:38
+msgid "تم التسليم"
+msgstr ""
+
+#: .\templates\merchant\orders.html:36
+#: .\templates\supervisor\all_orders.html:41
+msgid "مرتجع"
+msgstr ""
+
+#: .\templates\merchant\orders.html:38
+#: .\templates\supervisor\all_orders.html:44
+msgid "ملغي"
+msgstr ""
+
+#: .\templates\merchant\orders.html:74
+#: .\templates\store\customer_order_detail.html:178
+msgid "الكمية:"
+msgstr ""
+
+#: .\templates\merchant\orders.html:88 .\templates\store\my_orders.html:209
+#: .\templates\supervisor\finance_logs.html:66
+msgid "التفاصيل"
+msgstr ""
+
+#: .\templates\merchant\orders.html:97
+msgid "لا توجد طلبات واردة"
+msgstr ""
+
+#: .\templates\merchant\orders.html:98
+msgid "ستظهر هنا طلبات العملاء الجديدة فور وصولها وإتمام الدفع."
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:5
+msgid "شحن المحفظة | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:14
+msgid "شحن المحفظة 💳"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:15
+msgid "اشحن رصيدك عبر Paymob الآمن"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:26
+msgid "أدخل مبلغ الشحن"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:27
+msgid "حدد المبلغ الصافي الذي تريده في محفظتك"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:34
+msgid "المبلغ الصافي"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:43
+msgid "سيصل لمحفظتك:"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:47
+msgid "رسوم بوابة الدفع:"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:52
+msgid "الإجمالي المطلوب للدفع:"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:56
+msgid "يتم إضافة رسوم بوابة الدفع لضمان وصول المبلغ الصافي كاملاً لمحفظتك."
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:61
+msgid "اختر وسيلة الدفع"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:67
+#: .\templates\store\checkout.html:235 .\templates\store\retry_payment.html:143
+msgid "بطاقة بنكية"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:74
+#: .\templates\store\checkout.html:251 .\templates\store\retry_payment.html:159
+msgid "محفظة إلكترونية"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:81
+msgid "رقم المحفظة (المحلية)"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:89
+msgid "متابعة للدفع الآمن"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:94
+msgid "مدعوم بواسطة"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:136
+msgid "إرسال طلب الدفع للمحفظة"
+msgstr ""
+
+#: .\templates\merchant\paymob_deposit.html:140
+msgid "متابعة للدفع الآمن عبر البطاقة"
+msgstr ""
+
+#: .\templates\merchant\pending_approval.html:9
+msgid "حسابك قيد المراجعة"
+msgstr ""
+
+#: .\templates\merchant\pending_approval.html:52
+msgid "مرحباً بك يا"
+msgstr ""
+
+#: .\templates\merchant\pending_approval.html:55
+msgid "حسابك التجاري قيد المراجعة"
+msgstr ""
+
+#: .\templates\merchant\pending_approval.html:58
+msgid "لقد استلمنا طلب انضمامك كتاجر في منصتنا بنجاح."
+msgstr ""
+
+#: .\templates\merchant\products.html:5
+msgid "منتجاتي | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\products.html:16
+msgid "منتجاتي 🛍️"
+msgstr ""
+
+#: .\templates\merchant\products.html:17
+msgid "منتج متاح"
+msgstr ""
+
+#: .\templates\merchant\products.html:20
+msgid "جديد"
+msgstr ""
+
+#: .\templates\merchant\products.html:54
+#: .\templates\supervisor\all_products.html:143
+#: .\templates\supervisor\manage_countries.html:57
+#: .\templates\supervisor\user_edit.html:31
+msgid "نشط"
+msgstr ""
+
+#: .\templates\merchant\products.html:56
+#: .\templates\supervisor\all_products.html:149
+#: .\templates\supervisor\finance_overview.html:119
+msgid "مراجعة"
+msgstr ""
+
+#: .\templates\merchant\products.html:79
+msgid "تعديل"
+msgstr ""
+
+#: .\templates\merchant\products.html:83
+msgid "هل أنت متأكد من حذف هذا المنتج نهائياً؟"
+msgstr ""
+
+#: .\templates\merchant\products.html:83
+#: .\templates\supervisor\all_products.html:169
+#: .\templates\supervisor\manage_offers.html:67
+#: .\templates\supervisor\manage_roles.html:69
+msgid "حذف"
+msgstr ""
+
+#: .\templates\merchant\products.html:98
+msgid "لا توجد منتجات بعد"
+msgstr ""
+
+#: .\templates\merchant\products.html:99
+msgid "ابدأ بإضافة منتجاتك الأولى لتبدأ رحلة المبيعات الخاصة بك!"
+msgstr ""
+
+#: .\templates\merchant\profile.html:5
+msgid "حساب المتجر | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\profile.html:17
+msgid "حساب المتجر 🏪"
+msgstr ""
+
+#: .\templates\merchant\profile.html:20
+#: .\templates\supervisor\translations.html:45
+msgid "حفظ"
+msgstr ""
+
+#: .\templates\merchant\profile.html:46
+#: .\templates\supervisor\merchant_profile_admin.html:218
+msgid "الحد الأقصى للمنتجات"
+msgstr ""
+
+#: .\templates\merchant\profile.html:51
+msgid "الحد الأدنى للرصيد"
+msgstr ""
+
+#: .\templates\merchant\profile.html:61
+msgid "دولة المتجر الحالية"
+msgstr ""
+
+#: .\templates\merchant\profile.html:66
+msgid "لتغيير دولة المتجر، يرجى التواصل مع الدعم الفني لضمان استقرار المنتجات."
+msgstr ""
+
+#: .\templates\merchant\profile.html:82
+msgid "رقم الهاتف الأساسي"
+msgstr ""
+
+#: .\templates\merchant\profile.html:89
+msgid "تفاصيل البضاعة"
+msgstr ""
+
+#: .\templates\merchant\profile.html:92
+msgid "أنواع البضاعة (مثال: ملابس أطفال)"
+msgstr ""
+
+#: .\templates\merchant\profile.html:96
+msgid "الكمية التقريبية"
+msgstr ""
+
+#: .\templates\merchant\profile.html:111
+msgid "بيانات التوثيق 🏛️"
+msgstr ""
+
+#: .\templates\merchant\profile.html:114
+msgid "السجل الضريبي"
+msgstr ""
+
+#: .\templates\merchant\profile.html:115
+#: .\templates\supervisor\merchant_profile_admin.html:89
+#: .\templates\supervisor\pending_merchants.html:79
+msgid "غير متوفر"
+msgstr ""
+
+#: .\templates\merchant\profile.html:120
+msgid "الأمان والسياسات"
+msgstr ""
+
+#: .\templates\merchant\profile.html:132 .\templates\merchant\profile.html:166
+msgid "الشروط والأحكام للتجار"
+msgstr ""
+
+#: .\templates\merchant\profile.html:146 .\templates\merchant\profile.html:210
+#: .\templates\supervisor\manage_terms.html:40
+#: .\templates\supervisor\manage_terms.html:170
+#: .\templates\supervisor\manage_terms.html:271
+msgid "سياسة الشحن والمرتجعات"
+msgstr ""
+
+#: .\templates\merchant\profile.html:176
+msgid "لا توجد شروط وأحكام مضافة حالياً."
+msgstr ""
+
+#: .\templates\merchant\profile.html:198
+msgid "لا توجد سياسة خصوصية مضافة حالياً."
+msgstr ""
+
+#: .\templates\merchant\profile.html:220
+msgid "لا توجد سياسة شحن ومرتجعات مضافة حالياً."
+msgstr ""
+
+#: .\templates\merchant\reports.html:19
+msgid "تقارير الأرباح 📊"
+msgstr ""
+
+#: .\templates\merchant\reports.html:20
+msgid "متابعة أداء ومبيعات متجرك"
+msgstr ""
+
+#: .\templates\merchant\reports.html:42
+#: .\templates\supervisor\customers_analytics.html:9
+#: .\templates\supervisor\dashboard.html:31
+#: .\templates\supervisor\finance_overview.html:22
+#: .\templates\supervisor\merchant_profile_admin.html:102
+msgid "اليوم"
+msgstr ""
+
+#: .\templates\merchant\reports.html:50
+#: .\templates\supervisor\customers_analytics.html:10
+#: .\templates\supervisor\dashboard.html:32
+#: .\templates\supervisor\finance_overview.html:23
+msgid "أسبوع"
+msgstr ""
+
+#: .\templates\merchant\reports.html:58
+#: .\templates\supervisor\customers_analytics.html:11
+#: .\templates\supervisor\dashboard.html:33
+#: .\templates\supervisor\finance_overview.html:24
+msgid "شهر"
+msgstr ""
+
+#: .\templates\merchant\reports.html:66
+#: .\templates\supervisor\dashboard.html:34
+#: .\templates\supervisor\finance_overview.html:25
+msgid "سنة"
+msgstr ""
+
+#: .\templates\merchant\reports.html:75
+#: .\templates\supervisor\merchant_profile_admin.html:109
+msgid "من"
+msgstr ""
+
+#: .\templates\merchant\reports.html:85
+#: .\templates\supervisor\finance_logs.html:45
+#: .\templates\supervisor\merchant_profile_admin.html:111
+msgid "إلى"
+msgstr ""
+
+#: .\templates\merchant\reports.html:124
+msgid "صافي الإيرادات"
+msgstr ""
+
+#: .\templates\merchant\reports.html:134
+msgid "بعد خصم المرتجعات"
+msgstr ""
+
+#: .\templates\merchant\reports.html:156
+msgid "الطلبات الناجحة"
+msgstr ""
+
+#: .\templates\merchant\reports.html:161 .\templates\merchant\reports.html:190
+#: .\templates\supervisor\admin_complaints_list.html:40
+msgid "طلب"
+msgstr ""
+
+#: .\templates\merchant\reports.html:164
+msgid "المكتملة أو الجارية"
+msgstr ""
+
+#: .\templates\merchant\reports.html:185
+msgid "عدد المرتجعات"
+msgstr ""
+
+#: .\templates\merchant\reports.html:211
+#: .\templates\supervisor\merchant_profile_admin.html:140
+msgid "قيمة المرتجعات"
+msgstr ""
+
+#: .\templates\merchant\reports.html:227
+msgid "مؤشرالمبيعات"
+msgstr ""
+
+#: .\templates\merchant\reports.html:231
+msgid "أداء الفترة"
+msgstr ""
+
+#: .\templates\merchant\reports.html:241
+msgid "الأكثر مبيعاً"
+msgstr ""
+
+#: .\templates\merchant\reports.html:283
+msgid "قطعة مباعة"
+msgstr ""
+
+#: .\templates\merchant\reports.html:309
+msgid "لا توجد مبيعات في هذه الفترة"
+msgstr ""
+
+#: .\templates\merchant\reports.html:312
+msgid "حاول تغيير نطاق التاريخ من الفلتر أعلاه."
+msgstr ""
+
+#: .\templates\merchant\reports.html:349
+#: .\templates\supervisor\finance_overview.html:143
+msgid "الإيرادات"
+msgstr ""
+
+#: .\templates\merchant\shipping_settings.html:5
+msgid "تسعير الشحن | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\shipping_settings.html:14
+msgid "تسعير الشحن 🚚"
+msgstr ""
+
+#: .\templates\merchant\shipping_settings.html:15
+msgid "تحديد تكلفة التوصيل لكل محافظة"
+msgstr ""
+
+#: .\templates\merchant\shipping_settings.html:24
+msgid "حدد سعر التوصيل الخاص بك لكل محافظة. يمكنك ترك الحقل فارغاً لاستخدام"
+msgstr ""
+
+#: .\templates\merchant\shipping_settings.html:24
+msgid "السعر الافتراضي"
+msgstr ""
+
+#: .\templates\merchant\shipping_settings.html:32
+msgid "أسعار المحافظات"
+msgstr ""
+
+#: .\templates\merchant\shipping_settings.html:59
+msgid "حفظ أسعار الشحن"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:5
+msgid "المحفظة | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:14
+msgid "المحفظة 💳"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:15
+msgid "إدارة رصيدك ومعاملاتك المالية"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:27
+msgid "الرصيد المتاح للسحب"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:32
+msgid "رصيدك منخفض"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:41
+msgid "إيداع رصيد"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:46
+msgid "سحب أرباح"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:54
+msgid "متاح للسحب"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:60
+msgid "معلق (24 ساعة)"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:67
+msgid "سجل المعاملات"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:100
+msgid "لا توجد معاملات سابقة"
+msgstr ""
+
+#: .\templates\merchant\wallet.html:101
+msgid "ستظهر هنا تفاصيل الإيداع والسحب وأرباح الطلبات."
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:5
+msgid "طلب سحب أرباح | لوحة التاجر"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:14
+msgid "طلب سحب أرباح 💸"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:15
+msgid "اسحب أرباحك للحساب البنكي أو المحفظة الإلكترونية"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:26
+msgid "الرصيد القابل للسحب الآن"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:33
+msgid "يتم حجز"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:33
+msgid "لتغطية المرتجعات أو الحد الأدنى."
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:43
+msgid "المبلغ المراد سحبه"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:55
+msgid "لا يمكنك طلب مبلغ أكبر من الرصيد القابل للسحب أعلاه."
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:60
+msgid "طريقة السحب"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:64
+msgid "محفظة إلكترونية (فودافون كاش، أورانج، الخ)"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:65
+msgid "إنستا باي (InstaPay)"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:66
+msgid "حساب بنكي (Bank Account)"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:72
+msgid "تفاصيل الحساب (الرقم / IBAN / المعرف)"
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:79
+msgid "اكتب رقم المحفظة، أو حساب إنستا باي، أو رقم الآيبان..."
+msgstr ""
+
+#: .\templates\merchant\withdraw.html:87
+msgid "تأكيد وإرسال الطلب"
+msgstr ""
+
+#: .\templates\store\about_us.html:124
+msgid "جاري صياغة قصتنا..."
+msgstr ""
+
+#: .\templates\store\about_us.html:125
+msgid "يرجى العودة لاحقاً لاكتشاف المزيد عن ."
+msgstr ""
+
+#: .\templates\store\all_offers.html:216
+msgid "عروض لا تقاوم"
+msgstr ""
+
+#: .\templates\store\all_offers.html:217
+msgid "اكتشف أفضل الخصومات المتاحة اليوم في بلدك، ووفر أكثر!"
+msgstr ""
+
+#: .\templates\store\all_offers.html:246 .\templates\store\home.html:294
+#: .\templates\store\product_detail.html:280
+msgid "شحن مجاني"
+msgstr ""
+
+#: .\templates\store\all_offers.html:256 .\templates\store\home.html:304
+msgid "عرض لفترة محدودة"
+msgstr ""
+
+#: .\templates\store\all_offers.html:294
+msgid "لا توجد عروض حالياً"
+msgstr ""
+
+#: .\templates\store\all_offers.html:295
+msgid "عد لاحقاً لاكتشاف أقوى التخفيضات والأسعار الحصرية."
+msgstr ""
+
+#: .\templates\store\all_offers.html:297 .\templates\store\cart.html:204
+#: .\templates\store\my_orders.html:230 .\templates\store\wishlist.html:197
+msgid "تصفح المنتجات"
+msgstr ""
+
+#: .\templates\store\all_offers.html:320 .\templates\store\home.html:360
+msgid "انتهى"
+msgstr ""
+
+#: .\templates\store\cart.html:116
+msgid "سلة المشتريات"
+msgstr ""
+
+#: .\templates\store\cart.html:154 .\templates\store\cart.html:183
+#: .\templates\store\cart.html:184 .\templates\store\checkout.html:197
+#: .\templates\store\checkout.html:352 .\templates\store\checkout.html:357
+#: .\templates\store\checkout.html:362
+#: .\templates\store\customer_order_detail.html:176
+#: .\templates\store\customer_order_detail.html:214
+#: .\templates\store\customer_order_detail.html:219
+#: .\templates\store\customer_order_detail.html:225
+#: .\templates\store\customer_order_detail.html:234
+#: .\templates\store\customer_order_detail.html:246
+#: .\templates\store\merchant_shop.html:226
+#: .\templates\store\merchant_shop.html:230
+#: .\templates\store\my_orders.html:195
+#: .\templates\store\product_detail.html:259
+#: .\templates\store\product_detail.html:260
+#: .\templates\store\product_detail.html:266
+#: .\templates\store\product_detail.html:289
+#: .\templates\store\product_detail.html:423
+#: .\templates\store\referral_center.html:158
+#: .\templates\store\retry_payment.html:102
+#: .\templates\store\retry_payment.html:217
+#: .\templates\store\retry_payment.html:221
+#: .\templates\store\retry_payment.html:240 .\templates\store\wishlist.html:182
+#: .\templates\supervisor\adjust_wallet.html:7
+#: .\templates\supervisor\all_orders.html:6
+#: .\templates\supervisor\all_products.html:8
+#: .\templates\supervisor\customer_profile.html:3
+#: .\templates\supervisor\customers_analytics.html:50
+#: .\templates\supervisor\dashboard.html:8
+#: .\templates\supervisor\finance_logs.html:7
+#: .\templates\supervisor\finance_overview.html:7
+#: .\templates\support\create_ticket.html:5
+msgid "ج.م"
+msgstr ""
+
+#: .\templates\store\cart.html:181
+msgid "الإجمالي المحدد"
+msgstr ""
+
+#: .\templates\store\cart.html:189 .\templates\store\cart.html:192
+msgid "اختر منتجات للشراء"
+msgstr ""
+
+#: .\templates\store\cart.html:190
+msgid "متابعة الدفع"
+msgstr ""
+
+#: .\templates\store\cart.html:201
+msgid "سلتك فارغة!"
+msgstr ""
+
+#: .\templates\store\cart.html:202
+msgid "ابدأ بإضافة بعض المنتجات الرائعة لتسوقها."
+msgstr ""
+
+#: .\templates\store\categories.html:129
+msgid "تصفح الأقسام"
+msgstr ""
+
+#: .\templates\store\categories.html:165
+msgid "لا توجد أقسام حالياً!"
+msgstr ""
+
+#: .\templates\store\categories.html:166
+msgid "نعمل على تجهيز أقسام جديدة مميزة قريباً."
+msgstr ""
+
+#: .\templates\store\checkout.html:138 .\templates\store\checkout.html:380
+msgid "تأكيد الطلب"
+msgstr ""
+
+#: .\templates\store\checkout.html:152
+msgid "بيانات الشحن"
+msgstr ""
+
+#: .\templates\store\checkout.html:156
+msgid "المحافظة"
+msgstr ""
+
+#: .\templates\store\checkout.html:157 .\templates\store\checkout.html:372
+msgid "يرجى اختيار المحافظة أولاً"
+msgstr ""
+
+#: .\templates\store\checkout.html:158
+msgid "اختر المحافظة..."
+msgstr ""
+
+#: .\templates\store\checkout.html:167
+msgid "اسم الشارع، رقم العمارة، المجاورة..."
+msgstr ""
+
+#: .\templates\store\checkout.html:167
+msgid "يرجى كتابة العنوان بالتفصيل (12 حرف على الأقل) لضمان وصول المندوب."
+msgstr ""
+
+#: .\templates\store\checkout.html:173
+msgid "يرجى كتابة اسم المستلم بشكل واضح."
+msgstr ""
+
+#: .\templates\store\checkout.html:178
+msgid "يرجى إدخال رقم هاتف صحيح (أرقام فقط)."
+msgstr ""
+
+#: .\templates\store\checkout.html:183
+#: .\templates\store\customer_order_detail.html:126
+#: .\templates\supervisor\order_detail.html:4
+msgid "تفاصيل الطلب"
+msgstr ""
+
+#: .\templates\store\checkout.html:201
+msgid "الشحن:"
+msgstr ""
+
+#: .\templates\store\checkout.html:214
+msgid "اختر طريقة الدفع"
+msgstr ""
+
+#: .\templates\store\checkout.html:223
+msgid "ادفع نقداً عند باب البيت"
+msgstr ""
+
+#: .\templates\store\checkout.html:236 .\templates\store\retry_payment.html:144
+msgid "فيزا، ماستركارد، ميزة"
+msgstr ""
+
+#: .\templates\store\checkout.html:252 .\templates\store\retry_payment.html:160
+msgid "فودافون كاش، اتصالات، أورانج"
+msgstr ""
+
+#: .\templates\store\checkout.html:258
+msgid "رقم المحفظة"
+msgstr ""
+
+#: .\templates\store\checkout.html:269 .\templates\store\retry_payment.html:131
+#: .\templates\store\retry_payment.html:180
+msgid "ادفع نقداً عند استلام طلبك"
+msgstr ""
+
+#: .\templates\store\checkout.html:279 .\templates\store\retry_payment.html:190
+msgid "دفع إلكتروني شامل"
+msgstr ""
+
+#: .\templates\store\checkout.html:280 .\templates\store\retry_payment.html:191
+msgid "بوابة آمنة تدعم جميع الوسائل"
+msgstr ""
+
+#: .\templates\store\checkout.html:309 .\templates\store\checkout.html:328
+msgid "سيتوفر قريباً"
+msgstr ""
+
+#: .\templates\store\checkout.html:317
+msgid "قسط مع فوري"
+msgstr ""
+
+#: .\templates\store\checkout.html:318
+msgid "قسط مشترياتك بكل سهولة"
+msgstr ""
+
+#: .\templates\store\checkout.html:321 .\templates\store\checkout.html:340
+msgid "قريباً"
+msgstr ""
+
+#: .\templates\store\checkout.html:336
+msgid "ادفع مع حالا"
+msgstr ""
+
+#: .\templates\store\checkout.html:337
+msgid "تمويل سريع لمشترياتك"
+msgstr ""
+
+#: .\templates\store\checkout.html:348
+msgid "ملخص الحساب النهائي"
+msgstr ""
+
+#: .\templates\store\checkout.html:351
+msgid "إجمالي المنتجات والشحن:"
+msgstr ""
+
+#: .\templates\store\checkout.html:356
+msgid "رسوم بوابات الدفع:"
+msgstr ""
+
+#: .\templates\store\checkout.html:361
+msgid "الإجمالي المطلوب دفعه:"
+msgstr ""
+
+#: .\templates\store\checkout.html:370
+msgid "متابعة لاختيار الدفع"
+msgstr ""
+
+#: .\templates\store\checkout.html:447
+msgid "الانتقال للدفع الآمن"
+msgstr ""
+
+#: .\templates\store\checkout.html:447
+msgid "تأكيد دفع المحفظة"
+msgstr ""
+
+#: .\templates\store\checkout.html:452
+msgid "تأكيد الطلب (الدفع عند الاستلام)"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:210
+#: .\templates\supervisor\order_detail.html:137
+msgid "حالة الطلب"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:222
+#: .\templates\store\confirm_delivery.html:234
+#, python-format
+msgid "الطلب #%(order_id)s"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:225
+#: .\templates\store\confirm_delivery.html:237
+msgid "التاجر يفيد بأنه"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:225
+msgid "تم تسليم"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:225
+msgid "طلبك. يرجى تأكيد ذلك للمتابعة."
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:237
+msgid "تم إرجاع"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:237
+msgid "طلبك ولم تستلمه. هل هذا صحيح؟"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:249
+msgid "نعم، استلمت الطلب بنجاح"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:251
+msgid "نعم، لم أستلم / أرجعت الطلب"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:258
+msgid "لا، لم أستلم شيئاً (يوجد مشكلة)"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:260
+msgid "لا، لقد استلمت الطلب ودفعت ثمنه!"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:268
+msgid "كيف كانت تجربتك معنا؟"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:278
+msgid "أخبرنا برأيك في المنتجات (اختياري)"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:279
+msgid "جودة الخامة، سرعة التوصيل، التغليف..."
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:283
+msgid "إرسال التقييم والمتابعة"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:289
+msgid "سيتم إغلاق الطلب رسمياً كمرتجع ولن يتم مطالبتك بأي مصاريف."
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:292
+msgid "تأكيد المرتجع والمتابعة"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:302
+msgid "لماذا لم تستلم الطلب؟"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:304
+msgid "إبلاغ عن تلاعب المندوب:"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:311
+msgid "مثال: المندوب لم يتواصل معي حتى الآن..."
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:311
+msgid "مثال: لقد استلمت الطلب يوم الخميس ودفعت الفلوس للمندوب كاش..."
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:314
+msgid "رقم الواتساب للتواصل المباشر والتحقيق"
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:325
+msgid "سنقوم بالتواصل معك فوراً لضمان حقك وحل المشكلة."
+msgstr ""
+
+#: .\templates\store\confirm_delivery.html:329
+msgid "إرسال الشكوى العاجلة"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:146
+msgid "طريقة الدفع:"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:188
+#: .\templates\supervisor\order_detail.html:203
+msgid "عنوان التوصيل"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:192
+msgid "المستلم:"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:196
+#: .\templates\supervisor\team_management.html:141
+msgid "الهاتف:"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:200
+msgid "العنوان:"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:208
+#: .\templates\supervisor\order_detail.html:83
+msgid "ملخص الدفع"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:213
+msgid "مجموع المنتجات"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:218
+msgid "رسوم الشحن"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:224
+msgid "رسوم الدفع الإلكتروني"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:232
+msgid "الإجمالي النهائي"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:244
+msgid "المطلوب دفعه:"
+msgstr ""
+
+#: .\templates\store\customer_order_detail.html:251
+msgid "إكمال الدفع الآن"
+msgstr ""
+
+#: .\templates\store\home.html:222
+msgid "ما الذي تبحث عنه؟"
+msgstr ""
+
+#: .\templates\store\home.html:254 .\templates\supervisor\all_orders.html:23
+#: .\templates\supervisor\finance_logs.html:34
+#: .\templates\supervisor\merchant_profile_admin.html:101
+#: .\templates\supervisor\support_tickets.html:24
+msgid "الكل"
+msgstr ""
+
+#: .\templates\store\home.html:267
+msgid "وصل حديثاً"
+msgstr ""
+
+#: .\templates\store\home.html:336 .\templates\store\merchant_shop.html:247
+msgid "لا توجد منتجات حالياً"
+msgstr ""
+
+#: .\templates\store\home.html:337
+msgid "نعمل على توفير أفضل المنتجات قريباً."
+msgstr ""
+
+#: .\templates\store\legal_page.html:127
+msgid "آخر تحديث:"
+msgstr ""
+
+#: .\templates\store\legal_page.html:151
+msgid "جاري الصياغة والتحديث..."
+msgstr ""
+
+#: .\templates\store\legal_page.html:152
+msgid "لم يتم إضافة البنود الخاصة بهذا القسم حتى الآن، يرجى العودة لاحقاً."
+msgstr ""
+
+#: .\templates\store\legal_page.html:160
+msgid "العودة والتصفح"
+msgstr ""
+
+#: .\templates\store\merchant_shop.html:157
+msgid "متجر التاجر"
+msgstr ""
+
+#: .\templates\store\merchant_shop.html:181
+msgid "شريك معتمد في "
+msgstr ""
+
+#: .\templates\store\merchant_shop.html:186
+msgid "منتج"
+msgstr ""
+
+#: .\templates\store\merchant_shop.html:192
+msgid "التقييم"
+msgstr ""
+
+#: .\templates\store\merchant_shop.html:198
+msgid "جميع المنتجات"
+msgstr ""
+
+#: .\templates\store\merchant_shop.html:248
+msgid "هذا التاجر لم يقم بإضافة أي منتجات حتى الآن."
+msgstr ""
+
+#: .\templates\store\my_orders.html:156
+#, python-format
+msgid "طلب #%(order_num)s"
+msgstr ""
+
+#: .\templates\store\my_orders.html:160
+#: .\templates\supervisor\all_orders.html:29
+msgid "بانتظار الدفع"
+msgstr ""
+
+#: .\templates\store\my_orders.html:164
+#: .\templates\supervisor\pending_merchants.html:41
+msgid "قيد المراجعة"
+msgstr ""
+
+#: .\templates\store\my_orders.html:190
+msgid "كاش"
+msgstr ""
+
+#: .\templates\store\my_orders.html:194
+#: .\templates\supervisor\order_detail.html:111
+msgid "الإجمالي النهائي:"
+msgstr ""
+
+#: .\templates\store\my_orders.html:204
+msgid "إكمال الدفع"
+msgstr ""
+
+#: .\templates\store\my_orders.html:215
+msgid "التفاصيل وتتبع الطلب"
+msgstr ""
+
+#: .\templates\store\my_orders.html:227
+msgid "لا توجد طلبات سابقة!"
+msgstr ""
+
+#: .\templates\store\my_orders.html:228
+msgid "سلة مشترياتك كانت تنتظر هذه اللحظة، ابدأ التسوق الآن وتشكيل طلبك الأول."
+msgstr ""
+
+#: .\templates\store\notifications.html:138
+msgid "الإشعارات"
+msgstr ""
+
+#: .\templates\store\notifications.html:173
+msgid "سنخبرك بأي عروض مميزة أو تحديثات تخص طلباتك هنا."
+msgstr ""
+
+#: .\templates\store\order_success.html:101
+msgid "تم الطلب بنجاح! 🎉"
+msgstr ""
+
+#: .\templates\store\order_success.html:105
+msgid "شكراً لتسوقك في"
+msgstr ""
+
+#: .\templates\store\order_success.html:105
+msgid ". رقم طلبك محفوظ بأمان، وسيتم تجهيزه وشحنه في أسرع وقت."
+msgstr ""
+
+#: .\templates\store\order_success.html:110
+msgid "تتبع طلبي"
+msgstr ""
+
+#: .\templates\store\order_success.html:114
+msgid "عودة للرئيسية"
+msgstr ""
+
+#: .\templates\store\paymob_iframe.html:126
+msgid "الدفع الآمن"
+msgstr ""
+
+#: .\templates\store\paymob_iframe.html:137
+msgid "جاري تأمين بوابة الدفع..."
+msgstr ""
+
+#: .\templates\store\paymob_iframe.html:138
+msgid "يرجى الانتظار ولا تقم بإغلاق هذه الصفحة."
+msgstr ""
+
+#: .\templates\store\privacy_policy.html:134
+msgid "سياسة خصوصية العملاء"
+msgstr ""
+
+#: .\templates\store\privacy_policy.html:136
+msgid "نحن نهتم بخصوصيتك ونلتزم بحماية بياناتك الشخصية في ."
+msgstr ""
+
+#: .\templates\store\privacy_policy.html:166
+msgid "جاري تحديث سياسة الخصوصية"
+msgstr ""
+
+#: .\templates\store\privacy_policy.html:167
+msgid "يرجى العودة لاحقاً لمراجعة التحديثات الجديدة."
+msgstr ""
+
+#: .\templates\store\privacy_policy.html:175
+msgid "استخدامك لتطبيق  يعني موافقتك على هذه الشروط والسياسات."
+msgstr ""
+
+#: .\templates\store\product_detail.html:5
+#, python-format
+msgid "اشترِ %(name)s بسعر %(price)s ج.م. أفضل جودة وتوصيل سريع."
+msgstr ""
+
+#: .\templates\store\product_detail.html:272
+msgid "عرض محدود"
+msgstr ""
+
+#: .\templates\store\product_detail.html:281
+#, python-format
+msgid "عند شراء %(threshold)s قطع أو أكثر"
+msgstr ""
+
+#: .\templates\store\product_detail.html:310
+msgid "تاجر ذهبي"
+msgstr ""
+
+#: .\templates\store\product_detail.html:312
+msgid "تاجر موثوق"
+msgstr ""
+
+#: .\templates\store\product_detail.html:314
+msgid "تاجر معتمد"
+msgstr ""
+
+#: .\templates\store\product_detail.html:321
+#: .\templates\supervisor\merchant_profile_admin.html:167
+msgid "الوصف"
+msgstr ""
+
+#: .\templates\store\product_detail.html:331
+msgid ""
+"المنتج غير متوفر للشراء حالياً بسبب تحديثات في متجر التاجر. يرجى المحاولة "
+"لاحقاً."
+msgstr ""
+
+#: .\templates\store\product_detail.html:341
+msgid "1. اختر اللون"
+msgstr ""
+
+#: .\templates\store\product_detail.html:354
+msgid "2. اختر المقاس"
+msgstr ""
+
+#: .\templates\store\product_detail.html:366
+msgid "الكمية المتاحة"
+msgstr ""
+
+#: .\templates\store\product_detail.html:368
+#, python-format
+msgid "%(qty)s قطعة"
+msgstr ""
+
+#: .\templates\store\product_detail.html:394
+#: .\templates\store\product_detail.html:438
+msgid "اختر المقاس أولاً"
+msgstr ""
+
+#: .\templates\store\product_detail.html:398
+#: .\templates\store\product_detail.html:439
+msgid "إضافة للسلة"
+msgstr ""
+
+#: .\templates\store\product_detail.html:407
+msgid "قد يعجبك أيضاً"
+msgstr ""
+
+#: .\templates\store\product_detail.html:440
+msgid "نفذت الكمية"
+msgstr ""
+
+#: .\templates\store\product_detail.html:441
+msgid "متاح:"
+msgstr ""
+
+#: .\templates\store\product_detail.html:443
+msgid "اكتشف هذا المنتج الرائع على !"
+msgstr ""
+
+#: .\templates\store\product_detail.html:444
+msgid "تم نسخ رابط المنتج بنجاح!"
+msgstr ""
+
+#: .\templates\store\product_detail.html:445
+msgid "يوم و"
+msgstr ""
+
+#: .\templates\store\referral_center.html:142
+msgid "برنامج الإحالة"
+msgstr ""
+
+#: .\templates\store\referral_center.html:156
+msgid "رصيد الإحالة المتاح"
+msgstr ""
+
+#: .\templates\store\referral_center.html:162
+msgid "يمكنك استخدام هذا الرصيد كخصم إضافي عند إتمام طلبك القادم."
+msgstr ""
+
+#: .\templates\store\referral_center.html:164
+msgid "تأكد من استخدامه قبل انتهاء صلاحيته!"
+msgstr ""
+
+#: .\templates\store\referral_center.html:169
+msgid "كود الدعوة الخاص بك"
+msgstr ""
+
+#: .\templates\store\referral_center.html:172
+msgid "شارك الكود مع أصدقائك! ستحصل على نسبة"
+msgstr ""
+
+#: .\templates\store\referral_center.html:174
+msgid "من إجمالي طلباتهم كأرباح تضاف لمحفظتك هنا، صالحة للاستخدام لمدة"
+msgstr ""
+
+#: .\templates\store\referral_center.html:175
+msgid "يوماً."
+msgstr ""
+
+#: .\templates\store\referral_center.html:193
+msgid "لديك كود دعوة من صديق؟"
+msgstr ""
+
+#: .\templates\store\referral_center.html:195
+#, python-format
+msgid "أدخله الآن للحصول على الخصم (مهلة %(hours)s ساعة)"
+msgstr ""
+
+#: .\templates\store\referral_center.html:202
+msgid "أدخل الكود هنا"
+msgstr ""
+
+#: .\templates\store\referral_center.html:203
+msgid "تفعيل الكود"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:96
+msgid "إكمال الدفع للطلب"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:97
+msgid "طلب رقم"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:100
+msgid "المبلغ المستحق الصافي"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:108
+msgid "متابعة لاختيار طريقة الدفع"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:111
+msgid "إلغاء والعودة للطلب"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:121
+msgid "اختر طريقة الدفع:"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:166
+msgid "رقم المحفظة الإلكترونية"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:216
+msgid "رسوم الدفع الإلكتروني:"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:220
+msgid "الإجمالي المطلوب:"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:226
+msgid "تأكيد الطلب (كاش)"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:241
+msgid "الانتقال للدفع الآمن 💳"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:242
+msgid "تأكيد ودفع بالمحفظة 📱"
+msgstr ""
+
+#: .\templates\store\retry_payment.html:243
+msgid "تأكيد الطلب (كاش) 📦"
+msgstr ""
+
+#: .\templates\store\wishlist.html:194
+msgid "قائمة المفضلة فارغة!"
+msgstr ""
+
+#: .\templates\store\wishlist.html:195
+msgid "لم تقم بإضافة أي منتجات للمفضلة بعد، اكتشف المنتجات المميزة الآن."
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:2
+msgid "تسوية رصيد:"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:3
+msgid "تعديل رصيد المحفظة"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:17
+msgid "تسوية مالية يدوية"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:18
+msgid "تعديل رصيد التاجر:"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:26
+msgid "الرصيد الحالي في المحفظة"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:37
+msgid "المبلغ المراد تسويته"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:46
+msgid "البيان / سبب التسوية (يظهر للتاجر)"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:49
+msgid "مثال: تعويض مالي، غرامة تأخير، تسوية..."
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:51
+msgid "هذا السبب سيُسجل في كشف حساب التاجر كمرجع للعملية."
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:56
+msgid "اختر نوع العملية"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:60
+msgid "تأكيد الإجراء: هل أنت متأكد من إضافة هذا المبلغ لرصيد التاجر؟"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:62
+msgid "إضافة للرصيد"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:66
+msgid "تأكيد الإجراء: هل أنت متأكد من خصم هذا المبلغ من رصيد التاجر؟"
+msgstr ""
+
+#: .\templates\supervisor\adjust_wallet.html:68
+msgid "خصم من الرصيد"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:4
+msgid "شكاوى ومرتجعات العملاء"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:5
+msgid "إدارة الشكاوى والمرتجعات"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:12
+msgid "شكاوى العملاء والمرتجعات"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:15
+msgid "مراجعة المشاكل بين العملاء والتجار، واتخاذ قرارات التعويض أو الرفض."
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:43
+#: .\templates\supervisor\support_ticket_detail.html:96
+#: .\templates\supervisor\support_tickets.html:79
+#: .\templates\support\my_tickets.html:194
+msgid "مغلقة"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:45
+msgid "بانتظار إجراء"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:57
+#: .\templates\supervisor\support_tickets.html:87
+msgid "عرض التفاصيل"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:67
+msgid "المنصة مستقرة!"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:68
+msgid "لا توجد أي شكاوى أو مرتجعات معلقة حالياً."
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:82
+msgid "تفاصيل الشكوى للطلب"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:92
+msgid "الشاكي (العميل)"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:105
+msgid "المتجر (التاجر)"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:118
+msgid "نص الشكوى:"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:125
+msgid "تم عودة المنتج للتاجر"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:127
+msgid "المرتجع لم يصل للتاجر بعد!"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:137
+msgid "ملاحظات الإدارة (اختياري)"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:138
+msgid "سبب قبول أو رفض الشكوى..."
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:142
+msgid "تأكيد: هل أنت متأكد من خصم المبلغ من التاجر ورده للعميل كمرتجع؟"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:143
+msgid "قبول (عمل مرتجع)"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:145
+msgid ""
+"تأكيد: سيتم رفض الشكوى واعتبار الطلب تم تسليمه بنجاح لإعطاء التاجر أرباحه. "
+"هل أنت متأكد؟"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:146
+msgid "رفض (تأكيد التسليم)"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:153
+msgid "الشكوى مغلقة وتمت تسويتها"
+msgstr ""
+
+#: .\templates\supervisor\admin_complaints_list.html:157
+msgid "لا توجد ملاحظات إضافية."
+msgstr ""
+
+#: .\templates\supervisor\admin_notifications.html:2
+#: .\templates\supervisor\base_supervisor.html:256
+msgid "إشعارات النظام"
+msgstr ""
+
+#: .\templates\supervisor\admin_notifications.html:3
+msgid "الإشعارات والتنبيهات"
+msgstr ""
+
+#: .\templates\supervisor\admin_notifications.html:10
+msgid "أحدث الإشعارات"
+msgstr ""
+
+#: .\templates\supervisor\admin_notifications.html:11
+msgid "متابعة التنبيهات والأحداث الهامة في المنصة لحظة بلحظة."
+msgstr ""
+
+#: .\templates\supervisor\admin_notifications.html:43
+msgid "ستظهر هنا التنبيهات الخاصة بالنظام (تجار جدد، سحوبات، طلبات، وشكاوى)."
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:2
+#: .\templates\supervisor\admin_reviews_list.html:10
+msgid "إدارة تقييمات المنتجات"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:3
+msgid "تقييمات وآراء العملاء"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:11
+msgid "متابعة آراء العملاء في المنتجات ومراقبة جودة البضائع المعروضة."
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:21
+msgid "بحث باسم المنتج، العميل، أو التعليق..."
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:26
+msgid "كل التجار"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:36
+msgid "كل التقييمات"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:37
+msgid "5 نجوم ⭐️⭐️⭐️⭐️⭐️"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:38
+msgid "4 نجوم ⭐️⭐️⭐️⭐️"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:39
+msgid "3 نجوم ⭐️⭐️⭐️"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:40
+msgid "نجمتين ⭐️⭐️"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:41
+msgid "نجمة واحدة ⭐️"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:45
+msgid "تصفية وبحث"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:97
+msgid "تم تقييم المنتج:"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:102
+#: .\templates\supervisor\create_offer.html:36
+msgid "متجر:"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:107
+msgid "حذف التقييم (قريباً)"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:107
+msgid ""
+"لبرمجة دالة الحذف، أنشئ view يقوم بمسح review.delete() واربطه بهذا الزر."
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:120
+msgid "لا توجد تقييمات"
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:121
+msgid "لم يقم أي عميل بتقييم المنتجات حتى الآن بناءً على بحثك."
+msgstr ""
+
+#: .\templates\supervisor\admin_reviews_list.html:123
+msgid "إلغاء الفلترة"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:2
+msgid "إدارة الطلبات"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:3
+msgid "الطلبات الواردة"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:12
+msgid "سجل الطلبات"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:13
+msgid "متابعة وإدارة جميع طلبات العملاء في المتجر."
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:16
+msgid "تصدير لـ Excel"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:35
+msgid "تم الشحن"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:91
+msgid "المحافظة:"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:97
+msgid "الدفع:"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:103
+msgid "الإجمالي:"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:110
+msgid "عرض تفاصيل الطلب"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:119
+msgid "لا توجد طلبات هنا"
+msgstr ""
+
+#: .\templates\supervisor\all_orders.html:120
+msgid "لم يتم العثور على طلبات مطابقة للفلتر المحدد."
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:3
+#: .\templates\supervisor\base_supervisor.html:277
+msgid "كل المنتجات"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:4
+msgid "إدارة المنتجات"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:9
+msgid "بدون قسم"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:16
+msgid "معرض المنتجات"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:17
+msgid "تصفح، ابحث، وأدر جميع المنتجات المعروضة في المتجر."
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:20
+msgid "مراجعة المعلق"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:44
+msgid "نشط بالمتجر"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:57
+msgid "الأكثر مبيعاً ⭐"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:70
+#, python-format
+msgid "%(count)s مبيعة"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:88
+msgid "بحث بالمنتج أو التاجر..."
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:93
+msgid "الأحدث إضافة"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:94
+msgid "الأكثر مبيعاً 🔥"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:95
+msgid "الأعلى سعراً"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:96
+msgid "الأقل سعراً"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:100
+msgid "تطبيق"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:145
+#: .\templates\supervisor\manage_countries.html:59
+#: .\templates\supervisor\manage_terms.html:122
+msgid "معطل"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:155
+#, python-format
+msgid "%(sales)s مبيعة"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:163
+msgid "إعدادات المنتج"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:166
+msgid "معاينة بالمتجر"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:169
+msgid "هل أنت متأكد من الحذف النهائي للمنتج؟"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:180
+msgid "لا توجد منتجات مطابقة"
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:181
+msgid "لم يتم العثور على أي منتجات تطابق معايير البحث الحالية."
+msgstr ""
+
+#: .\templates\supervisor\all_products.html:183
+msgid "إلغاء البحث"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:4
+#: .\templates\supervisor\archived_products.html:5
+#: .\templates\supervisor\base_supervisor.html:282
+msgid "أرشيف المنتجات"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:13
+msgid "سجل المنتجات المؤرشفة"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:15
+msgid ""
+"هنا تظهر المنتجات التي قام التجار بحذفها، ولكن النظام احتفظ بها (أرشفها) "
+"نظراً لارتباطها بطلبات أو فواتير سابقة لضمان سلامة الحسابات."
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:23
+msgid "قائمة المنتجات المحذوفة مؤقتاً"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:24
+msgid "منتج مؤرشف"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:31
+msgid "المنتج"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:32
+#: .\templates\supervisor\dashboard.html:169
+#: .\templates\supervisor\wallets_list.html:72
+msgid "التاجر"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:34
+msgid "تاريخ الإضافة"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:35
+#: .\templates\supervisor\wallets_list.html:76
+msgid "إجراء"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:69
+msgid ""
+"هل أنت متأكد من استعادة هذا المنتج لمتجر التاجر؟ (المنتج سيحتاج للمراجعة "
+"والتفعيل مجدداً)"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:70
+msgid "استعادة للتاجر"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:80
+msgid "الأرشيف فارغ حالياً"
+msgstr ""
+
+#: .\templates\supervisor\archived_products.html:81
+msgid "المنتجات التي تم حذفها ولها طلبات سابقة ستظهر هنا."
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:10
+msgid "لوحة الإدارة | "
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:218
+msgid "الإدارة العليا (المالك)"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:220
+msgid "فرع"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:222
+msgid "مشرف محلي"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:231
+msgid "التحكم المركزي"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:236
+#: .\templates\supervisor\base_supervisor.html:357
+msgid "إرسال إشعارات"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:239
+#: .\templates\supervisor\base_supervisor.html:369
+msgid "فريق العمل والمشرفين"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:242
+#: .\templates\supervisor\manage_countries.html:4
+#: .\templates\supervisor\manage_countries.html:5
+msgid "إدارة الدول والأسواق"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:245
+#: .\templates\supervisor\base_supervisor.html:378
+msgid "الوثائق والشروط"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:248
+#: .\templates\supervisor\base_supervisor.html:381
+msgid "صفحة من نحن"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:268
+msgid "شكاوى ومرتجعات"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:274
+#: .\templates\supervisor\pending_products.html:4
+msgid "مراجعة المنتجات"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:286
+msgid "تقييمات العملاء"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:292
+msgid "عروض المنصة"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:295
+msgid "كوبونات الخصم"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:307
+msgid "البانرات"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:310
+msgid "الإعلانات المنبثقة"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:315
+msgid "المستخدمين والتجار"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:320
+#: .\templates\supervisor\customers_analytics.html:2
+msgid "تحليلات العملاء"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:323
+msgid "كل الأعضاء"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:329
+msgid "طلبات التجار"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:332
+msgid "قائمة التجار"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:337
+msgid "الإدارة والمالية"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:342
+msgid "الحسابات المالية"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:347
+msgid "نظرة عامة"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:348
+msgid "محافظ التجار"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:349
+msgid "السحوبات"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:350
+msgid "سجل العمليات"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:363
+#: .\templates\support\my_tickets.html:153
+#: .\templates\support\ticket_detail.html:162
+#: .\templates\support\ticket_detail.html:206
+msgid "الدعم الفني"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:375
+msgid "إعدادات المنصة"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:396
+msgid "لوحة القيادة"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:427
+msgid "ملفي الشخصي"
+msgstr ""
+
+#: .\templates\supervisor\base_supervisor.html:465
+msgid "القائمة"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:3
+msgid "إدارة الأقسام"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:4
+msgid "إدارة أقسام المتجر"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:11
+msgid "تصنيفات المنتجات"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:12
+msgid "إدارة الأقسام الرئيسية لتسهيل تصفح العملاء للمنتجات."
+msgstr ""
+
+#: .\templates\supervisor\categories.html:15
+#: .\templates\supervisor\categories.html:97
+msgid "إضافة قسم جديد"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:58
+msgid "تعديل القسم"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:68
+#: .\templates\supervisor\categories.html:106
+#: .\templates\supervisor\manage_countries.html:103
+#: .\templates\supervisor\manage_countries.html:176
+msgid "الاسم (عربي)"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:77
+msgid "تحديث الصورة (اختياري)"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:82
+#: .\templates\supervisor\categories.html:120
+#: .\templates\supervisor\manage_countries.html:152
+#: .\templates\supervisor\manage_countries.html:225
+#: .\templates\supervisor\manage_terms.html:218
+msgid "إلغاء"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:115
+msgid "صورة القسم"
+msgstr ""
+
+#: .\templates\supervisor\categories.html:121
+msgid "إضافة"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:2
+msgid "إطلاق عرض منصة"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:3
+msgid "إنشاء عرض منصة (Platform Offer)"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:15
+msgid "إطلاق عرض منصة حصري"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:16
+msgid "هذا العرض ممول من المنصة، سيتم تعويض التاجر تلقائياً عن أي خصومات."
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:23
+msgid "إعدادات العرض الجديد"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:30
+msgid "اختر المنتج المستهدف"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:34
+msgid "ابحث عن منتج لاختياره"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:42
+msgid "قيمة الخصم والمدة"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:45
+msgid "نسبة الخصم المراد تطبيقها"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:50
+msgid "أدخل 0 إذا كنت تريد تقديم شحن مجاني فقط."
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:54
+msgid "مدة العرض"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:57
+#: .\templates\supervisor\site_settings.html:223
+msgid "أيام"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:64
+msgid "دعم الشحن المجاني"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:70
+msgid ""
+"تفعيل هذا الخيار يعني أن المنصة ستتحمل تكلفة الشحن بالكامل بدلاً من العميل."
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:73
+msgid "الشرط (الحد الأدنى للقطع)"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:75
+msgid "شراء"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:77
+msgid "قطع فأكثر"
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:82
+msgid "تأكيد: هل أنت متأكد من إطلاق هذا العرض؟ سيتم تطبيقه فوراً على المنصة."
+msgstr ""
+
+#: .\templates\supervisor\create_offer.html:83
+msgid "إطلاق العرض وتفعيله"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:1
+msgid "ملف العميل:"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:2
+msgid "ملف العميل وطلباته"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:15
+msgid "بروفايل المشتري"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:62
+#, python-format
+msgid ""
+"%(count)s طلب{%% plural\n"
+"              %%}%(count)s طلبات"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:70
+#: .\templates\supervisor\customers_analytics.html:36
+msgid "إجمالي الإنفاق"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:110
+#: .\templates\supervisor\dashboard.html:167
+msgid "رقم الطلب"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:129
+msgid "تاريخ الطلب"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:137
+msgid "القيمة الإجمالية"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:155
+msgid "عرض التفاصيل كاملة"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:168
+msgid "لا يوجد سجل مشتريات"
+msgstr ""
+
+#: .\templates\supervisor\customer_profile.html:171
+msgid "هذا العميل لم يقم بأي طلبات حتى الآن."
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:8
+msgid "نطاق التسجيل:"
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:19
+msgid "عملاء جدد"
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:21
+#: .\templates\supervisor\finance_overview.html:41
+#: .\templates\supervisor\finance_overview.html:48
+msgid "في الفترة المحددة"
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:28
+msgid "أفضل العملاء (Top 10)"
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:34
+#: .\templates\supervisor\dashboard.html:168
+#: .\templates\supervisor\support_ticket_detail.html:61
+msgid "العميل"
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:35
+msgid "عدد الطلبات"
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:37
+msgid "ملف"
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:52
+msgid "عرض البروفايل"
+msgstr ""
+
+#: .\templates\supervisor\customers_analytics.html:56
+msgid "لا توجد بيانات."
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:4
+msgid "لوحة القيادة الشاملة"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:5
+msgid "مركز العمليات"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:14
+msgid "نظرة شاملة على أداء السوق والمهام الإدارية المطلوبة."
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:19
+msgid "رابط دعوة تاجر جديد"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:22
+msgid "نسخ"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:42
+msgid "تطبيق الفلتر"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:53
+msgid "إجمالي مبيعات الطلبات"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:63
+msgid "أرباح المنصة الصافية"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:71
+msgid "مركز العمليات (يحتاج لتدخل)"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:79
+msgid "طلبات جديدة"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:87
+msgid "شكاوى العملاء"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:95
+msgid "طلبات مرتجع"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:105
+msgid "تذاكر الدعم"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:117
+msgid "سحوبات مالية"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:127
+msgid "متاجر للمراجعة"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:137
+msgid "منتجات معلقة"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:147
+msgid "منحنى المبيعات للفترة المحددة"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:160
+msgid "أحدث الطلبات في هذه الفترة"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:161
+msgid "عرض كافة الطلبات"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:170
+msgid "الإجمالي"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:171
+#: .\templates\supervisor\manage_countries.html:34
+msgid "الحالة"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:172
+#: .\templates\supervisor\finance_logs.html:67
+#: .\templates\supervisor\merchant_profile_admin.html:168
+msgid "التاريخ"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:196
+msgid "لا توجد طلبات في هذه الفترة."
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:224
+msgid "تم نسخ رابط التسجيل للتاجر بنجاح!"
+msgstr ""
+
+#: .\templates\supervisor\dashboard.html:227
+msgid "المبيعات"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:4
+#: .\templates\supervisor\merchant_profile_admin.html:158
+msgid "سجل المعاملات المالية"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:12
+msgid "السجل المالي الشامل"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:13
+msgid ""
+"تتبع كل حركة مالية (إضافة، خصم، سحب، إيداع) تتم في محافظ التجار مع إمكانية "
+"البحث المتقدم."
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:16
+msgid "ملخص المالية"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:24
+msgid "بحث متقدم"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:27
+msgid "رقم الطلب، التاجر، أو الوصف..."
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:32
+msgid "نوع المعاملة"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:42
+msgid "الفترة الزمنية"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:62
+msgid "رقم العملية/الطلب"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:63
+msgid "التاجر (المحفظة)"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:64
+#: .\templates\supervisor\merchant_profile_admin.html:165
+msgid "المبلغ"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:65
+#: .\templates\supervisor\merchant_profile_admin.html:166
+msgid "النوع"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:118
+msgid "لا توجد معاملات مسجلة"
+msgstr ""
+
+#: .\templates\supervisor\finance_logs.html:119
+msgid "لم يتم العثور على أي حركة مالية تطابق بحثك."
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:3
+msgid "نظرة عامة على المالية"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:4
+msgid "التقارير المالية والأرباح"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:13
+msgid "ملخص الإدارة المالية"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:14
+msgid "نظرة شاملة على أرباح المنصة، محافظ التجار، والسيولة النقدية."
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:41
+msgid "إجمالي العمولات"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:48
+msgid "التعويضات / الخصومات"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:57
+msgid "صافي الربح الفعلي"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:67
+msgid "أرصدة التجار (إجمالي المنصة)"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:80
+msgid "تحليل الإيرادات"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:97
+msgid "تصدير التقارير"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:98
+msgid "قم بتحميل التفاصيل المالية كملف Excel."
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:102
+msgid "تحميل تقرير الأرباح"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:105
+msgid "تحميل مديونيات التجار"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:113
+msgid "طلبات سحب معلقة"
+msgstr ""
+
+#: .\templates\supervisor\finance_overview.html:115
+#, python-format
+msgid "هناك %(count)s طلبات"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:12
+msgid "الدول المسجلة"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:13
+msgid "إدارة الأسواق، العملات، وبوابات الدفع لكل دولة."
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:18
+msgid "إدارة المحافظات"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:21
+#: .\templates\supervisor\manage_countries.html:165
+msgid "إضافة دولة جديدة"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:32
+msgid "الكود والاتصال"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:33
+msgid "العملة"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:35
+msgid "إجراءات"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:79
+msgid "لا توجد دول مسجلة حتى الآن."
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:91
+msgid "تعديل بيانات الدولة"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:114
+#: .\templates\supervisor\manage_countries.html:187
+msgid "كود الدولة (ISO 2)"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:125
+#: .\templates\supervisor\manage_countries.html:198
+msgid "اسم العملة"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:129
+#: .\templates\supervisor\manage_countries.html:202
+msgid "رمز العملة"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:136
+#: .\templates\supervisor\manage_countries.html:209
+msgid "Paymob ID (بطاقات)"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:140
+#: .\templates\supervisor\manage_countries.html:213
+msgid "Paymob ID (محافظ)"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:146
+#: .\templates\supervisor\manage_countries.html:219
+msgid "تفعيل الدولة في الموقع"
+msgstr ""
+
+#: .\templates\supervisor\manage_countries.html:226
+msgid "إضافة الدولة"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:4
+msgid "إدارة المحافظات والمدن"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:11
+msgid "إضافة محافظة جديدة"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:18
+msgid "الدولة التابعة لها"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:27
+msgid "اسم المحافظة / المدينة"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:28
+msgid "مثال: القاهرة، الرياض..."
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:32
+msgid "حفظ المحافظة"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:41
+msgid "المحافظات المسجلة"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:49
+msgid "اسم المحافظة"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:50
+#: .\templates\supervisor\manage_roles.html:51
+msgid "تحكم"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:66
+msgid "هل أنت متأكد من الحذف؟"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:79
+msgid "تعديل المحافظة"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:83
+msgid "اسم المحافظة الجديد"
+msgstr ""
+
+#: .\templates\supervisor\manage_governorates.html:96
+msgid "لا توجد محافظات مسجلة."
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:2
+msgid "إدارة عروض المنصة"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:3
+msgid "عروض المنصة النشطة"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:10
+msgid "العروض الحالية"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:11
+msgid "متابعة وإدارة الخصومات والشحن المجاني المدعوم من المنصة."
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:14
+msgid "إطلاق عرض جديد"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:25
+msgid "نشط الآن"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:25
+#: .\templates\supervisor\manage_popups.html:102
+msgid "منتهي"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:45
+msgid "الخصم"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:49
+msgid "ينتهي خلال"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:57
+msgid "شحن مجاني للمنصة"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:66
+msgid "تأكيد: هل أنت متأكد من حذف هذا العرض؟ سيعود المنتج لسعره الأصلي فوراً."
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:79
+msgid "لا توجد عروض نشطة"
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:80
+msgid "لم تقم بإطلاق أي عروض مدعومة من المنصة حتى الآن."
+msgstr ""
+
+#: .\templates\supervisor\manage_offers.html:81
+msgid "أنشئ أول عرض الآن"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:3
+msgid "إدارة النوافذ المنبثقة"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:4
+msgid "إدارة الإعلانات المنبثقة (Popups)"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:11
+msgid "إعلانات الـ Popup"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:12
+msgid "جدولة وإدارة الإعلانات التي تظهر للعملاء فور فتح التطبيق."
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:15
+msgid "إعلان جديد"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:23
+msgid "إعداد وجدولة إعلان جديد"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:28
+#: .\templates\supervisor\manage_popups.html:154
+msgid "عنوان الإعلان الداخلي"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:29
+#, python-format
+msgid "مثال: خصم العيد 50%%"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:32
+#: .\templates\supervisor\manage_popups.html:158
+msgid "صورة الإعلان"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:38
+msgid "وجهة التوجيه (عند الضغط)"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:40
+msgid "ربط بعرض منصة متاح"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:42
+#: .\templates\supervisor\manage_popups.html:165
+msgid "اختياري: لا أريد الربط بعرض"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:45
+#: .\templates\supervisor\manage_popups.html:168
+#, python-format
+msgid "خصم %(percent)s%% على %(product_name)s"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:51
+msgid "أو رابط توجيه خارجي"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:57
+msgid "التوقيت الدقيق للظهور"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:60
+msgid "تاريخ وساعة البدء:"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:64
+msgid "تاريخ وساعة الانتهاء:"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:70
+msgid "تفعيل المراقبة والجدولة فوراً"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:75
+#: .\templates\supervisor\manage_popups.html:193
+msgid "حفظ وجدولة الإعلان"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:100
+msgid "متوقف"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:104
+msgid "مجدول"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:106
+msgid "يعمل"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:113
+msgid "عرض داخلي"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:124
+msgid "تأكيد: هل أنت متأكد من حذف هذا الإعلان نهائياً؟"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:124
+msgid "حذف الجدولة"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:134
+msgid "لا توجد إعلانات منبثقة"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:135
+msgid "لم تقم بجدولة أي إعلانات لتظهر للعملاء حتى الآن."
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:148
+msgid "جدولة إعلان جديد"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:162
+msgid "وجهة التوجيه"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:174
+msgid "أو رابط توجيه خارجي https://..."
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:177
+msgid "التوقيت الدقيق"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:180
+msgid "يبدأ من:"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:184
+msgid "ينتهي في:"
+msgstr ""
+
+#: .\templates\supervisor\manage_popups.html:189
+msgid "تفعيل المراقبة فوراً"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:2
+#: .\templates\supervisor\manage_roles.html:3
+msgid "إدارة الصلاحيات"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:11
+msgid "إنشاء دور وظيفي"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:16
+msgid "اسم الدور (مثلاً: محاسب)"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:20
+msgid "الصلاحيات المسموحة:"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:33
+msgid "حفظ الدور"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:42
+msgid "الأدوار الحالية"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:49
+msgid "الدور"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:50
+msgid "الصلاحيات"
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:69
+msgid ""
+"تأكيد: هل أنت متأكد من حذف هذا الدور؟ قد يؤثر ذلك على المشرفين المرتبطين به."
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:78
+msgid "لا توجد أدوار مخصصة."
+msgstr ""
+
+#: .\templates\supervisor\manage_roles.html:79
+msgid "قم بإنشاء دور جديد من القائمة الجانبية لتخصيص صلاحيات المشرفين."
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:2
+msgid "الوثائق القانونية"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:3
+msgid "الوثائق القانونية (الشروط والخصوصية)"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:8
+msgid "الوثائق والشروط القانونية"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:9
+msgid "إدارة بنود سياسة الخصوصية، الشروط والأحكام، وسياسات الاسترجاع لكل دولة."
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:12
+msgid "إضافة بند جديد"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:19
+#: .\templates\supervisor\manage_terms.html:246
+msgid "صياغة بند جديد"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:26
+#: .\templates\supervisor\manage_terms.html:156
+#: .\templates\supervisor\manage_terms.html:255
+msgid "الدولة المستهدفة"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:28
+#: .\templates\supervisor\manage_terms.html:158
+#: .\templates\supervisor\manage_terms.html:257
+msgid "عام (يطبق على كل الدول)"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:38
+#: .\templates\supervisor\manage_terms.html:168
+#: .\templates\supervisor\manage_terms.html:269
+msgid "شروط وأحكام"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:44
+#: .\templates\supervisor\manage_terms.html:174
+#: .\templates\supervisor\manage_terms.html:275
+msgid "المستهدف"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:54
+#: .\templates\supervisor\manage_terms.html:285
+msgid "عنوان البند (عربي)"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:64
+#: .\templates\supervisor\manage_terms.html:195
+#: .\templates\supervisor\manage_terms.html:295
+msgid "النص التفصيلي (عربي)"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:73
+#: .\templates\supervisor\manage_terms.html:304
+msgid "الترتيب (رقم)"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:77
+#: .\templates\supervisor\manage_terms.html:308
+msgid "حفظ البند"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:92
+#, python-format
+msgid "%(group_name)s"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:94
+#, python-format
+msgid "%(counter)s بند"
+msgid_plural "%(counter)s بنود"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\supervisor\manage_terms.html:128
+msgid "تأكيد الحذف نهائياً؟"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:145
+msgid "تعديل البند القانوني"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:184
+msgid "العنوان (عربي)"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:206
+msgid "الترتيب"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:211
+msgid "تفعيل البند"
+msgstr ""
+
+#: .\templates\supervisor\manage_terms.html:235
+msgid "لا توجد بنود قانونية مضافة حالياً"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:3
+msgid "عروض العملاء (VIP) | "
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:4
+msgid "إدارة العروض المخصصة للعملاء"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:13
+msgid "قسائم الخصم الخاصة (Vouchers)"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:14
+msgid "إصدار هدايا وخصومات مخصصة لعملاء محددين كتعويض أو مكافأة."
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:17
+#: .\templates\supervisor\manage_vouchers.html:159
+msgid "إصدار قسيمة جديدة"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:25
+msgid "إنشاء قسيمة جديدة"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:31
+msgid "العميل المستهدف (ابحث بالاسم أو الهاتف)"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:33
+#: .\templates\supervisor\manage_vouchers.html:167
+#: .\templates\supervisor\manage_vouchers.html:228
+msgid "ابحث عن العميل..."
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:41
+msgid "عنوان رسالة الهدية للعميل"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:46
+msgid "كود الخصم (للاستخدام السري)"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:55
+msgid "نسبة الخصم"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:62
+#: .\templates\supervisor\manage_vouchers.html:187
+msgid "أقصى خصم"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:72
+msgid "رصيد القطع المسموحة"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:76
+msgid "تاريخ الانتهاء"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:82
+msgid "تضمين شحن مجاني للطلب"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:87
+msgid "إصدار وإرسال الهدية للعميل"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:109
+msgid "نفد الرصيد / مستخدمة"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:111
+msgid "قسيمة نشطة"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:118
+msgid "خصم"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:119
+msgid "أقصى خصم:"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:122
+msgid "متبقي للاستخدام:"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:123
+msgid "قطع"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:127
+msgid "يشمل شحن مجاني"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:133
+msgid "تنتهي:"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:134
+msgid "هل أنت متأكد من حذف وإلغاء هذه القسيمة من العميل نهائياً؟"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:134
+msgid "حذف القسيمة"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:145
+msgid "لا توجد قسائم مُصدرة"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:146
+msgid "لم تقم بإصدار أي هدايا أو عروض مخصصة للعملاء حتى الآن."
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:165
+msgid "العميل المستهدف"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:174
+msgid "عنوان الهدية"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:178
+msgid "كود الخصم"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:183
+#, python-format
+msgid "نسبة الخصم %%"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:193
+msgid "عدد القطع"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:197
+#: .\templates\supervisor\merchant_profile_admin.html:274
+msgid "ينتهي في"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:202
+msgid "تضمين شحن مجاني"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:206
+msgid "إصدار وإرسال الهدية"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:220
+msgid "ابحث عن العميل بالاسم أو رقم الهاتف..."
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:222
+msgid "لم يتم العثور على عميل مطابق"
+msgstr ""
+
+#: .\templates\supervisor\manage_vouchers.html:230
+#: .\templates\supervisor\merchants_list.html:113
+#: .\templates\supervisor\users_list.html:115
+msgid "لا توجد نتائج"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:3
+#, python-format
+msgid ""
+"ملف التاجر: %(first_name)s | %(site_settings.site_name|default:\"Elbazaar\")s"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:4
+msgid "إدارة ملف التاجر"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:15
+msgid "ملف التاجر:"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:22
+msgid "هل أنت متأكد من سحب شارة التوثيق من هذا التاجر؟"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:23
+msgid "حساب موثق (إلغاء)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:26
+msgid "هل تريد منح هذا التاجر شارة التوثيق الزرقاء؟"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:27
+msgid "غير موثق (توثيق الآن)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:37
+msgid "نظرة عامة وإحصائيات"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:42
+msgid "إدارة الصلاحيات والبيانات"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:68
+msgid "موثق"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:70
+#: .\templates\supervisor\merchants_list.html:47
+#: .\templates\supervisor\merchants_list.html:91
+msgid "عادي"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:79
+msgid "معلومات النشاط التجاري"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:81
+msgid "نوع البضاعة:"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:82
+msgid "الكمية المحتملة:"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:83
+msgid "متوسط الأسعار:"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:84
+msgid "الدولة:"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:87
+msgid "الوثائق (KYC)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:89
+#: .\templates\supervisor\pending_merchants.html:75
+msgid "السجل الضريبي:"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:103
+msgid "الشهر"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:104
+msgid "السنة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:123
+#: .\templates\supervisor\wallets_list.html:73
+msgid "الرصيد المتاح"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:131
+msgid "المبيعات الناجحة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:133
+#, python-format
+msgid "%(total_items_sold)s قطعة مباعة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:142
+#, python-format
+msgid "%(total_items_returned)s قطعة مسترجعة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:149
+msgid "المنتجات المعروضة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:151
+msgid "الحد الأقصى:"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:180
+msgid "لا توجد معاملات مسجلة."
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:197
+msgid "لا توجد معاملات مالية مسجلة في هذه الفترة."
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:213
+msgid "لوحة التحكم وصلاحيات التاجر"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:226
+msgid "تاريخ انتهاء الاشتراك (حظر المنتجات)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:231
+msgid "اتركه فارغاً لاشتراك دائم."
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:235
+msgid "الحد الأدنى للرصيد ( لعرض المنتجات )"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:243
+msgid "تحديث الصلاحيات"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:251
+msgid "نظام الكاش باك الخاص بالتاجر"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:259
+msgid "نوع المكافأة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:261
+#, python-format
+msgid "نسبة مئوية (%%)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:262
+msgid "مبلغ ثابت (ج.م)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:266
+msgid "القيمة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:270
+msgid "يبدأ من"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:281
+msgid "تفعيل الكاش باك الآن"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:284
+msgid "حفظ إعدادات الكاش باك"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:291
+msgid "إجراءات طارئة للمتجر"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:292
+msgid ""
+"يمكنك إخفاء أو إظهار كل منتجات هذا التاجر بضغطة زر واحدة في حالات الطوارئ."
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:294
+msgid "إخفاء جميع منتجات هذا التاجر من المنصة؟"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:294
+msgid "إخفاء الكل"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:295
+msgid "إظهار جميع المنتجات المقبولة فقط؟"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:295
+msgid "تفعيل الكل"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:304
+msgid "تحديث بيانات (KYC) وأولوية التاجر"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:311
+msgid "أولوية ظهور المنتجات (رتبة خفية)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:312
+msgid ""
+"هذه الرتبة لا تظهر للتاجر وتستخدم فقط لتحديد ترتيب عرض منتجاته في الصفحة "
+"الرئيسية للعملاء."
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:314
+#: .\templates\supervisor\pending_merchants.html:130
+msgid "ترتيب عادي (افتراضي)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:315
+#: .\templates\supervisor\pending_merchants.html:131
+msgid "أولوية برونزية 🥉"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:316
+#: .\templates\supervisor\pending_merchants.html:132
+msgid "أولوية فضية 🥈"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:317
+#: .\templates\supervisor\pending_merchants.html:133
+msgid "أولوية ذهبية 🥇 (المركز الأول)"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:328
+msgid "الكمية المحتملة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:333
+msgid "الأسعار المتوقعة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:338
+msgid "المقاسات المتوفرة"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:348
+msgid "حفظ البيانات"
+msgstr ""
+
+#: .\templates\supervisor\merchant_profile_admin.html:349
+msgid "إلغاء والتراجع"
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:5
+msgid "قائمة التجار | "
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:6
+msgid "قائمة التجار والمتاجر"
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:12
+#: .\templates\supervisor\pending_merchants.html:15
+msgid "قائمة التجار النشطين"
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:13
+msgid "إدارة المتاجر المعتمدة والبحث فيها بسهولة."
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:21
+msgid "تجار نشطين"
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:29
+msgid "طلبات معلقة"
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:41
+msgid "ابحث باسم التاجر، رقم الهاتف..."
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:46
+msgid "كل التوثيقات"
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:54
+#: .\templates\supervisor\users_list.html:64
+msgid "بحث"
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:103
+msgid "عرض ملف التاجر والتفاصيل"
+msgstr ""
+
+#: .\templates\supervisor\merchants_list.html:114
+#: .\templates\supervisor\users_list.html:116
+msgid "جرب البحث بكلمات أخرى أو تغيير الفلاتر."
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:3
+#, python-format
+msgid ""
+"تفاصيل الطلب #%(order_id)s | %(site_settings.site_name|default:\"Elbazaar\")s"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:14
+#: .\templates\support\create_ticket.html:170
+msgid "الطلب"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:24
+msgid "طباعة الفاتورة"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:37
+#, python-format
+msgid "%(counter)s منتج"
+msgid_plural "%(counter)s منتجات"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\supervisor\order_detail.html:87
+msgid "إجمالي المنتجات:"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:91
+msgid "تكلفة الشحن:"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:95
+msgid "رسوم المنصة:"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:102
+msgid "خصم معوض من الإدارة:"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:121
+msgid "تم الدفع إلكترونياً"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:145
+#: .\templates\supervisor\support_ticket_detail.html:80
+msgid "الحالة الحالية"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:157
+msgid "تغيير الحالة إلى:"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:168
+msgid "حفظ وتحديث الحالة"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:173
+msgid "ليس لديك صلاحية لتعديل حالة الطلب."
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:182
+msgid "بيانات العميل والشحن"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:194
+msgid "عرض بروفايل العميل"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:220
+msgid "اسم المستلم:"
+msgstr ""
+
+#: .\templates\supervisor\order_detail.html:231
+msgid "سبب الرفض / الإرجاع"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:202
+msgid "GLOBAL NET PROFIT (USD)"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:206
+msgid "Total Sales Volume:"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:235
+msgid "صافي الربح الإقليمي"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:240
+msgid "العمليات المالية والمبيعات"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:246
+msgid "إجمالي المبيعات"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:255
+msgid "العمولات المتحصلة"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:264
+msgid "التعويضات"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:273
+msgid "حالة الطلبات"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:275
+msgid "ناجحة"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:276
+msgid "مرتجعة"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:277
+msgid "معلقة / جارية"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:281
+msgid "المخزون والمنتجات"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:283
+msgid "منتجات نشطة"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:284
+msgid "تحت المراجعة"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:289
+msgid "الموارد البشرية والمخاطر"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:291
+#: .\templates\supervisor\users_list.html:28
+#: .\templates\supervisor\users_list.html:59
+msgid "العملاء"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:292
+#: .\templates\supervisor\users_list.html:35
+#: .\templates\supervisor\users_list.html:60
+msgid "التجار"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:293
+msgid "حظر (Ban)"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:294
+msgid "الشكاوي"
+msgstr ""
+
+#: .\templates\supervisor\owner_dashboard.html:299
+msgid "مؤشر الإيرادات (6 أشهر)"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:3
+msgid "طلبات الإيداع | "
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:4
+msgid "طلبات الإيداع وسداد المديونيات"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:11
+msgid "طلبات الإيداع المعلقة"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:12
+msgid "مراجعة إيصالات التحويل المرفقة من التجار وتأكيد إضافة الرصيد لمحافظهم."
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:15
+#: .\templates\supervisor\pending_withdrawals.html:15
+msgid "الإحصائيات المالية"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:25
+msgid "إيداع جديد"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:38
+#: .\templates\supervisor\pending_withdrawals.html:38
+msgid "عرض ملف التاجر"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:44
+msgid "المبلغ المودع"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:51
+msgid "عرض إيصال التحويل (الإثبات)"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:55
+msgid "التاجر لم يرفق صورة إثبات"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:63
+msgid ""
+"تأكيد الإجراء: هل تأكدت من وصول المبلغ لحساب المنصة البنكي أو المحفظة؟ سيتم "
+"إضافة هذا الرصيد لمحفظة التاجر فوراً."
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:64
+msgid "تأكيد الإيداع وإضافة الرصيد"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:74
+msgid "لا توجد طلبات إيداع"
+msgstr ""
+
+#: .\templates\supervisor\pending_deposits.html:75
+msgid "لا يوجد تجار بانتظار تأكيد سداد مديونياتهم حالياً."
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:3
+msgid "طلبات الانضمام | "
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:4
+msgid "تجار بانتظار التفعيل"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:11
+msgid "طلبات الانضمام الجديدة"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:12
+msgid "راجع بيانات التجار ومستنداتهم (KYC) قبل تفعيل حساباتهم."
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:50
+msgid "تفاصيل النشاط"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:58
+msgid "الكمية المتوفرة"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:66
+msgid "المقاسات"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:72
+msgid "مستندات التوثيق (KYC)"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:87
+msgid "بطاقة (أمام)"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:93
+msgid "بطاقة (خلف)"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:100
+msgid "تفعيل الحساب وضبط الإعدادات"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:105
+msgid "اتصال بالتاجر"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:107
+msgid "هل أنت متأكد من رفض طلب التاجر وإعادته كعميل عادي؟"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:108
+#: .\templates\supervisor\pending_withdrawals.html:64
+msgid "رفض الطلب"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:117
+msgid "تفعيل الحساب وضبط الصلاحيات"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:124
+#, python-format
+msgid ""
+"سيتم تفعيل حساب \"%(name)s\" ومنحه صلاحية الدخول كتاجر. يرجى تحديد رتبة "
+"التوثيق وإعدادات المتجر الأساسية."
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:128
+msgid "رتبة التوثيق (Badge):"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:138
+msgid "إعدادات وصلاحيات المتجر"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:141
+msgid "الحد الأقصى للمنتجات المسموح بإضافتها:"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:147
+msgid "الحد الأدنى للرصيد (ليظل المتجر نشطاً):"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:156
+msgid "تاريخ انتهاء الاشتراك/الظهور (اختياري):"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:165
+msgid "تفعيل المتجر"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:179
+msgid "لا توجد طلبات انضمام جديدة"
+msgstr ""
+
+#: .\templates\supervisor\pending_merchants.html:180
+msgid "جميع طلبات المتاجر تمت معالجتها بنجاح."
+msgstr ""
+
+#: .\templates\supervisor\pending_products.html:3
+msgid "المنتجات المعلقة | "
+msgstr ""
+
+#: .\templates\supervisor\pending_products.html:11
+msgid "منتجات بانتظار المراجعة"
+msgstr ""
+
+#: .\templates\supervisor\pending_products.html:12
+msgid "راجع المنتجات، حدد نسبة عمولة المنصة، ثم قم بالقبول أو الرفض."
+msgstr ""
+
+#: .\templates\supervisor\pending_products.html:15
+msgid "عرض كل المنتجات"
+msgstr ""
+
+#: .\templates\supervisor\pending_products.html:33
+msgid "معلق"
+msgstr ""
+
+#: .\templates\supervisor\pending_products.html:53
+#: .\templates\supervisor\product_review.html:4
+msgid "مراجعة المنتج"
+msgstr ""
+
+#: .\templates\supervisor\pending_products.html:64
+msgid "لا توجد منتجات معلقة"
+msgstr ""
+
+#: .\templates\supervisor\pending_products.html:65
+msgid "عمل رائع! لقد قمت بمراجعة جميع المنتجات."
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:3
+msgid "طلبات السحب المعلقة | "
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:4
+msgid "طلبات سحب الأرباح"
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:11
+msgid "طلبات السحب المعلقة"
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:12
+msgid "مراجعة طلبات التجار، وتحويل الأرباح إلى محافظهم الإلكترونية."
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:25
+msgid "بانتظار التحويل"
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:44
+msgid "المبلغ المطلوب تحويله"
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:50
+msgid "تحويل إلى المحفظة رقم:"
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:53
+msgid "نسخ الرقم"
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:61
+msgid ""
+"تأكيد الإجراء: هل قمت بتحويل المبلغ للتاجر بالفعل على محفظته؟ لا يمكن "
+"التراجع بعد الموافقة."
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:62
+msgid "تم التحويل (موافقة)"
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:64
+msgid ""
+"تأكيد الإجراء: هل أنت متأكد من رفض طلب السحب؟ سيتم إعادة المبلغ لمحفظة "
+"التاجر فوراً."
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:75
+msgid "لا توجد طلبات سحب"
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:76
+msgid "جميع طلبات سحب الأرباح تمت معالجتها، والمحافظ مستقرة حالياً."
+msgstr ""
+
+#: .\templates\supervisor\pending_withdrawals.html:86
+msgid "تم نسخ رقم المحفظة: "
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:3
+#, python-format
+msgid ""
+"تعديل المنتج: %(name)s | %(site_settings.site_name|default:\"Elbazaar\")s"
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:4
+msgid "إدارة المنتج وتحديد العمولة"
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:16
+msgid "مراجعة واعتماد المنتج"
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:17
+msgid "قم بمراجعة المنتج وتحديد نسبة العمولة الخاصة بالمنصة."
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:25
+msgid "بانتظار التفعيل"
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:40
+#: .\templates\supervisor\product_review.html:40
+msgid "التاجر:"
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:51
+msgid "المنتج نشط (يظهر للعملاء في المتجر)"
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:53
+msgid "أغلق هذا الخيار لإخفاء المنتج أو إيقافه مؤقتاً."
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:59
+msgid "نسبة عمولة المنصة"
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:67
+msgid ""
+"يتم خصم هذه النسبة كعمولة للمنصة من كل عملية بيع ناجحة لهذا المنتج، وتضاف "
+"الباقي لمحفظة التاجر."
+msgstr ""
+
+#: .\templates\supervisor\product_edit_admin.html:74
+msgid "حفظ التعديلات واعتماد المنتج"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:3
+#, python-format
+msgid "مراجعة: %(name)s | %(site_settings.site_name|default:\"Elbazaar\")s"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:10
+msgid "العودة للمنتجات المعلقة"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:30
+msgid "غير مصنف"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:36
+msgid "السعر الأساسي:"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:46
+msgid "وصف المنتج:"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:47
+msgid "لا يوجد وصف مضاف لهذا المنتج."
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:58
+msgid "قرار الإدارة"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:59
+msgid ""
+"قم بتحديد نسبة العمولة التي ستحصل عليها المنصة من مبيعات هذا المنتج، ثم اتخذ "
+"القرار."
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:65
+#, python-format
+msgid "نسبة عمولة المنصة (%%)"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:72
+#, python-format
+msgid ""
+"نسبة العمولة الافتراضية المحددة في النظام للتاجر هي %(pct)s%%. يمكنك تعديلها "
+"لهذا المنتج خصيصاً."
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:80
+msgid "الموافقة وتفعيل المنتج"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:83
+msgid ""
+"تأكيد الإجراء: هل أنت متأكد من رفض هذا المنتج وحذفه نهائياً من قاعدة البيانات؟"
+msgstr ""
+
+#: .\templates\supervisor\product_review.html:84
+msgid "رفض وحذف المنتج"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:3
+msgid "إرسال إشعار | "
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:4
+msgid "إرسال إشعار للمستخدمين"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:14
+msgid "إرسال إشعار عام أو مخصص"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:15
+msgid "تواصل مع المستخدمين، أرسل لهم العروض الجديدة، أو نبههم بتحديثات المنصة."
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:24
+msgid "عنوان الإشعار"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:25
+msgid "مثال: عرض خاص لك!"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:29
+msgid "الرابط عند الضغط (اختياري)"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:30
+msgid "مثال: /my-orders/ أو https://..."
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:34
+msgid "الجهة المستهدفة"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:36
+msgid "الجميع (تجار وعملاء)"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:37
+msgid "التجار فقط"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:38
+msgid "العملاء فقط"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:39
+msgid "مستخدم محدد (تاجر أو عميل مخصص)"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:45
+msgid "اختر المستخدم المستهدف"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:47
+msgid "ابحث بالاسم أو رقم الهاتف"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:50
+#: .\templates\supervisor\users_list.html:90
+msgid "تاجر"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:50
+#: .\templates\supervisor\users_list.html:92
+msgid "عميل"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:58
+msgid "نص الإشعار التفصيلي"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:59
+msgid "اكتب تفاصيل الرسالة التي ستظهر للمستخدم هنا..."
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:65
+msgid "هل أنت متأكد من إرسال هذا الإشعار الآن؟"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:66
+msgid "إرسال الإشعار الآن"
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:82
+msgid "ابحث عن المستخدم بالاسم أو رقم الهاتف..."
+msgstr ""
+
+#: .\templates\supervisor\send_broadcast.html:84
+msgid "لم يتم العثور على مستخدم مطابق"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:4
+msgid "إعدادات الموقع"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:80
+msgid "إعدادات المنصة المركزية"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:83
+msgid "الإعدادات العامة"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:95
+#: .\templates\supervisor\site_settings.html:113
+msgid "الهوية والبصرية"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:98
+msgid "بوابات الدفع"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:101
+msgid "المحفظة والسحب"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:104
+msgid "المكافآت والدعوات"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:116
+msgid "اسم الموقع / الفرع"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:123
+msgid "بوابات الدفع الإلكتروني"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:124
+msgid "تم ضبط فواتيرك كبوابة الدفع الرسمية للمنصة."
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:132
+msgid "فواتيرك (Fawaterk)"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:133
+msgid "البوابة الحالية والنشطة"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:140
+msgid "ضبط عمولات فواتيرك"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:144
+#, python-format
+msgid "نسبة رسوم Fawaterk (%%)"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:147
+msgid "رسوم Fawaterk (المبلغ الثابت)"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:158
+msgid "سياسات المحافظ والسحب"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:161
+msgid "الحد الأدنى لطلب السحب"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:168
+msgid "المبلغ المحجوز لضمان الجدية"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:176
+msgid "مدة تعليق الأرباح للمراجعة"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:179
+#: .\templates\supervisor\site_settings.html:242
+msgid "ساعة"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:187
+msgid "نظام المكافآت والدعوات"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:192
+msgid "إعدادات الداعي (اكتساب المكافآت)"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:193
+msgid "القواعد الخاصة بالشخص الذي يشارك الكود للحصول على رصيد مكافأة."
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:198
+msgid "نسبة المكافأة للداعي من الطلب"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:206
+msgid "الحد الأقصى للمكافأة في الطلب الواحد"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:214
+msgid "عدد الطلبات المؤهلة (للمدعو الواحد)"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:216
+msgid "كم عدد الطلبات التي سيحصل الداعي على مكافأة منها؟"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:220
+msgid "صلاحية رصيد المكافأة للداعي"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:233
+msgid "إعدادات المدعو واستخدام الرصيد"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:234
+msgid ""
+"قواعد تسجيل المستخدم الجديد، وكيفية استخدام وتطبيق رصيد المكافآت عند الشراء."
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:239
+msgid "مهلة إدخال كود الدعوة للمستخدم الجديد"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:248
+msgid "أقصى نسبة خصم يمكن استخدامها للمنتج"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:256
+msgid "الحد الأقصى المالي لخصم الإحالة بالسلة"
+msgstr ""
+
+#: .\templates\supervisor\site_settings.html:275
+msgid "حفظ جميع الإعدادات"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:3
+#, python-format
+msgid "تذكرة #%(ticket_id)s | %(site_settings.site_name|default:\"Elbazaar\")s"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:4
+msgid "متابعة التذكرة"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:13
+msgid "المحادثة والدعم الفني"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:45
+#: .\templates\support\ticket_detail.html:188
+msgid "اكتب ردك هنا..."
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:46
+msgid "إرسال"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:58
+msgid "بيانات التذكرة"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:72
+msgid "طلب مرتبط"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:74
+msgid "الطلب #"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:88
+msgid "إجراءات إدارية"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:91
+msgid "تحديث حالة التذكرة"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:93
+#: .\templates\support\my_tickets.html:192
+msgid "مفتوحة"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:94
+#: .\templates\supervisor\support_tickets.html:30
+msgid "قيد المعالجة"
+msgstr ""
+
+#: .\templates\supervisor\support_ticket_detail.html:95
+msgid "تم الحل"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:3
+msgid "تذاكر الدعم الفني | "
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:4
+msgid "تذاكر الدعم الفني"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:11
+msgid "مركز مساعدة العملاء والتجار"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:12
+msgid "متابعة الشكاوى، الاستفسارات، والرد على تذاكر الدعم الفني."
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:17
+#, python-format
+msgid "%(counter)s تذكرة إجمالية"
+msgid_plural "%(counter)s تذاكر إجمالية"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\supervisor\support_tickets.html:27
+msgid "جديدة (مفتوحة)"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:33
+msgid "مغلقة / محلولة"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:77
+#: .\templates\support\create_ticket.html:135
+#: .\templates\support\my_tickets.html:157
+#: .\templates\support\ticket_detail.html:183
+msgid "تذكرة جديدة"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:81
+msgid "جارية"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:89
+msgid "رد ومتابعة"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:101
+msgid "صندوق الوارد فارغ"
+msgstr ""
+
+#: .\templates\supervisor\support_tickets.html:102
+msgid "لا توجد تذاكر دعم فني مطابقة للبحث في الوقت الحالي."
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:5
+msgid "فريق العمل | "
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:6
+msgid "إدارة فريق العمل والمشرفين"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:14
+msgid "تعيين مشرف جديد"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:24
+#, python-format
+msgid "سيتم ربط هذا المشرف بفرع (%(country)s) تلقائياً كمشرف محلي."
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:31
+msgid "أحرف إنجليزية وأرقام فقط"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:36
+msgid "مثال: 01012345678"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:40
+#: .\templates\supervisor\user_edit.html:57
+msgid "البريد الإلكتروني (اختياري)"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:45
+msgid "كلمة المرور الدائمة"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:53
+msgid "الفرع (الدولة)"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:55
+msgid "اختر الدولة التي سيديرها..."
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:63
+msgid "الرتبة الإدارية الأساسية"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:65
+msgid "مدير دولة (صلاحيات كاملة على دولته)"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:66
+msgid "مشرف مخصص (يحتاج لصلاحيات مخصصة لاحقاً)"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:69
+msgid "\"مدير الدولة\" يرى كل شيء يخص دولته ولا يحتاج لتعيين أدوار مخصصة."
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:77
+msgid "المسمى الوظيفي الإضافي (اختياري)"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:79
+msgid "بدون مسمى وظيفي إضافي"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:85
+msgid "أو"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:85
+msgid "أنشئ دوراً مخصصاً جديداً"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:90
+msgid "تأكيد التعيين وإنشاء الحساب"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:100
+msgid "فريق العمل الحالي"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:102
+msgid "إدارة الصلاحيات والأدوار"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:132
+msgid "إدارة عليا"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:145
+msgid "الإيميل:"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:146
+msgid "غير مسجل"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:149
+#: .\templates\supervisor\user_edit.html:38
+msgid "آخر دخول:"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:150
+msgid "لم يسجل دخول"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:157
+msgid "تعديل الحساب"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:161
+msgid "تأكيد الإجراء: هل أنت متأكد من حذف هذا المشرف نهائياً؟"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:161
+msgid "حذف المشرف"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:172
+msgid "لا يوجد مشرفين حالياً"
+msgstr ""
+
+#: .\templates\supervisor\team_management.html:173
+msgid "استخدم النموذج لتعيين فريق العمل الخاص بك لتقسيم المهام."
+msgstr ""
+
+#: .\templates\supervisor\translations.html:4
+#: .\templates\supervisor\translations.html:9
+msgid "لوحة المترجمات الشاملة"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:18
+msgid "المحافظات"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:39
+msgid "النص الأصلي (عربي)"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:42
+msgid "الترجمة (English)"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:44
+msgid "Type translation here..."
+msgstr ""
+
+#: .\templates\supervisor\translations.html:50
+msgid "لا توجد أقسام حالياً."
+msgstr ""
+
+#: .\templates\supervisor\translations.html:66
+msgid "English Name"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:84
+#: .\templates\supervisor\translations.html:106
+msgid "النص العربي"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:89
+#: .\templates\supervisor\translations.html:111
+msgid "English Translation"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:90
+msgid "English Title"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:91
+msgid "English Content..."
+msgstr ""
+
+#: .\templates\supervisor\translations.html:94
+msgid "حفظ الترجمة"
+msgstr ""
+
+#: .\templates\supervisor\translations.html:112
+msgid "English Translation..."
+msgstr ""
+
+#: .\templates\supervisor\translations.html:114
+msgid "حفظ تحديث صفحة من نحن"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:5
+msgid "تعديل حساب | "
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:6
+msgid "تعديل بيانات المستخدم"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:14
+msgid "العودة للخلف"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:27
+msgid "محظور"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:37
+msgid "إعدادات حساب المستخدم"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:38
+msgid "لم يسجل دخول بعد"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:42
+msgid "المعلومات الشخصية"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:53
+msgid "رقم الهاتف (اسم الدخول الأساسي)"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:61
+msgid "دولة الحساب"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:63
+msgid "اختر الدولة"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:75
+msgid "الصلاحيات وحالة الحساب"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:78
+msgid "تغيير دور الحساب الأساسي (Role)"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:80
+msgid "عميل عادي (تسوق)"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:81
+msgid "تاجر (صاحب متجر)"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:83
+msgid "مشرف / موظف دعم"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:84
+msgid "مدير دولة"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:85
+msgid "مالك أعلى (Super Admin)"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:89
+msgid "لا تملك الصلاحية لتغيير أدوار الإدارة العليا."
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:96
+msgid "حساب نشط"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:102
+msgid "حظر الحساب"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:111
+msgid "إعدادات الأمان (اختياري)"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:113
+msgid "تعيين كلمة مرور جديدة قسرياً"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:115
+msgid "اتركه فارغاً لعدم التغيير"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:116
+msgid "توليد كلمة مرور عشوائية قوية"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:117
+msgid "توليد عشوائي"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:120
+msgid ""
+"سيتم تغيير كلمة المرور فوراً بمجرد الحفظ دون الحاجة لمعرفة الكلمة القديمة."
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:125
+msgid "هل أنت متأكد من حفظ التعديلات على هذا الحساب؟"
+msgstr ""
+
+#: .\templates\supervisor\user_edit.html:126
+msgid "حفظ التغييرات وتحديث الحساب"
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:5
+msgid "إدارة الأعضاء | "
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:6
+msgid "إدارة المستخدمين والأعضاء"
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:12
+msgid "سجل الأعضاء"
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:13
+msgid "إدارة سريعة للحسابات والتفاصيل من خلال التعديل."
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:21
+msgid "كل المستخدمين"
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:42
+msgid "المشرفين"
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:53
+msgid "ابحث بالاسم، رقم الهاتف..."
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:58
+msgid "كل الأدوار"
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:94
+msgid "مشرف"
+msgstr ""
+
+#: .\templates\supervisor\users_list.html:104
+msgid "فتح التفاصيل للتعديل"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:3
+msgid "إدارة المحافظ | "
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:4
+msgid "إدارة محافظ التجار"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:11
+msgid "محافظ التجار المالية"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:12
+msgid "راقب أرصدة التجار المتاحة والمعلقة، وقم بتعديلها عند الحاجة."
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:21
+msgid "ابحث عن اسم التاجر..."
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:28
+msgid "الرصيد المتاح: الأعلى أولاً"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:29
+msgid "الرصيد المتاح: الأقل أولاً"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:30
+msgid "الاسم: أ-ي"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:31
+msgid "الاسم: ي-أ"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:32
+msgid "الرصيد المعلق: الأعلى أولاً"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:33
+msgid "الرصيد المعلق: الأقل أولاً"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:35
+msgid "إعادة تعيين الفلاتر"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:47
+msgid "إجمالي الرصيد المتاح"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:54
+msgid "إجمالي الرصيد المعلق"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:61
+msgid "عدد التجار المعروضين"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:74
+msgid "الرصيد المعلق"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:75
+msgid "إجمالي المستحقات"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:94
+msgid "حساب موثق"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:120
+msgid "تعديل الرصيد"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:128
+msgid "لا توجد محافظ نشطة"
+msgstr ""
+
+#: .\templates\supervisor\wallets_list.html:138
+msgid "لم يتم العثور على أي محافظ تطابق اسم التاجر المُدخل."
+msgstr ""
+
+#: .\templates\support\create_ticket.html:146
+msgid "كيف يمكننا مساعدتك؟"
+msgstr ""
+
+#: .\templates\support\create_ticket.html:148
+msgid "نحن هنا من أجلك! يرجى توضيح مشكلتك وسنقوم بالرد عليك في أقرب وقت."
+msgstr ""
+
+#: .\templates\support\create_ticket.html:157
+msgid "موضوع التذكرة"
+msgstr ""
+
+#: .\templates\support\create_ticket.html:159
+msgid "مثال: استفسار عن الطلب #123 أو مشكلة في الدفع"
+msgstr ""
+
+#: .\templates\support\create_ticket.html:164
+msgid "طلب متعلق (اختياري)"
+msgstr ""
+
+#: .\templates\support\create_ticket.html:167
+msgid "بدون طلب محدد / استفسار عام"
+msgstr ""
+
+#: .\templates\support\create_ticket.html:175
+msgid "إذا كانت مشكلتك تخص طلباً معيناً، يرجى اختياره لتسهيل المساعدة."
+msgstr ""
+
+#: .\templates\support\create_ticket.html:181
+msgid "تفاصيل المشكلة أو الاستفسار"
+msgstr ""
+
+#: .\templates\support\create_ticket.html:183
+msgid ""
+"اشرح مشكلتك أو استفسارك بالتفصيل لمساعدتنا في الرد عليك بشكل أسرع وأدق..."
+msgstr ""
+
+#: .\templates\support\create_ticket.html:188
+msgid "إرسال التذكرة"
+msgstr ""
+
+#: .\templates\support\my_tickets.html:165
+msgid "متابعة استفساراتك وتذاكر الدعم السابقة مع فريق ."
+msgstr ""
+
+#: .\templates\support\my_tickets.html:185
+msgid "منذ"
+msgstr ""
+
+#: .\templates\support\my_tickets.html:214
+msgid "لا توجد تذاكر دعم"
+msgstr ""
+
+#: .\templates\support\my_tickets.html:216
+msgid ""
+"ليس لديك أي استفسارات أو شكاوى مسجلة حالياً. نحن هنا دائماً لخدمتك وحل أي "
+"مشكلة تواجهك!"
+msgstr ""
+
+#: .\templates\support\my_tickets.html:219
+msgid "افتح تذكرة الآن"
+msgstr ""
+
+#: .\templates\support\ticket_detail.html:143
+msgid "تذكرة"
+msgstr ""
+
+#: .\templates\support\ticket_detail.html:182
+msgid "هذه التذكرة مغلقة. لا يمكن الرد عليها."
+msgstr ""
+
+#: .\templates\terms.html:47
+msgid "يرجى قراءة شروط استخدام المنصة بعناية قبل الموافقة."
+msgstr ""
+
+#: .\templates\terms.html:69
+msgid "لا توجد شروط حالياً"
+msgstr ""
+
+#: .\templates\terms.html:70
+msgid "لم يتم إضافة أي شروط أو أحكام للمنصة حتى الآن."
+msgstr ""
+
+#: .\templates\terms.html:78
+msgid "إغلاق والعودة للتسجيل"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
+msgid "Messages"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:33
+msgid "…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:35
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:36
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:37
+msgid "That page contains no results"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:153
+#: .\venv\Lib\site-packages\django\forms\fields.py:774
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:200
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:211
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:309
+#: .\venv\Lib\site-packages\django\core\validators.py:318
+#: .\venv\Lib\site-packages\django\core\validators.py:332
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:320
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:514
+#: .\venv\Lib\site-packages\django\forms\fields.py:365
+#: .\venv\Lib\site-packages\django\forms\fields.py:404
+msgid "Enter a number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:659
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1633
+#: .\venv\Lib\site-packages\django\forms\models.py:932
+msgid "and"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1635
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:20
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1161
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1164
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1214
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1216
+msgid "String (unlimited)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1325
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1426
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1430
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1565
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1434
+msgid "Date (without time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1561
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1569
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1574
+msgid "Date (with time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1701
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1703
+msgid "Decimal number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
+msgid "Duration"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
+msgid "Email address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
+msgid "File path"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
+msgid "Floating point number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
+msgid "Integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
+msgid "Small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
+msgid "IPv4 address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
+msgid "IP address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
+msgid "Positive big integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
+msgid "Positive integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
+msgid "Positive small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
+msgid "Text"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
+msgid "Time"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
+msgid "URL"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
+msgid "Raw binary data"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
+msgid "Universally unique identifier"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
+msgid "File"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
+msgid "Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
+msgid "A JSON object"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:978
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:981
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1275
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1332
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1334
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1382
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to
+#. the label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:188
+msgid ":?.!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:92
+msgid "This field is required."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:314
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:485
+#: .\venv\Lib\site-packages\django\forms\fields.py:1251
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:508
+#: .\venv\Lib\site-packages\django\forms\fields.py:1252
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:535
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:569
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:570
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:639
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:640
+msgid "No file was submitted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:641
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:643
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:648
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:716
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:872
+#: .\venv\Lib\site-packages\django\forms\fields.py:959
+#: .\venv\Lib\site-packages\django\forms\models.py:1621
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:961
+#: .\venv\Lib\site-packages\django\forms\fields.py:1080
+#: .\venv\Lib\site-packages\django\forms\models.py:1619
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1081
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1323
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1353
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:97
+msgid ":"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:925
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:930
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:937
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:946
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1383
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1474
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1623
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:528
+msgid "Clear"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:529
+msgid "Currently"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:530
+msgid "Change"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:869
+msgid "Unknown"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:870
+msgid "Yes"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:871
+msgid "No"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\tasks\base.py:34
+msgctxt "Task"
+msgid "Ready"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\tasks\base.py:36
+msgctxt "Task"
+msgid "Running"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\tasks\base.py:38
+msgctxt "Task"
+msgid "Failed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\tasks\base.py:40
+msgctxt "Task"
+msgid "Successful"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:878
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:908
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:925
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:927
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:929
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:931
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:933
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:935
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "p.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:75
+msgid "a.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "PM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:81
+msgid "AM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:288
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:307
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:29
+msgid "Forbidden"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:353
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:68
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:14
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:94
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:102
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:112
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:122
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:126
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:158
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:177
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:404
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:409
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:419
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:439
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:456
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:475
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:481
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:498
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:510
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:518
+msgid "title"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:18
+msgid "password"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:285
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:304
+msgid "title a"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:289
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:315
+msgid "title b"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:293
+msgid "title c"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:297
+msgid "title d"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:420
+msgid "visits"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\translation.py:74
+msgid "Sorry, translation is not available."
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\widgets.py:32
+msgid "None"
+msgstr ""
+
+#: .\venv\modeltranslation\templates\admin\modeltranslation\app_index.html:9
+#: .\venv\modeltranslation\templates\modeltranslation\admin\admin.html:25
+msgid "Home"
+msgstr ""
+
+#: .\venv\modeltranslation\templates\admin\modeltranslation\app_index.html:24
+#: .\venv\modeltranslation\templates\admin\modeltranslation\app_index.html:25
+msgid "Admin translations"
+msgstr ""
+
+#: .\venv\modeltranslation\templates\admin\modeltranslation\app_index.html:29
+#: .\venv\modeltranslation\templates\admin\modeltranslation\app_index.html:30
+msgid "Update translations"
+msgstr ""
+
+#: .\venv\modeltranslation\templates\modeltranslation\admin\admin.html:27
+msgid "Translations"
+msgstr ""
